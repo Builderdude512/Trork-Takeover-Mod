@@ -1,0 +1,43 @@
+{
+  "Model": "Projectile_Hammer",
+  "LaunchForce": 40,
+  "Physics": {
+    "Type": "Standard",
+    "Gravity": 20,
+    "TerminalVelocityAir": 35,
+    "TerminalVelocityWater": 1,
+    "RotationMode": "VelocityRoll",
+    "Bounciness": 1,
+    "BounceCount": 1,
+    "SticksVertically": true,
+    "ComputePitch": true
+  },
+  "Interactions": {
+    "ProjectileHit": {
+      "Interactions": [
+        {
+          "Type": "DamageEntity",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Projectile": 22
+            }
+          },
+          "DamageEffects": {
+            "Knockback": {
+              "Force": -14
+            }
+          }
+        },
+        "Common_Projectile_Despawn"
+      ]
+    },
+    "ProjectileMiss": {
+      "Interactions": [
+        "Common_Projectile_Despawn"
+      ]
+    }
+  },
+  "SpawnRotationOffset": {
+    "Pitch": 10
+  }
+}

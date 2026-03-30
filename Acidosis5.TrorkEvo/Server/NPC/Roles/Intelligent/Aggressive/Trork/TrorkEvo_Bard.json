@@ -1,0 +1,64 @@
+{
+  "Type": "Variant",
+  "Reference": "Template_Trork_Hybrid",
+  "Modify": {
+    "Appearance": "TrorkEvo_Bard",
+    "IdleMotionComponent": "Component_Trork_Instruction_Idle_Motion_Follow_Path",
+    "DropList": "Drop_TrorkEvo_Soldier",
+    "Weapons": [
+      "Weapon_Club_Copper",
+      "Weapon_Club_Copper"
+    ],
+    "MaxHealth": 120,
+    "IsMemory": false,
+    "AttackSequence": "Component_Instruction_Attack_Sequence_TrorkEvo_Bard",
+    "RangedAttackSequence": "Component_Instruction_Attack_Sequence_Range_TrorkEvo_Bard",
+    "_InteractionVars": {
+      "Melee_Fast": {
+        "Interactions": [
+          {
+            "Parent": "NPC_Attack_Melee_Damage",
+            "DamageCalculator": {
+              "BaseDamage": {
+                "Physical": 12
+              }
+            }
+          }
+        ]
+      },
+      "Melee_Medium": {
+        "Interactions": [
+          {
+            "Parent": "NPC_Attack_Melee_Damage",
+            "DamageCalculator": {
+              "BaseDamage": {
+                "Physical": 23
+              }
+            }
+          }
+        ]
+      },
+      "Melee_Heavy": {
+        "Interactions": [
+          {
+            "Parent": "NPC_Attack_Melee_Damage",
+            "DamageCalculator": {
+              "BaseDamage": {
+                "Physical": 29
+              }
+            }
+          }
+        ]
+      }
+    },
+    "NameTranslationKey": {
+      "Compute": "NameTranslationKey"
+    }
+  },
+  "Parameters": {
+    "NameTranslationKey": {
+      "Value": "TTO_Server.npcRoles.TrorkEvo_Bard.name",
+      "Description": "TTO_Server.npcRoles.TrorkEvo_Bard.description"
+    }
+  }
+}

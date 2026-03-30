@@ -1,0 +1,23 @@
+{
+  "Type": "Selector",
+  "Selector": {
+    "Id": "AOECircle",
+    "Range": 2,
+    "Offset": {
+      "Y": 1
+    }
+  },
+  "HitEntity": {
+    "Interactions": [
+      {
+        "Type": "Replace",
+        "DefaultValue": {
+          "Interactions": [
+            "NPC_Attack_Melee_Damage"
+          ]
+        },
+        "Var": "Melee_Light"
+      }
+    ]
+  }
+}

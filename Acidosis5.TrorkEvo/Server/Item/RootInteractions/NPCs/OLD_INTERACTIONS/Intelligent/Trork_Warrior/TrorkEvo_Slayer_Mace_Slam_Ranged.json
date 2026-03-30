@@ -1,0 +1,14 @@
+{
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  },
+  "Interactions": [
+    "TrorkEvo_Slayer_Mace_Slam_Force_Ranged",
+    "TrorkEvo_Mace_Projectile"
+  ],
+  "Cooldown": {
+    "Cooldown": 12
+  }
+}

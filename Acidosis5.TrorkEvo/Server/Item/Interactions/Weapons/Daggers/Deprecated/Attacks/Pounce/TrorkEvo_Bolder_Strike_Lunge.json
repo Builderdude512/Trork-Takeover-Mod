@@ -1,0 +1,28 @@
+{
+  "Type": "Simple",
+  "RunTime": 1.5,
+  "Effects": {
+    "ItemPlayerAnimationsId": "Trork_Sword",
+    "ItemAnimationId": "StabDashCharging",
+    "ClearAnimationOnFinish": true,
+    "WaitForAnimationToFinish": true,
+    "Particles": [
+      {
+        "SystemId": "Sword_Charging",
+        "TargetEntityPart": "PrimaryItem",
+        "PositionOffset": {
+          "Y": 0.5
+        }
+      }
+    ],
+    "MovementEffects": {
+      "DisableAll": true
+    }
+  },
+  "Next": {
+    "Type": "Serial",
+    "Interactions": [
+      "TrorkEvo_Bolder_Club_Thrust_Force"
+    ]
+  }
+}

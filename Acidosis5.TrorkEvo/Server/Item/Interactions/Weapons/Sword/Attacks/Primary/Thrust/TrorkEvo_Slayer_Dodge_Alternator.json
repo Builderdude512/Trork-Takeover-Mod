@@ -1,0 +1,8 @@
+{
+  "Type": "Chaining",
+  "Next": [
+    "TrorkEvo_Minion_DodgeL_Chargeup",
+    "TrorkEvo_Minion_DodgeR_Chargeup"
+  ],
+  "ChainingAllowance": 18
+}

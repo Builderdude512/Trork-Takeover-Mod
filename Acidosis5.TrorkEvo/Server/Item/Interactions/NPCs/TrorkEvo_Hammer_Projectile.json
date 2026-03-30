@@ -1,0 +1,54 @@
+{
+  "Type": "Simple",
+  "$Comment": "Prepare Delay",
+  "Next": {
+    "Type": "Parallel",
+    "Interactions": [
+      {
+        "Interactions": [
+          {
+            "Type": "Simple",
+            "RunTime": 1.5,
+            "Effects": {
+              "MovementEffects": {
+                "DisableAll": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "Interactions": [
+          {
+            "Type": "Simple",
+            "Effects": {
+              "ItemPlayerAnimationsId": "Battleaxe",
+              "ItemAnimationId": "WhirlwindChargedSpin",
+              "Trails": [
+                {
+                  "TargetEntityPart": "PrimaryItem",
+                  "TrailId": "Large_Charged",
+                  "PositionOffset": {
+                    "Y": 0.6
+                  }
+                }
+              ],
+              "ClearAnimationOnFinish": true
+            },
+            "RunTime": 1.35,
+            "Next": {
+              "Type": "Projectile",
+              "Config": "Projectile_Config_TrorkEvo_Hammer_Charged"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "RunTime": 1.25,
+  "Parent": "TrorkEvo_Mace_Projectile",
+  "Effects": {
+    "ItemPlayerAnimationsId": "Trork_Sword",
+    "ItemAnimationId": "SwingLeftCharging"
+  }
+}

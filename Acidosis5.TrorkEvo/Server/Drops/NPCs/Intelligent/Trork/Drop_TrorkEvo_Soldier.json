@@ -1,0 +1,83 @@
+{
+  "Container": {
+    "Type": "Multiple",
+    "Containers": [
+      {
+        "Type": "Choice",
+        "Weight": 100,
+        "Containers": [
+          {
+            "Type": "Choice",
+            "Containers": [
+              {
+                "Type": "Single",
+                "Item": {
+                  "ItemId": "Ingredient_Fabric_Scrap_Linen",
+                  "QuantityMax": 4
+                },
+                "Weight": 65
+              },
+              {
+                "Type": "Single",
+                "Item": {
+                  "ItemId": "Ingredient_Leather_Medium",
+                  "QuantityMax": 2
+                },
+                "Weight": 20
+              },
+              {
+                "Type": "Single",
+                "Item": {
+                  "ItemId": "Ore_Iron"
+                },
+                "Weight": 15
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Type": "Choice",
+        "Weight": 5,
+        "Containers": [
+          {
+            "Weight": 25,
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Armor_Trork_Head",
+              "QuantityMin": 1,
+              "QuantityMax": 1
+            }
+          },
+          {
+            "Weight": 25,
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Armor_Trork_Chest",
+              "QuantityMin": 1,
+              "QuantityMax": 1
+            }
+          },
+          {
+            "Weight": 25,
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Armor_Trork_Hands",
+              "QuantityMin": 1,
+              "QuantityMax": 1
+            }
+          },
+          {
+            "Weight": 25,
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Armor_Trork_Legs",
+              "QuantityMin": 1,
+              "QuantityMax": 1
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

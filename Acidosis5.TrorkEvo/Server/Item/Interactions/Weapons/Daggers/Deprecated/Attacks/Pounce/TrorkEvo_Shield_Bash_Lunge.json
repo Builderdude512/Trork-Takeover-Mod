@@ -1,0 +1,25 @@
+{
+  "Type": "Simple",
+  "Next": {
+    "Type": "Serial",
+    "Interactions": [
+      {
+        "Type": "ApplyEffect",
+        "EffectId": "TrorkEvo_Block_Charging_Thrust",
+        "RunTime": 0.75,
+        "Effects": {
+          "Particles": [
+            {
+              "SystemId": "Mace_Charging",
+              "TargetEntityPart": "PrimaryItem"
+            }
+          ],
+          "ItemPlayerAnimationsId": "Shield",
+          "ItemAnimationId": "Guard"
+        }
+      },
+      "TrorkEvo_Shield_Shield_Thrust_Force",
+      "TrorkEvo_Shield_Bash_Selector"
+    ]
+  }
+}

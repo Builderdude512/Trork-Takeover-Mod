@@ -1,0 +1,13 @@
+{
+  "Model": "NPC_Spawn_Marker",
+  "NPCs": [
+    {
+      "Name": "TrorkEvo_Slayer",
+      "Weight": 100,
+      "SpawnAfterGameTime": "P3D"
+    }
+  ],
+  "ExclusionRadius": 25,
+  "MaxDropHeight": 4,
+  "DeactivationDistance": 150
+}

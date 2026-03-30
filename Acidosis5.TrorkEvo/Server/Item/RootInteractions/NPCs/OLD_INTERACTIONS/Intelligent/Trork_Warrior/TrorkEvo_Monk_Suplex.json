@@ -1,0 +1,17 @@
+{
+  "Interactions": [
+    "TrorkEvo_Monk_Daggers_Thrust_Force_Ranged_Suplex"
+  ],
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  },
+  "Cooldown": {
+    "Cooldown": 2,
+    "Charges": [
+      11,
+      11
+    ]
+  }
+}

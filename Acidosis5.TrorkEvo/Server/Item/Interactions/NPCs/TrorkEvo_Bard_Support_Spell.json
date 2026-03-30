@@ -1,0 +1,41 @@
+{
+  "Type": "Selector",
+  "Selector": {
+    "Id": "AOECircle",
+    "Range": 15
+  },
+  "Effects": {
+    "Particles": [
+      {
+        "TargetEntityPart": "Self",
+        "SystemId": "Seeds_Eternal",
+        "PositionOffset": {
+          "Z": 8
+        }
+      }
+    ]
+  },
+  "HitEntityRules": [
+    {
+      "Matchers": [
+        {
+          "Type": "Player",
+          "Invert": true
+        }
+      ],
+      "Next": {
+        "Interactions": [
+          {
+            "Type": "ApplyEffect",
+            "Entity": "Target",
+            "EffectId": "TrorkEvo_Lesser_Regen"
+          }
+        ]
+      }
+    }
+  ],
+  "Next": {
+    "Type": "ApplyEffect",
+    "EffectId": "TrorkEvo_Lesser_Regen"
+  }
+}

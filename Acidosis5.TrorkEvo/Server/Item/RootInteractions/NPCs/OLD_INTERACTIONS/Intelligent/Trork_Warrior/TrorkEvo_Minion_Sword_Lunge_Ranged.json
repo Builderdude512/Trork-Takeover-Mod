@@ -1,0 +1,13 @@
+{
+  "Interactions": [
+    "TrorkEvo_Minion_Strike_Lunge_Ranged"
+  ],
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  },
+  "Cooldown": {
+    "Cooldown": 10
+  }
+}

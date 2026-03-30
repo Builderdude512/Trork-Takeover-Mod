@@ -1,0 +1,14 @@
+{
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  },
+  "Interactions": [
+    "TrorkEvo_Spear_Projectile",
+    "TrorkEvo_Bard_Strike_Disengage"
+  ],
+  "Cooldown": {
+    "Cooldown": 15
+  }
+}

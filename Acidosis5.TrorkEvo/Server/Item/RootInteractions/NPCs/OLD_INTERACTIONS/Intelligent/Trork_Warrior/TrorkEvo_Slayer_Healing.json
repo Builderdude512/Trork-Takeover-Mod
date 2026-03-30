@@ -1,0 +1,14 @@
+{
+  "Interactions": [
+    "TrorkEvo_Slayer_Potion"
+  ],
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  },
+  "Cooldown": {
+    "Id": "SlayerHealingPotion",
+    "Cooldown": 1
+  }
+}

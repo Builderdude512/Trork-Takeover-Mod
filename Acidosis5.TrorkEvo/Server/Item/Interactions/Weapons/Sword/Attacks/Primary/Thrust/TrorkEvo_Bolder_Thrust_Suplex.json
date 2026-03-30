@@ -1,0 +1,36 @@
+{
+  "Type": "Simple",
+  "Next": {
+    "Type": "ApplyForce",
+    "Force": 700,
+    "Direction": {
+      "X": 0,
+      "Y": 0.05,
+      "Z": -1
+    },
+    "RunTime": 5,
+    "Effects": {
+      "ItemPlayerAnimationsId": "Sword",
+      "ItemAnimationId": "Jump"
+    },
+    "WaitForGround": true,
+    "WaitForCollision": true,
+    "GroundCheckDelay": 0.2
+  },
+  "Effects": {
+    "ItemPlayerAnimationsId": "Sword",
+    "ItemAnimationId": "Crouch",
+    "MovementEffects": {
+      "DisableAll": true
+    },
+    "Particles": [
+      {
+        "SystemId": "Daggers_Dash_Straight",
+        "Scale": 4,
+        "TargetEntityPart": "Entity"
+      }
+    ],
+    "ClearAnimationOnFinish": true
+  },
+  "RunTime": 0.45
+}

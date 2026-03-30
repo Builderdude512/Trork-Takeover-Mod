@@ -1,0 +1,18 @@
+{
+  "Model": "NPC_Spawn_Marker",
+  "NPCs": [
+    {
+      "Name": "Trork_Warrior",
+      "Weight": 100,
+      "SpawnAfterGameTime": "P1D"
+    },
+    {
+      "Name": "TrorkEvo_Tank",
+      "Weight": 25,
+      "SpawnAfterGameTime": "P2D"
+    }
+  ],
+  "ExclusionRadius": 20,
+  "MaxDropHeight": 4,
+  "DeactivationDistance": 150
+}

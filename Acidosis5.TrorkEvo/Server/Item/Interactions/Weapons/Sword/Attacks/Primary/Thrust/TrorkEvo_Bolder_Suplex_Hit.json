@@ -1,0 +1,42 @@
+{
+  "Type": "StatsCondition",
+  "LessThan": true,
+  "ValueType": "Percent",
+  "Costs": {
+    "Health": 40
+  },
+  "Next": {
+    "Type": "Selector",
+    "Selector": {
+      "Id": "AOECylinder",
+      "Range": 4,
+      "Height": 0.25
+    },
+    "HitEntity": {
+      "Interactions": [
+        {
+          "Type": "Replace",
+          "DefaultValue": {
+            "Interactions": [
+              "NPC_Attack_Melee_Damage"
+            ]
+          },
+          "Var": "Melee_Light"
+        }
+      ]
+    },
+    "Effects": {
+      "Particles": [
+        {
+          "SystemId": "Block_Break_Stone",
+          "Scale": 3,
+          "TargetEntityPart": "Entity"
+        }
+      ]
+    },
+    "Next": {
+      "Type": "ApplyEffect",
+      "EffectId": "TrorkEvo_Stage2_FX"
+    }
+  }
+}

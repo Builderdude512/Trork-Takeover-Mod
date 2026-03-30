@@ -1,0 +1,34 @@
+{
+  "Parent": "Trork",
+  "Texture": "NPC/Intelligent/Trork/Models/Model_Textures/Turquoise.png",
+  "DefaultAttachments": [
+    {
+      "Model": "NPC/Intelligent/Trork/Models/Attachments/Haircuts/Braids.blockymodel",
+      "Texture": "NPC/Intelligent/Trork/Models/Attachments/Haircuts/Braids_Textures/BrownLight.png"
+    },
+    {
+      "Model": "NPC/Intelligent/Trork/Models/Attachments/DrummerChest.blockymodel",
+      "Texture": "NPC/Intelligent/Trork/Models/Attachments/Sentry/Chest_Texture.png"
+    },
+    {
+      "Model": "NPC/Intelligent/Trork/Models/Attachments/Eyebrows/Eyebrows.blockymodel",
+      "Texture": "NPC/Intelligent/Trork/Models/Attachments/Eyebrows/Eyebrows_Textures/Brown.png"
+    }
+  ],
+  "RandomAttachmentSets": {
+    "Eyes": {
+      "Eye1": {
+        "Model": "NPC/Intelligent/Trork/Models/Attachments/Eyes/Eyes.blockymodel",
+        "Texture": "NPC/Intelligent/Trork/Models/Attachments/Eyes/Eyes_Textures/Orange.png",
+        "Weight": 5
+      },
+      "Eye2": {
+        "Model": "NPC/Intelligent/Trork/Models/Attachments/Eyes/Eyes.blockymodel",
+        "Texture": "NPC/Intelligent/Trork/Models/Attachments/Eyes/Eyes_Textures/One_Eye.png"
+      }
+    }
+  },
+  "MinScale": 0.95,
+  "MaxScale": 0.95,
+  "EyeHeight": 1.9
+}

@@ -1,0 +1,11 @@
+{
+  "Interactions": [
+    "TrorkEvo_Slayer_Strike_DoubleHit",
+    "TrorkEvo_Slayer_Strike_DoubleHit_P2"
+  ],
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  }
+}

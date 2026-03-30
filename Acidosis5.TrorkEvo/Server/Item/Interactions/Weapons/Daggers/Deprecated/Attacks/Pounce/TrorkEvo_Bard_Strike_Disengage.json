@@ -1,0 +1,49 @@
+{
+  "Type": "ApplyForce",
+  "Effects": {
+    "MovementEffects": {
+      "DisableForward": true,
+      "DisableBackward": true
+    },
+    "LocalSoundEventId": "SFX_Sword_T2_Swing_LR_Local",
+    "WorldSoundEventId": "SFX_Light_Melee_T2_Swing",
+    "CameraEffect": "Daggers_Jump"
+  },
+  "ChangeVelocityType": "Set",
+  "Force": 15,
+  "RaycastHeightOffset": 1.8,
+  "RaycastDistance": 2,
+  "VelocityConfig": {
+    "AirResistance": 0.995,
+    "AirResistanceMax": 0.96,
+    "GroundResistance": 0,
+    "GroundResistanceMax": 0,
+    "Style": "Linear",
+    "Threshold": 100
+  },
+  "GroundCheckDelay": 0.4,
+  "RunTime": 0.2,
+  "RaycastMode": "FollowLook",
+  "Forces": [
+    {
+      "Direction": {
+        "Z": 100
+      },
+      "Force": 750
+    },
+    {
+      "Force": 20,
+      "Direction": {
+        "Y": 1
+      }
+    }
+  ],
+  "Next": {
+    "Type": "Simple",
+    "RunTime": 1,
+    "Next": {
+      "Type": "Simple",
+      "RunTime": 1
+    }
+  }
+}

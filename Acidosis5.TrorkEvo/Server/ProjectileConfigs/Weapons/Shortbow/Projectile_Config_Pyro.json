@@ -1,0 +1,39 @@
+{
+  "Model": "Fireball",
+  "LaunchForce": 30,
+  "Physics": {
+    "Type": "Standard",
+    "Gravity": 9,
+    "TerminalVelocityAir": 50,
+    "TerminalVelocityWater": 1,
+    "RotationMode": "VelocityDamped",
+    "Bounciness": 0.0
+  },
+  "Interactions": {
+    "ProjectileHit": {
+      "Interactions": [
+        {
+          "Type": "DamageEntity",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Projectile": 12
+            }
+          },
+          "DamageEffects": {
+            "Knockback": {
+              "Force": -5
+            }
+          }
+        },
+        "PyroFireballExplode",
+        "Common_Projectile_Despawn"
+      ]
+    },
+    "ProjectileMiss": {
+      "Interactions": [
+        "PyroFireballExplode",
+        "Common_Projectile_Despawn"
+      ]
+    }
+  }
+}

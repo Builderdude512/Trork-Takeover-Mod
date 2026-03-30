@@ -1,0 +1,23 @@
+{
+  "Model": "NPC_Spawn_Marker",
+  "NPCs": [
+    {
+      "Name": "Trork_Brawler",
+      "Weight": 50,
+      "SpawnAfterGameTime": "P1D"
+    },
+    {
+      "Name": "Trork_Mauler",
+      "Weight": 50,
+      "SpawnAfterGameTime": "P1D"
+    },
+    {
+      "SpawnAfterGameTime": "P1D",
+      "Name": "Trork_Mauler",
+      "Weight": 50
+    }
+  ],
+  "ExclusionRadius": 20,
+  "MaxDropHeight": 4,
+  "DeactivationDistance": 150
+}

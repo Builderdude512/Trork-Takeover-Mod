@@ -1,0 +1,30 @@
+{
+  "Type": "Simple",
+  "Next": {
+    "Type": "ApplyForce",
+    "Force": 600,
+    "Direction": {
+      "X": 0,
+      "Y": 0.06,
+      "Z": -1
+    },
+    "RunTime": 2,
+    "Effects": {
+      "ItemPlayerAnimationsId": "Daggers",
+      "ItemAnimationId": "Jump"
+    },
+    "WaitForGround": true,
+    "WaitForCollision": true,
+    "GroundCheckDelay": 0.2,
+    "Next": {
+      "Type": "Simple",
+      "RunTime": 0.2
+    }
+  },
+  "RunTime": 0.35,
+  "Effects": {
+    "ItemPlayerAnimationsId": "Trork_Mace",
+    "ItemAnimationId": "SwingLeftCharging",
+    "ClearAnimationOnFinish": true
+  }
+}

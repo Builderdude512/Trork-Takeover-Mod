@@ -1,0 +1,21 @@
+{
+  "Appearance": "Dagger_Crude",
+  "SticksVertically": false,
+  "MuzzleVelocity": 30,
+  "TerminalVelocity": 30,
+  "Gravity": 20,
+  "Bounciness": 0.5,
+  "ImpactSlowdown": 0.5,
+  "TimeToLive": 5,
+  "Damage": 18,
+  "DeathEffectsOnHit": true,
+  "DeadTime": 0,
+  "HitParticles": {
+    "SystemId": "Impact_Sword_Basic"
+  },
+  "DepthShot": 1,
+  "HorizontalCenterShot": 0.1,
+  "HitSoundEventId": "SFX_Daggers_T1_Stab_Impact",
+  "MissSoundEventId": "SFX_Rubble_Bounce",
+  "RotationMode": "VelocityDamped"
+}

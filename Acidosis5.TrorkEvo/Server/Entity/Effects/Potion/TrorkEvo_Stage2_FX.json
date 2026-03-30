@@ -1,0 +1,40 @@
+{
+  "ValueType": "Absolute",
+  "OverlapBehavior": "Overwrite",
+  "DamageResistance": {
+    "Physical": [
+      {
+        "CalculationType": "Multiplicative",
+        "Amount": 0.15,
+        "Target": "Max"
+      }
+    ],
+    "Projectile": [
+      {
+        "CalculationType": "Multiplicative",
+        "Amount": 0.15,
+        "Target": "Max"
+      }
+    ]
+  },
+  "StatModifiers": {
+    "Mana": 1
+  },
+  "Infinite": true,
+  "ApplicationEffects": {
+    "EntityTopTint": "#aa2121",
+    "Particles": [
+      {
+        "SystemId": "Angry",
+        "TargetEntityPart": "Entity",
+        "Scale": 1,
+        "PositionOffset": {
+          "Y": 2,
+          "Z": 0.75
+        }
+      }
+    ],
+    "HorizontalSpeedMultiplier": 1.25
+  },
+  "DamageCalculatorCooldown": 1
+}

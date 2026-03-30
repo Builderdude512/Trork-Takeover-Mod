@@ -1,0 +1,70 @@
+{
+  "Type": "Variant",
+  "Reference": "Template_Trork_Hybrid",
+  "Modify": {
+    "Appearance": "TrorkEvo_Minion",
+    "IdleMotionComponent": "Component_Trork_Instruction_Idle_Motion_Follow_Path",
+    "DropList": "Drop_TrorkEvo_Grunt",
+    "Weapons": [
+      "Weapon_Sword_Stone_Trork",
+      "Weapon_Sword_Stone_Trork"
+    ],
+    "MaxHealth": 70,
+    "IsMemory": false,
+    "MaxSpeed": 9,
+    "DesiredRangedAttackDistanceRange": [
+      4,
+      9
+    ],
+    "AttackSequence": "Component_Instruction_Attack_Sequence_TrorkEvo_Minion",
+    "RangedAttackSequence": "Component_Instruction_Attack_Sequence_Ranged_TrorkEvo_Minion",
+    "BreakOffRange": 6,
+    "_InteractionVars": {
+      "Melee_Fast": {
+        "Interactions": [
+          {
+            "Parent": "NPC_Attack_Melee_Damage",
+            "DamageCalculator": {
+              "BaseDamage": {
+                "Physical": 9
+              }
+            }
+          }
+        ]
+      },
+      "Thrust_Damage": {
+        "Interactions": [
+          {
+            "Parent": "NPC_Attack_Melee_Damage",
+            "DamageCalculator": {
+              "BaseDamage": {
+                "Physical": 25
+              }
+            }
+          }
+        ]
+      },
+      "Melee_Medium": {
+        "Interactions": [
+          {
+            "Parent": "NPC_Attack_Melee_Damage",
+            "DamageCalculator": {
+              "BaseDamage": {
+                "Physical": 18
+              }
+            }
+          }
+        ]
+      }
+    },
+    "NameTranslationKey": {
+      "Compute": "NameTranslationKey"
+    }
+  },
+  "Parameters": {
+    "NameTranslationKey": {
+      "Value": "TTO_Server.npcRoles.TrorkEvo_Minion.name",
+      "Description": "TTO_Server.npcRoles.TrorkEvo_Bard.description"
+    }
+  }
+}

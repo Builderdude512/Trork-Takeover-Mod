@@ -1,0 +1,13 @@
+{
+  "Interactions": [
+    "TrorkEvo_Spitfire_Projectile"
+  ],
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  },
+  "Cooldown": {
+    "Cooldown": 12
+  }
+}

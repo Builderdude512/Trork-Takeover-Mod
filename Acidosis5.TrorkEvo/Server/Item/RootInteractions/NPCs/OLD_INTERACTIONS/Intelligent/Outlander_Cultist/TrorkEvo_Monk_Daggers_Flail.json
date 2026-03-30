@@ -1,0 +1,12 @@
+{
+  "Interactions": [
+    "TrorkEvo_Monk_Strike_FlailRight",
+    "TrorkEvo_Monk_Strike_FlailLeft",
+    "TrorkEvo_Monk_Strike_FlailRight"
+  ],
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  }
+}

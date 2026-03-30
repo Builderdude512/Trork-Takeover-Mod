@@ -1,0 +1,40 @@
+{
+  "Model": "Ember",
+  "LaunchForce": 25,
+  "Physics": {
+    "Type": "Standard",
+    "Gravity": 8,
+    "TerminalVelocityAir": 50,
+    "TerminalVelocityWater": 1,
+    "RotationMode": "VelocityDamped",
+    "Bounciness": 0.0
+  },
+  "Interactions": {
+    "ProjectileHit": {
+      "Interactions": [
+        {
+          "Type": "DamageEntity",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Projectile": 12
+            }
+          },
+          "DamageEffects": {
+            "Knockback": {
+              "Force": -5
+            }
+          }
+        },
+        "Common_Projectile_Despawn"
+      ]
+    },
+    "ProjectileMiss": {
+      "Interactions": [
+        "Common_Projectile_Despawn"
+      ]
+    }
+  },
+  "SpawnRotationOffset": {
+    "Pitch": 2
+  }
+}

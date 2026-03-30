@@ -1,0 +1,17 @@
+npcRoles.TrorkEvo_Bard.name = Trork Wardrummer
+npcRoles.TrorkEvo_Bard.description = Tries to stay away from frontline combat, periodically buffing allies. Melee and projectiles are somewhat weak.
+
+npcRoles.TrorkEvo_Minion.name = Trork Thief
+npcRoles.TrorkEvo_Minion.description = Can use lunging attacks and sometimes dodges melee attacks. Better at melee than ranged combat.
+
+npcRoles.TrorkEvo_Monk.name = Trork Knuckleduster
+npcRoles.TrorkEvo_Monk.description = Melee attacks do more knockback, and can do slam attacks to close the distance to it's target.
+
+npcRoles.TrorkEvo_Pyro.name = Trork Torchbearer
+npcRoles.TrorkEvo_Pyro.description = Shoots bursts of fire at short range, charged fireball attack explodes, bypassing blocks. Better at 
+
+npcRoles.TrorkEvo_Slayer.name = Trork Slayer
+npcRoles.TrorkEvo_Slayer.description = Aggressive and versatile, engage with caution. Occasionally uses lesser regen potions when below half health.
+
+npcRoles.TrorkEvo_Tank.name = Trork Grunt
+npcRoles.TrorkEvo_Tank.description = Slightly tougher than standard trorks, can use charge attacks.

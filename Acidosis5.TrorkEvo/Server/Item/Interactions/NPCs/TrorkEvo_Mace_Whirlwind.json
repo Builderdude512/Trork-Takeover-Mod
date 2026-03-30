@@ -1,0 +1,113 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemPlayerAnimationsId": "Battleaxe",
+    "ItemAnimationId": "SwingLeftCharging",
+    "ClearAnimationOnFinish": true,
+    "Particles": [
+      {
+        "SystemId": "Dagger_Charging",
+        "TargetEntityPart": "PrimaryItem",
+        "PositionOffset": {
+          "Y": 0.6
+        }
+      }
+    ],
+    "MovementEffects": {
+      "DisableAll": true
+    }
+  },
+  "$Comment": "Prepare Delay",
+  "Next": {
+    "Type": "Parallel",
+    "Interactions": [
+      {
+        "Interactions": [
+          {
+            "Type": "Simple",
+            "Effects": {
+              "ItemPlayerAnimationsId": "Battleaxe",
+              "ItemAnimationId": "WhirlwindChargedSpin",
+              "Trails": [
+                {
+                  "TargetEntityPart": "PrimaryItem",
+                  "TrailId": "Large_Charged",
+                  "PositionOffset": {
+                    "Y": 0.6
+                  }
+                }
+              ],
+              "ClearAnimationOnFinish": true,
+              "MovementEffects": {
+                "DisableAll": true
+              }
+            },
+            "RunTime": 2.25
+          }
+        ]
+      },
+      {
+        "Interactions": [
+          {
+            "Type": "Repeat",
+            "Repeat": 4,
+            "ForkInteractions": {
+              "Interactions": [
+                {
+                  "Type": "Selector",
+                  "Selector": {
+                    "Id": "AOECircle",
+                    "Range": 4
+                  },
+                  "HitEntity": {
+                    "Interactions": [
+                      {
+                        "Type": "DamageEntity",
+                        "DamageCalculator": {
+                          "BaseDamage": {
+                            "Physical": 20
+                          }
+                        },
+                        "DamageEffects": {
+                          "Knockback": {
+                            "Type": "Point",
+                            "Force": 9
+                          }
+                        },
+                        "Effects": {
+                          "Particles": [
+                            {
+                              "SystemId": "Impact_Mace_Charged",
+                              "TargetEntityPart": "PrimaryItem",
+                              "PositionOffset": {
+                                "Y": 0.8
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "Type": "Simple",
+                        "Effects": {
+                          "WorldSoundEventId": "SFX_Mace_T2_Impact",
+                          "LocalSoundEventId": "SFX_Mace_T2_Impact"
+                        }
+                      }
+                    ]
+                  },
+                  "RunTime": 0.5,
+                  "Effects": {
+                    "WorldSoundEventId": "SFX_Mace_T2_Swing_Charged",
+                    "LocalSoundEventId": "SFX_Mace_T2_Swing_LR_Local"
+                  }
+                },
+                "TrorkEvo_Minion_Sword_Thrust_Force"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "RunTime": 1.25
+}

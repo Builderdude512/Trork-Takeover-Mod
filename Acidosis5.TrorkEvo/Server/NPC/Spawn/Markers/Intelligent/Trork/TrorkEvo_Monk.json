@@ -1,0 +1,13 @@
+{
+  "Model": "NPC_Spawn_Marker",
+  "NPCs": [
+    {
+      "Name": "TrorkEvo_Monk",
+      "Weight": 100,
+      "SpawnAfterGameTime": "P2D"
+    }
+  ],
+  "ExclusionRadius": 25,
+  "MaxDropHeight": 4,
+  "DeactivationDistance": 150
+}

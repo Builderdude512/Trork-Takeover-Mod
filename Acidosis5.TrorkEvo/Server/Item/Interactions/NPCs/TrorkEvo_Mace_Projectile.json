@@ -1,0 +1,58 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemPlayerAnimationsId": "Battleaxe",
+    "ItemAnimationId": "SwingLeftCharging",
+    "ClearAnimationOnFinish": true,
+    "Particles": [
+      {
+        "SystemId": "Dagger_Charging",
+        "TargetEntityPart": "PrimaryItem",
+        "PositionOffset": {
+          "Y": 0.6
+        }
+      }
+    ]
+  },
+  "$Comment": "Prepare Delay",
+  "Next": {
+    "Type": "Parallel",
+    "Interactions": [
+      {
+        "Interactions": [
+          {
+            "Type": "Simple",
+            "Effects": {
+              "ItemPlayerAnimationsId": "Battleaxe",
+              "ItemAnimationId": "WhirlwindChargedSpin",
+              "Trails": [
+                {
+                  "TargetEntityPart": "PrimaryItem",
+                  "TrailId": "Large_Charged",
+                  "PositionOffset": {
+                    "Y": 0.6
+                  }
+                }
+              ],
+              "ClearAnimationOnFinish": true
+            },
+            "RunTime": 0.25
+          }
+        ]
+      },
+      {
+        "Interactions": [
+          {
+            "Type": "Simple",
+            "RunTime": 0.2,
+            "Next": {
+              "Type": "LaunchProjectile",
+              "ProjectileId": "TrorkEvo_Slayer_Projectile"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "RunTime": 0.75
+}

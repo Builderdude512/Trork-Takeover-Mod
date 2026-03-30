@@ -1,0 +1,20 @@
+{
+  "Type": "ApplyForce",
+  "Force": 500,
+  "Direction": {
+    "X": -1,
+    "Y": 0.01
+  },
+  "AdjustVertical": true,
+  "RaycastMode": "FollowLook",
+  "Effects": {
+    "ItemPlayerAnimationsId": "Daggers",
+    "ItemAnimationId": "DashRight",
+    "ClearAnimationOnFinish": true,
+    "Trails": [
+      {
+        "TrailId": "Large_Projectile"
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "Interactions": [
+    "TrorkEvo_Mace_Whirlwind"
+  ],
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  },
+  "Cooldown": {
+    "Cooldown": 15
+  }
+}

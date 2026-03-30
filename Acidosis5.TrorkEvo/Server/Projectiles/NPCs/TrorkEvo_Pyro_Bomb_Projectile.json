@@ -1,0 +1,19 @@
+{
+  "Appearance": "Fireball",
+  "SticksVertically": true,
+  "MuzzleVelocity": 20,
+  "TerminalVelocity": 30,
+  "Gravity": 3,
+  "TimeToLive": 5,
+  "Damage": 10,
+  "DeathEffectsOnHit": true,
+  "DeadTime": 0,
+  "HitParticles": {
+    "SystemId": "Impact_Sword_Basic"
+  },
+  "DepthShot": 1,
+  "HorizontalCenterShot": 0.1,
+  "HitSoundEventId": "SFX_Daggers_T1_Stab_Impact",
+  "MissSoundEventId": "SFX_Rubble_Bounce",
+  "RotationMode": "VelocityDamped"
+}

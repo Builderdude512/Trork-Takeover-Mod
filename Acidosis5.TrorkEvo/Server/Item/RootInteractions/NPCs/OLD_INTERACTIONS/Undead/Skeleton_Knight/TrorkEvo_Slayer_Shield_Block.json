@@ -1,0 +1,13 @@
+{
+  "Interactions": [
+    "TrorkEvo_Slayer_Block"
+  ],
+  "Tags": {
+    "Attack": [
+      "Attack"
+    ]
+  },
+  "Cooldown": {
+    "Cooldown": 12
+  }
+}

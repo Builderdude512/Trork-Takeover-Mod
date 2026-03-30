@@ -1,0 +1,86 @@
+{
+  "Type": "Variant",
+  "Reference": "Template_Trork_Hybrid",
+  "Modify": {
+    "Appearance": "TrorkEvo_Slayer",
+    "DropList": "Drop_Trork_Brawler",
+    "Weapons": [
+      "TrorkThoriMace",
+      "TrorkThoriMace"
+    ],
+    "MaxHealth": 200,
+    "IsMemory": false,
+    "DesiredRangedAttackDistanceRange": [
+      5,
+      15
+    ],
+    "AttackSequence": "Component_Instruction_Attack_Sequence_TrorkEvo_Slayer",
+    "RangedAttackSequence": "Component_Instruction_Attack_Sequence_Ranged_TrorkEvo_Slayer",
+    "LeashMinPlayerDistance": 10,
+    "_InteractionVars": {
+      "Melee_Light": {
+        "Interactions": [
+          {
+            "Parent": "NPC_Attack_Melee_Damage",
+            "DamageCalculator": {
+              "BaseDamage": {
+                "Physical": 14
+              }
+            },
+            "DamageEffects": {
+              "Knockback": {
+                "Force": 5,
+                "RelativeX": 0,
+                "RelativeZ": -3,
+                "VelocityY": 3,
+                "VelocityType": "Add"
+              }
+            }
+          }
+        ]
+      },
+      "Melee_Medium": {
+        "Interactions": [
+          {
+            "Parent": "NPC_Attack_Melee_Damage",
+            "DamageCalculator": {
+              "BaseDamage": {
+                "Physical": 25
+              }
+            }
+          }
+        ]
+      },
+      "Melee_Heavy": {
+        "Interactions": [
+          {
+            "Parent": "NPC_Attack_Melee_Damage",
+            "DamageCalculator": {
+              "BaseDamage": {
+                "Physical": 45
+              }
+            },
+            "DamageEffects": {
+              "Knockback": {
+                "Force": 10,
+                "RelativeX": 0,
+                "RelativeZ": -3,
+                "VelocityY": 1,
+                "VelocityType": "Add"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "NameTranslationKey": {
+      "Compute": "NameTranslationKey"
+    }
+  },
+  "Parameters": {
+    "NameTranslationKey": {
+      "Value": "TTO_Server.npcRoles.TrorkEvo_Slayer.name",
+      "Description": "TTO_Server.npcRoles.TrorkEvo_Slayer.description"
+    }
+  }
+}

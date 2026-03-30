@@ -1,0 +1,18 @@
+{
+  "Interactions": [
+    "TrorkEvo_Bolder_Thrust_Suplex",
+    "TrorkEvo_Bolder_Suplex_Hit"
+  ],
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  },
+  "Cooldown": {
+    "Cooldown": 1,
+    "Charges": [
+      9,
+      9
+    ]
+  }
+}

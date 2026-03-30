@@ -1,0 +1,35 @@
+{
+  "Model": "Bolder",
+  "LaunchForce": 30,
+  "Physics": {
+    "Type": "Standard",
+    "Gravity": 50,
+    "TerminalVelocityAir": 50,
+    "TerminalVelocityWater": 1,
+    "RotationMode": "VelocityRoll",
+    "Bounciness": 1,
+    "BounceLimit": 0.2,
+    "BounceCount": 5
+  },
+  "Interactions": {
+    "ProjectileHit": {
+      "Interactions": [
+        "BolderExplode",
+        "Common_Projectile_Despawn"
+      ]
+    },
+    "ProjectileMiss": {
+      "Interactions": [
+        "Common_Projectile_Despawn"
+      ]
+    },
+    "ProjectileBounce": {
+      "Interactions": [
+        "BolderBounceExplode"
+      ]
+    }
+  },
+  "SpawnRotationOffset": {
+    "Pitch": 15
+  }
+}

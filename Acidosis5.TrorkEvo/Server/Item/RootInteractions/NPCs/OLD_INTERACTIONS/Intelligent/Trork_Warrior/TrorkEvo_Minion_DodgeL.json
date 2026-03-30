@@ -1,0 +1,14 @@
+{
+  "Interactions": [
+    "TrorkEvo_Minion_DodgeL_Chargeup"
+  ],
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  },
+  "Cooldown": {
+    "Cooldown": 7,
+    "Id": "Minion_Dodge"
+  }
+}

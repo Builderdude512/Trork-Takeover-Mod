@@ -1,0 +1,27 @@
+{
+  "ValueType": "Absolute",
+  "Duration": 0.75,
+  "OverlapBehavior": "Overwrite",
+  "DamageResistance": {
+    "Physical": [
+      {
+        "CalculationType": "Multiplicative",
+        "Amount": 0.4,
+        "Target": "Max"
+      }
+    ],
+    "Projectile": [
+      {
+        "CalculationType": "Multiplicative",
+        "Amount": 0.4,
+        "Target": "Max"
+      }
+    ]
+  },
+  "ApplicationEffects": {
+    "HorizontalSpeedMultiplier": 0
+  },
+  "StatModifiers": {
+    "Mana": 1
+  }
+}

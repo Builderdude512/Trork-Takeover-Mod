@@ -1,0 +1,28 @@
+[
+    {
+        "Id": "CampQuarry",
+        "ZoneMask": [ "Zone1_Tier2" ],
+        "BiomeMask": [ "*Plains*" ],
+        "Prefab": [ "TrorkEvo.TrorkEvo_Camp_Quarry" ],
+        "Weight": [ 1.0 ],
+        "Pattern": {
+            "GridGenerator": {
+                "Seed": "Pattern_Monuments",
+                "Density": [ 0.35, 0.45 ],
+                "Scale": 0.004,
+                "Jitter": 0.75
+            },
+            "HeightThreshold": {
+                "Positions": [ 105, 109],
+                "Values": [ 0, 1 ]
+            },
+            "FitHeightmap": false,
+            "Mask": {
+                "File": "Zones.Masks.Zone1.Monuments_Encounter"
+            },
+            "MaxSize": 1000,
+            "ExclusionRadius": 1000
+        }
+
+    }
+]

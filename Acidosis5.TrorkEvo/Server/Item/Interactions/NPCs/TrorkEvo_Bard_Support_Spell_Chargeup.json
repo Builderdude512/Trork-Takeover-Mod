@@ -1,0 +1,20 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemPlayerAnimationsId": "Wand",
+    "ItemAnimationId": "CastLeftCharging",
+    "ClearAnimationOnFinish": true,
+    "Particles": [
+      {
+        "SystemId": "Azure_Spiral",
+        "TargetEntityPart": "PrimaryItem",
+        "PositionOffset": {
+          "Y": 1
+        }
+      }
+    ]
+  },
+  "Next": "TrorkEvo_Bard_Support_Spell",
+  "RunTime": 1.5,
+  "HorizontalSpeedMultiplier": 0
+}

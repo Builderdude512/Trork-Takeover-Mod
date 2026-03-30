@@ -1,0 +1,10 @@
+{
+  "Type": "ApplyEffect",
+  "Effects": {
+    "ItemPlayerAnimationsId": "Shield",
+    "ItemAnimationId": "Guard",
+    "ClearAnimationOnFinish": true
+  },
+  "EffectId": "TrorkEvo_Block_LnM",
+  "RunTime": 1.75
+}

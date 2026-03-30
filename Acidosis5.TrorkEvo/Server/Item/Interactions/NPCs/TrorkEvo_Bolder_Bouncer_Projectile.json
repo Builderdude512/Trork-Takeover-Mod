@@ -1,0 +1,30 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemPlayerAnimationsId": "Wand",
+    "ItemAnimationId": "StabDashCharging",
+    "ClearAnimationOnFinish": true,
+    "Particles": [
+      {
+        "TargetEntityPart": "PrimaryItem",
+        "SystemId": "Block_Sprint_Stone",
+        "PositionOffset": {
+          "Y": 0.75
+        },
+        "Scale": 1
+      }
+    ]
+  },
+  "$Comment": "Prepare Delay",
+  "Next": {
+    "Type": "Projectile",
+    "Config": "Projectile_Config_Bolder_Bouncer",
+    "Effects": {
+      "ItemPlayerAnimationsId": "Wand",
+      "ItemAnimationId": "StabDashCharged",
+      "ClearAnimationOnFinish": true
+    },
+    "RunTime": 0.35
+  },
+  "RunTime": 0.8
+}

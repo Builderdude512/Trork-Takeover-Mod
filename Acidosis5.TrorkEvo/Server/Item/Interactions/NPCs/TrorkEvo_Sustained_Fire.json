@@ -1,0 +1,40 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemPlayerAnimationsId": "Trork_Sword",
+    "ItemAnimationId": "SwingLeftCharging",
+    "ClearAnimationOnFinish": true,
+    "Particles": [
+      {
+        "SystemId": "Camfire_New1",
+        "TargetEntityPart": "PrimaryItem",
+        "PositionOffset": {
+          "Y": 0.75
+        }
+      }
+    ]
+  },
+  "$Comment": "Prepare Delay",
+  "RunTime": 0.5,
+  "Next": {
+    "Type": "Repeat",
+    "Repeat": 3,
+    "ForkInteractions": {
+      "Interactions": [
+        {
+          "Type": "Projectile",
+          "RunTime": 0.175,
+          "Config": "Projectile_Config_Spitfire"
+        }
+      ]
+    },
+    "Effects": {
+      "ItemPlayerAnimationsId": "Trork_Sword",
+      "ItemAnimationId": "Interact",
+      "ClearAnimationOnFinish": true,
+      "MovementEffects": {
+        "DisableAll": true
+      }
+    }
+  }
+}

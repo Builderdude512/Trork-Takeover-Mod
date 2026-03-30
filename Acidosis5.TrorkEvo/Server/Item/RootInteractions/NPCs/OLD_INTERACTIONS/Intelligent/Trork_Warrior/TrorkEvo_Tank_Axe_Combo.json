@@ -1,0 +1,14 @@
+{
+  "Interactions": [
+    "TrorkEvo_Tank_Strike_Combo0",
+    "TrorkEvo_Tank_Strike_Combo1",
+    "TrorkEvo_Tank_Strike_Combo2",
+    "TrorkEvo_Tank_Strike_Combo3",
+    "TrorkEvo_Tank_Strike_Combo4"
+  ],
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  }
+}

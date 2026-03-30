@@ -1,0 +1,101 @@
+{
+  "Type": "Simple",
+  "Next": {
+    "Type": "ApplyForce",
+    "Force": 500,
+    "Direction": {
+      "X": 0,
+      "Y": 0.06,
+      "Z": -1
+    },
+    "RunTime": 5,
+    "Effects": {
+      "ItemPlayerAnimationsId": "Daggers",
+      "ItemAnimationId": "Jump"
+    },
+    "WaitForGround": true,
+    "WaitForCollision": true,
+    "GroundCheckDelay": 0.2,
+    "Next": {
+      "Type": "Simple",
+      "RunTime": 0.5
+    },
+    "GroundNext": {
+      "Type": "Simple",
+      "Effects": {
+        "Particles": [
+          {
+            "SystemId": "Block_Break_Stone",
+            "Scale": 2.5
+          }
+        ]
+      },
+      "Next": {
+        "Type": "Selector",
+        "Selector": {
+          "Id": "AOECircle",
+          "Range": 5
+        },
+        "HitEntity": {
+          "Interactions": [
+            {
+              "Type": "Replace",
+              "DefaultValue": {
+                "Interactions": [
+                  "NPC_Attack_Melee_Damage"
+                ]
+              },
+              "Var": "Melee_Slam"
+            }
+          ]
+        }
+      }
+    },
+    "CollisionNext": {
+      "Type": "Simple",
+      "Effects": {
+        "Particles": [
+          {
+            "SystemId": "Explosion_Big"
+          }
+        ]
+      },
+      "Next": {
+        "Type": "Selector",
+        "Selector": {
+          "Id": "AOECircle",
+          "Range": 5
+        },
+        "HitEntity": {
+          "Interactions": [
+            {
+              "Type": "Replace",
+              "DefaultValue": {
+                "Interactions": [
+                  "NPC_Attack_Melee_Damage"
+                ]
+              },
+              "Var": "Melee_Slam"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "Effects": {
+    "ItemPlayerAnimationsId": "Daggers",
+    "ItemAnimationId": "Crouch",
+    "MovementEffects": {
+      "DisableAll": true
+    },
+    "Particles": [
+      {
+        "SystemId": "Daggers_Dash_Straight",
+        "Scale": 4,
+        "TargetEntityPart": "Entity"
+      }
+    ],
+    "ClearAnimationOnFinish": true
+  },
+  "RunTime": 0.65
+}

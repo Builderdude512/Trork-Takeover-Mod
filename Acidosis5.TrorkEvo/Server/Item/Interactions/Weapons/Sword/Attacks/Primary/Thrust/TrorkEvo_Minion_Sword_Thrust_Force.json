@@ -1,0 +1,10 @@
+{
+  "Type": "ApplyForce",
+  "Force": 500,
+  "Direction": {
+    "X": 0,
+    "Y": 0.01,
+    "Z": -1
+  },
+  "RunTime": 0.05
+}

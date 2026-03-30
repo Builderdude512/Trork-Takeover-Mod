@@ -1,0 +1,16 @@
+{
+  "IconProperties": {
+    "Scale": 0.45,
+    "Translation": [
+      20.4,
+      -27
+    ],
+    "Rotation": [
+      45,
+      300,
+      0
+    ]
+  },
+  "Parent": "Tool_Hammer_Crude",
+  "Scale": 1.25
+}

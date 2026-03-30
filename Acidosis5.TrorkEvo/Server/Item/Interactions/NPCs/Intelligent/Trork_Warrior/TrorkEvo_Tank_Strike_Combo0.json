@@ -1,0 +1,21 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemPlayerAnimationsId": "TrorkEvo_Tank",
+    "ItemAnimationId": "WhirlwindCharging",
+    "Particles": [
+      {
+        "SystemId": "Sword_Charging",
+        "TargetEntityPart": "PrimaryItem",
+        "PositionOffset": {
+          "Y": 0.5
+        },
+        "Scale": 2
+      }
+    ],
+    "WorldSoundEventId": "SFX_Light_Melee_T1_Lunge_Charge",
+    "ClearAnimationOnFinish": true
+  },
+  "$Comment": "Prepare Delay",
+  "RunTime": 0.95
+}

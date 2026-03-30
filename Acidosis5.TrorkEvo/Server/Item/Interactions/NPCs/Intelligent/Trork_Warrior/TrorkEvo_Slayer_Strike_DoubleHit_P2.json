@@ -1,0 +1,52 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "Particles": [
+      {
+        "SystemId": "Mace_Bash",
+        "TargetEntityPart": "PrimaryItem",
+        "TargetNodeName": "Handle",
+        "PositionOffset": {
+          "X": -0.8
+        },
+        "RotationOffset": {
+          "Yaw": -180
+        }
+      }
+    ],
+    "ItemAnimationId": "GuardBash"
+  },
+  "Next": {
+    "Type": "Selector",
+    "$Comment": "Length of Combat",
+    "RunTime": 0.083,
+    "Selector": {
+      "Id": "Stab",
+      "TestLineOfSight": true,
+      "ExtendTop": 0.5,
+      "ExtendLeft": 0.5,
+      "ExtendRight": 0.5,
+      "ExtendBottom": 0.5,
+      "StartDistance": 0,
+      "EndDistance": 2.5
+    },
+    "HitEntity": {
+      "Interactions": [
+        {
+          "Type": "Replace",
+          "DefaultValue": {
+            "Interactions": [
+              "NPC_Attack_Melee_Damage"
+            ]
+          },
+          "Var": "Melee_Light"
+        }
+      ]
+    },
+    "Next": {
+      "Type": "Simple",
+      "RunTime": 0.167
+    }
+  },
+  "RunTime": 0.167
+}

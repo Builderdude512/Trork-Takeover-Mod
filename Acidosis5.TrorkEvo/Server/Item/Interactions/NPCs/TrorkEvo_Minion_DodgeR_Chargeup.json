@@ -1,0 +1,26 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemPlayerAnimationsId": "Sword",
+    "ClearAnimationOnFinish": true,
+    "MovementEffects": {
+      "DisableLeft": true,
+      "DisableRight": true
+    },
+    "ItemAnimationId": "JumpWalk",
+    "Trails": [
+      {
+        "TrailId": "Daggers_Dash_Distortion"
+      }
+    ],
+    "Particles": [
+      {
+        "SystemId": "Daggers_Charged_Trail",
+        "Scale": 4,
+        "TargetEntityPart": "Entity"
+      }
+    ]
+  },
+  "Next": "TrorkEvo_Minion_DodgeR_Force",
+  "RunTime": 0.35
+}

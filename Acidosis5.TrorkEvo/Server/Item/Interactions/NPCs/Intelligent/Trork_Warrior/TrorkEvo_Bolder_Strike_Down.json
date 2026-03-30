@@ -1,0 +1,144 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemPlayerAnimationsId": "Sword",
+    "ItemAnimationId": "SwingLeftCharging",
+    "ClearAnimationOnFinish": true,
+    "MovementEffects": {
+      "DisableAll": true
+    }
+  },
+  "$Comment": "Prepare Delay",
+  "RunTime": 0.4,
+  "Next": {
+    "Type": "Parallel",
+    "$Comment": "Make sure this parallel interaction is needed and can't be optimized away",
+    "Interactions": [
+      {
+        "Interactions": [
+          {
+            "Type": "Selector",
+            "$Comment": "Length of Combat",
+            "RunTime": 0.4,
+            "Selector": {
+              "Id": "Horizontal",
+              "Direction": "ToLeft",
+              "TestLineOfSight": true,
+              "ExtendTop": 0.5,
+              "ExtendBottom": 0.5,
+              "StartDistance": 0.1,
+              "EndDistance": 3,
+              "Length": 90,
+              "RollOffset": 90,
+              "YawStartOffset": -45
+            },
+            "HitEntity": {
+              "Interactions": [
+                {
+                  "Type": "Replace",
+                  "DefaultValue": {
+                    "Interactions": [
+                      "NPC_Attack_Melee_Damage"
+                    ]
+                  },
+                  "Var": "Melee_Heavy"
+                }
+              ]
+            },
+            "Next": {
+              "Type": "Selector",
+              "Selector": {
+                "Id": "AOECylinder",
+                "Range": 3,
+                "Height": 0.1,
+                "Offset": {
+                  "Z": -1
+                }
+              },
+              "HitEntity": {
+                "Interactions": [
+                  {
+                    "Type": "Replace",
+                    "DefaultValue": {
+                      "Interactions": [
+                        "NPC_Attack_Melee_Damage"
+                      ]
+                    },
+                    "Var": "Melee_Light"
+                  }
+                ]
+              },
+              "Effects": {
+                "Particles": [
+                  {
+                    "SystemId": "Block_Break_Stone",
+                    "TargetEntityPart": "PrimaryItem",
+                    "Scale": 3,
+                    "PositionOffset": {},
+                    "DetachedFromModel": true
+                  }
+                ]
+              },
+              "Next": {
+                "Type": "StatsCondition",
+                "LessThan": true,
+                "ValueType": "Percent",
+                "Costs": {
+                  "Health": 40
+                },
+                "Next": {
+                  "Type": "Parallel",
+                  "Interactions": [
+                    {
+                      "Interactions": [
+                        {
+                          "Type": "Projectile",
+                          "Config": "Projectile_Config_Bolder_B"
+                        }
+                      ]
+                    },
+                    {
+                      "Interactions": [
+                        {
+                          "Type": "Projectile",
+                          "Config": "Projectile_Config_Bolder_D"
+                        }
+                      ]
+                    },
+                    {
+                      "Interactions": [
+                        {
+                          "Type": "ApplyEffect",
+                          "EffectId": "TrorkEvo_Stage2_FX"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            "Effects": {
+              "ItemPlayerAnimationsId": "Trork_Sword",
+              "ItemAnimationId": "SwingDown",
+              "ClearAnimationOnFinish": true
+            }
+          }
+        ]
+      },
+      {
+        "Interactions": [
+          {
+            "Type": "Simple",
+            "$Comment": "Length of Effect",
+            "RunTime": 0.3,
+            "Effects": {
+              "WorldSoundEventId": "SFX_Light_Melee_T2_Swing",
+              "ClearAnimationOnFinish": true,
+              "ClearSoundEventOnFinish": false
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

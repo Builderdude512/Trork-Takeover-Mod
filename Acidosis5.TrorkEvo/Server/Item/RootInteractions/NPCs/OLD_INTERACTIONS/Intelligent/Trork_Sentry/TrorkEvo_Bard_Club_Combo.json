@@ -1,0 +1,11 @@
+{
+  "Interactions": [
+    "TrorkEvo_Bard_Strike_Left",
+    "TrorkEvo_Bard_Strike_Right"
+  ],
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "Model": "NPC_Spawn_Marker",
+  "NPCs": [
+    {
+      "Name": "TrorkEvo_Tank",
+      "Weight": 100,
+      "SpawnAfterGameTime": "P1D"
+    },
+    {
+      "Name": "TrorkEvo_Minion",
+      "SpawnAfterGameTime": "P1D",
+      "Weight": 75
+    },
+    {
+      "Name": "Trork_Doctor_Witch",
+      "Weight": 25,
+      "SpawnAfterGameTime": "P1D"
+    },
+    {
+      "Name": "TrorkEvo_Hamr",
+      "Weight": 75,
+      "SpawnAfterGameTime": "P1D"
+    },
+    {
+      "Name": "TrorkEvo_Shield",
+      "Weight": 75,
+      "SpawnAfterGameTime": "P1D"
+    }
+  ],
+  "ExclusionRadius": 25,
+  "MaxDropHeight": 4,
+  "DeactivationDistance": 150
+}

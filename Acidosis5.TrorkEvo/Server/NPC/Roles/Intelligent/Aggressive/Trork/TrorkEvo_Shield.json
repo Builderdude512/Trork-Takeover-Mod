@@ -1,0 +1,50 @@
+{
+  "Type": "Variant",
+  "Reference": "Template_Trork_Melee",
+  "Modify": {
+    "Appearance": "TrorkEvo_Shield",
+    "DropList": "Drop_TrorkEvo_Grunt",
+    "Weapons": [
+      "Weapon_Shield_Scrap_Spiked",
+      "Weapon_Shield_Scrap_Spiked"
+    ],
+    "MaxHealth": 100,
+    "IsMemory": false,
+    "AttackDistance": 4,
+    "AttackSequence": "Component_Instruction_Attack_Sequence_TrorkEvo_Shield",
+    "LeashMinPlayerDistance": 8,
+    "MaxSpeed": 6,
+    "_InteractionVars": {
+      "Melee_Medium": {
+        "Interactions": [
+          {
+            "Parent": "NPC_Attack_Melee_Damage",
+            "DamageCalculator": {
+              "BaseDamage": {
+                "Physical": 24
+              }
+            },
+            "DamageEffects": {
+              "Knockback": {
+                "Force": 18,
+                "RelativeX": 0,
+                "RelativeZ": -2,
+                "VelocityY": 0.5,
+                "VelocityType": "Add"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "NameTranslationKey": {
+      "Compute": "NameTranslationKey"
+    }
+  },
+  "Parameters": {
+    "NameTranslationKey": {
+      "Value": "TTO_Server.npcRoles.TrorkEvo_Tank.name",
+      "Description": "TTO_Server.npcRoles.TrorkEvo_Tank.description"
+    }
+  }
+}

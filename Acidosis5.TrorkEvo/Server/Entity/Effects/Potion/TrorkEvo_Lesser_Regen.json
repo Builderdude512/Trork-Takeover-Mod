@@ -1,0 +1,35 @@
+{
+  "StatModifiers": {
+    "Health": 5
+  },
+  "ValueType": "Absolute",
+  "DamageCalculatorCooldown": 1,
+  "Duration": 3.05,
+  "OverlapBehavior": "Overwrite",
+  "DamageResistance": {
+    "Physical": [
+      {
+        "CalculationType": "Multiplicative",
+        "Amount": 0.1,
+        "Target": "Max"
+      }
+    ],
+    "Projectile": [
+      {
+        "CalculationType": "Multiplicative",
+        "Amount": 0.1,
+        "Target": "Max"
+      }
+    ]
+  },
+  "StatModifierEffects": {
+    "WorldParticles": [
+      {
+        "SystemId": "Potion_Health_Implosion"
+      }
+    ]
+  },
+  "ApplicationEffects": {
+    "EntityTopTint": "#ff0404"
+  }
+}

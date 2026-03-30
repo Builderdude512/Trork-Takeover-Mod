@@ -1,0 +1,28 @@
+[
+    {
+        "Id": "FortRoundhouse",
+        "ZoneMask": [ "*" ],
+        "BiomeMask": [ "*Forest_Birch*" ],
+        "Prefab": [ "TrorkEvo.TrorkEvo_Fort_Roundhouse" ],
+        "Weight": [ 1.0 ],
+        "Pattern": {
+            "GridGenerator": {
+                "Seed": "Pattern_Monuments",
+                "Density": [ 0.2, 0.75 ],
+                "Scale": 0.005,
+                "Jitter": 0.75
+            },
+            "HeightThreshold": {
+                "Positions": [ 101, 111 ],
+                "Values": [ 0, 1 ]
+            },
+            "FitHeightmap": false,
+            "Mask": {
+                "File": "Zones.Masks.Zone1.Monuments_Encounter"
+            },
+            "MaxSize": 110,
+            "ExclusionRadius": 100
+        }
+
+    }
+]

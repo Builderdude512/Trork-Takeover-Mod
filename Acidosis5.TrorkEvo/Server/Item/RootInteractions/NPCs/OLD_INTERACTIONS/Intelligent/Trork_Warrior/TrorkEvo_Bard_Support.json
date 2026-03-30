@@ -1,0 +1,13 @@
+{
+  "Interactions": [
+    "TrorkEvo_Bard_Support_Spell_Chargeup"
+  ],
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  },
+  "Cooldown": {
+    "Cooldown": 10
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "Model": "Items/Projectiles/Projectile.blockymodel",
+  "Texture": "Items/Projectiles/Projectile_default.png",
+  "HitBox": {
+    "Max": {
+      "X": 0.1,
+      "Y": 0.1,
+      "Z": 0.1
+    },
+    "Min": {
+      "X": -0.1,
+      "Y": -0.1,
+      "Z": -0.1
+    }
+  },
+  "MinScale": 1,
+  "MaxScale": 1,
+  "DefaultAttachments": [
+    {
+      "Model": "Resources/Ores/Ore_Large.blockymodel",
+      "Texture": "Resources/Ores/Ore_Textures/Copper.png"
+    }
+  ],
+  "Trails": [
+    {
+      "TrailId": "Large_Projectile",
+      "TargetEntityPart": "Entity"
+    }
+  ],
+  "Particles": [
+    {
+      "TargetEntityPart": "Entity",
+      "SystemId": "Block_Run_Dirt"
+    }
+  ]
+}

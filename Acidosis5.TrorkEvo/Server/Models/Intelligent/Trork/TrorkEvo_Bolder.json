@@ -1,0 +1,36 @@
+{
+  "Parent": "Trork",
+  "Texture": "NPC/Intelligent/Trork/Models/Attachments/BolderSkinTexture.png",
+  "DefaultAttachments": [
+    {
+      "Model": "NPC/Intelligent/Trork/Models/Attachments/Eyes/Eyes.blockymodel",
+      "Texture": "NPC/Intelligent/Trork/Models/Attachments/Eyes/Eyes_Textures/Orange.png"
+    },
+    {
+      "Model": "NPC/Intelligent/Trork/Models/Attachments/BolderChest.blockymodel",
+      "Texture": "NPC/Intelligent/Trork/Models/Attachments/Hunter/Chest_Texture.png"
+    },
+    {
+      "Model": "NPC/Intelligent/Trork/Models/Attachments/Haircuts/Mohawk.blockymodel",
+      "Texture": "NPC/Intelligent/Trork/Models/Attachments/Haircuts/Mohawk_Textures/BrownDark.png"
+    },
+    {
+      "Model": "NPC/Intelligent/Trork/Models/Attachments/Cosmetics/Tusks_Small.blockymodel",
+      "Texture": "NPC/Intelligent/Trork/Models/Attachments/Cosmetics/Tusks_Small_Texture.png"
+    }
+  ],
+  "AnimationSets": {
+    "Sleep": {
+      "Animations": [
+        {
+          "Animation": "NPC/Intelligent/Trork/Animations/Flavor/Sleep_Spear.blockyanim",
+          "SoundEventId": "SFX_Trork_Sleep",
+          "Speed": 0.5
+        }
+      ]
+    }
+  },
+  "MinScale": 1.5,
+  "MaxScale": 1.5,
+  "EyeHeight": 1.85
+}

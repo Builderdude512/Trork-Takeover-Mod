@@ -1,0 +1,118 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemPlayerAnimationsId": "Wand",
+    "ItemAnimationId": "CastLeftCharging",
+    "ClearAnimationOnFinish": true,
+    "Particles": [
+      {
+        "TargetEntityPart": "PrimaryItem",
+        "SystemId": "Block_Sprint_Stone",
+        "PositionOffset": {
+          "Y": 0.75
+        },
+        "Color": "#614327"
+      }
+    ]
+  },
+  "$Comment": "Prepare Delay",
+  "RunTime": 1.25,
+  "Next": {
+    "Type": "Serial",
+    "Interactions": [
+      {
+        "Type": "Projectile",
+        "Config": "Projectile_Config_Bolder",
+        "RunTime": 0.75,
+        "Effects": {
+          "ItemPlayerAnimationsId": "Trork_Sword",
+          "ItemAnimationId": "SwingLeft",
+          "ClearAnimationOnFinish": true,
+          "Particles": [
+            {
+              "TargetEntityPart": "PrimaryItem",
+              "PositionOffset": {
+                "Y": 0.8
+              },
+              "SystemId": "Block_Hit_Stone"
+            }
+          ]
+        }
+      },
+      {
+        "Type": "StatsCondition",
+        "LessThan": true,
+        "Costs": {
+          "Health": 40
+        },
+        "Failed": {
+          "Type": "Projectile",
+          "Config": "Projectile_Config_Bolder_A",
+          "RunTime": 0.75,
+          "Effects": {
+            "ItemPlayerAnimationsId": "Trork_Sword",
+            "ItemAnimationId": "SwingRight",
+            "ClearAnimationOnFinish": true,
+            "Particles": [
+              {
+                "TargetEntityPart": "PrimaryItem",
+                "PositionOffset": {
+                  "Y": 0.8
+                },
+                "SystemId": "Block_Hit_Stone"
+              }
+            ]
+          }
+        },
+        "Next": {
+          "Type": "Parallel",
+          "RunTime": 0.75,
+          "Effects": {
+            "ItemPlayerAnimationsId": "Trork_Sword",
+            "ItemAnimationId": "SwingRight",
+            "Particles": [
+              {
+                "TargetEntityPart": "PrimaryItem",
+                "PositionOffset": {
+                  "Y": 0.8
+                },
+                "SystemId": "Block_Hit_Stone"
+              }
+            ]
+          },
+          "Interactions": [
+            {
+              "Interactions": [
+                {
+                  "Type": "ApplyEffect",
+                  "EffectId": "TrorkEvo_Stage2_FX"
+                },
+                {
+                  "Type": "Projectile",
+                  "Config": "Projectile_Config_Bolder_A"
+                }
+              ]
+            },
+            {
+              "Interactions": [
+                {
+                  "Type": "Projectile",
+                  "Config": "Projectile_Config_Bolder_B"
+                }
+              ]
+            },
+            {
+              "Interactions": [
+                {
+                  "Type": "Projectile",
+                  "Config": "Projectile_Config_Bolder_D"
+                }
+              ]
+            }
+          ]
+        },
+        "ValueType": "Percent"
+      }
+    ]
+  }
+}

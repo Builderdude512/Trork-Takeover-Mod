@@ -1,0 +1,27 @@
+{
+  "Type": "Explode",
+  "Parent": "Explode_Generic_Entities",
+  "RunTime": 0.1,
+  "Effects": {
+    "WorldSoundEventId": "SFX_Stone_Hit",
+    "LocalSoundEventId": "SFX_Stone_Hit",
+    "Particles": [
+      {
+        "SystemId": "Block_Break_Stone",
+        "TargetEntityPart": "Entity",
+        "Scale": 1.5
+      }
+    ]
+  },
+  "Config": {
+    "DamageBlocks": false,
+    "DamageEntities": true,
+    "EntityDamageRadius": 2,
+    "EntityDamage": 5,
+    "EntityDamageFalloff": 0,
+    "Knockback": {
+      "Type": "Point",
+      "Force": 2
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "Type": "Simple",
+  "RunTime": 0.65,
+  "Effects": {
+    "ItemPlayerAnimationsId": "Trork_Sword",
+    "ItemAnimationId": "StabDashCharging",
+    "ClearAnimationOnFinish": true,
+    "WaitForAnimationToFinish": true,
+    "Particles": [
+      {
+        "SystemId": "Sword_Charging",
+        "TargetEntityPart": "PrimaryItem",
+        "PositionOffset": {
+          "Y": 0.5
+        }
+      }
+    ],
+    "MovementEffects": {
+      "DisableAll": true
+    }
+  },
+  "Next": {
+    "Type": "Serial",
+    "Interactions": [
+      "TrorkEvo_Minion_Sword_Thrust_Force",
+      "Weapon_Sword_Primary_Thrust_Selector"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemPlayerAnimationsId": "Default",
+    "ItemAnimationId": "Throw"
+  },
+  "$Comment": "Prepare Delay",
+  "Next": {
+    "Type": "LaunchProjectile",
+    "RunTime": 0.217,
+    "Effects": {
+      "WorldSoundEventId": "SFX_Unarmed_Swing",
+      "ItemPlayerAnimationsId": "Spear",
+      "ItemAnimationId": "ThrowCharged",
+      "ClearAnimationOnFinish": true
+    },
+    "ProjectileId": "TrorkEvo_Bard_Projectile",
+    "Tags": {
+      "AimingReference": []
+    }
+  }
+}

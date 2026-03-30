@@ -1,0 +1,16 @@
+{
+  "Type": "Serial",
+  "Interactions": [
+    {
+      "Type": "ApplyEffect",
+      "EffectId": "TrorkEvo_Block_Condition",
+      "Effects": {
+        "ItemPlayerAnimationsId": "Battleaxe",
+        "ItemAnimationId": "Guard",
+        "ClearAnimationOnFinish": true
+      },
+      "RunTime": 0.75
+    },
+    "TrorkEvo_Slayer_Strike_DoubleHit_P2"
+  ]
+}

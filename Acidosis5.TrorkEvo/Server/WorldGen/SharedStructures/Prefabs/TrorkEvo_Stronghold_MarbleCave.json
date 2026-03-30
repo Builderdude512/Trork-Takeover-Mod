@@ -1,0 +1,28 @@
+[
+    {
+        "Id": "StrongholdMarbleCave",
+        "ZoneMask": [ "Zone1_Tier3" ],
+        "BiomeMask": [ "*Plains_Gorge*" ],
+        "Prefab": [ "TrorkEvo.TrorkEvo_Stronghold_MarbleCave" ],
+        "Weight": [ 1.0 ],
+        "Pattern": {
+            "GridGenerator": {
+                "Seed": "Pattern_Monuments",
+                "Density": [ 0.2, 0.4 ],
+                "Scale": 0.004,
+                "Jitter": 0.75
+            },
+            "HeightThreshold": {
+                "Positions": [ 101, 109 ],
+                "Values": [ 1, 1 ]
+            },
+            "FitHeightmap": false,
+            "Mask": {
+                "File": "Zones.Masks.Zone1.Monuments_Encounter"
+            },
+            "MaxSize": 100,
+            "ExclusionRadius": 100
+        }
+
+    }
+]

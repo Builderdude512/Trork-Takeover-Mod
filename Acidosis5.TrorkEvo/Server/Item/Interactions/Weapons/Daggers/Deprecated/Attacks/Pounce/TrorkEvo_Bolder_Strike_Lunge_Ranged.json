@@ -1,0 +1,28 @@
+{
+  "Type": "Simple",
+  "RunTime": 0.8,
+  "Effects": {
+    "ItemPlayerAnimationsId": "Trork_Sword",
+    "ItemAnimationId": "Crouch",
+    "ClearAnimationOnFinish": true,
+    "WaitForAnimationToFinish": true,
+    "Particles": [
+      {
+        "SystemId": "Sword_Charging",
+        "TargetEntityPart": "PrimaryItem",
+        "PositionOffset": {
+          "Y": 0.5
+        }
+      }
+    ],
+    "MovementEffects": {
+      "DisableAll": true
+    }
+  },
+  "Next": {
+    "Type": "Serial",
+    "Interactions": [
+      "TrorkEvo_Bolder_Club_Thrust_Force_Ranged"
+    ]
+  }
+}

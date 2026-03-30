@@ -1,0 +1,65 @@
+{
+  "Type": "Simple",
+  "Next": {
+    "Type": "Serial",
+    "Interactions": [
+      {
+        "Type": "ApplyEffect",
+        "EffectId": "TrorkEvo_Block_MnL",
+        "RunTime": 1,
+        "Effects": {
+          "Particles": [
+            {
+              "SystemId": "Mace_Charging",
+              "TargetEntityPart": "Entity",
+              "Scale": 2,
+              "PositionOffset": {
+                "Y": 1
+              }
+            }
+          ],
+          "ItemPlayerAnimationsId": "Trork_Sword",
+          "ItemAnimationId": "Guard",
+          "ClearAnimationOnFinish": true
+        }
+      },
+      {
+        "Type": "Parallel",
+        "Interactions": [
+          {
+            "Interactions": [
+              "TrorkEvo_Bolder_Shoulder_Thrust_Force"
+            ]
+          },
+          {
+            "Interactions": [
+              {
+                "Type": "Repeat",
+                "Repeat": 5,
+                "ForkInteractions": {
+                  "Interactions": [
+                    "TrorkEvo_Bolder_Shoulder_Hit",
+                    {
+                      "Type": "Simple",
+                      "RunTime": 0.175,
+                      "Effects": {
+                        "Particles": [
+                          {
+                            "SystemId": "Impact_Battleaxe_Bash",
+                            "TargetEntityPart": "Self",
+                            "PositionOffset": {},
+                            "Scale": 3
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

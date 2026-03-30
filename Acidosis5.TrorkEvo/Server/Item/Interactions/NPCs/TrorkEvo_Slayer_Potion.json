@@ -1,0 +1,40 @@
+{
+  "Type": "StatsCondition",
+  "Costs": {
+    "Health": 150
+  },
+  "LessThan": true,
+  "ValueType": "Absolute",
+  "Next": {
+    "Type": "Simple",
+    "Effects": {
+      "ItemPlayerAnimationsId": "Wand",
+      "ItemAnimationId": "CastLeftCharging",
+      "ClearAnimationOnFinish": true,
+      "Particles": [
+        {
+          "SystemId": "Azure_Spiral",
+          "TargetEntityPart": "PrimaryItem",
+          "PositionOffset": {
+            "Y": 1
+          }
+        }
+      ],
+      "MovementEffects": {
+        "DisableAll": true
+      }
+    },
+    "RunTime": 1.5,
+    "Next": {
+      "Type": "ApplyEffect",
+      "EffectId": "Potion_Health_Lesser_Regen",
+      "Next": {
+        "Type": "TriggerCooldown",
+        "Cooldown": {
+          "Id": "SlayerHealingPotion",
+          "Cooldown": 25
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemPlayerAnimationsId": "Trork_Sword",
+    "ItemAnimationId": "SwingLeftCharging",
+    "ClearAnimationOnFinish": true,
+    "Particles": [
+      {
+        "SystemId": "Torch_Fire",
+        "TargetEntityPart": "PrimaryItem",
+        "PositionOffset": {
+          "Y": 0.75
+        }
+      }
+    ]
+  },
+  "$Comment": "Prepare Delay",
+  "RunTime": 0.85,
+  "Next": {
+    "Type": "Parallel",
+    "Interactions": [
+      {
+        "Interactions": [
+          {
+            "Type": "Simple",
+            "RunTime": 0.35,
+            "Effects": {
+              "ItemPlayerAnimationsId": "Sword",
+              "ItemAnimationId": "SwingLeftCharged"
+            }
+          }
+        ]
+      },
+      {
+        "Interactions": [
+          "TrorkEvo_Spitfire_Volley"
+        ]
+      }
+    ]
+  }
+}

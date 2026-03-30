@@ -1,0 +1,18 @@
+{
+  "Interactions": [
+    "TrorkEvo_Hammer_Projectile"
+  ],
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  },
+  "Cooldown": {
+    "Cooldown": 0.5,
+    "Charges": [
+      8,
+      8,
+      8
+    ]
+  }
+}

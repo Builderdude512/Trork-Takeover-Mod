@@ -1,0 +1,19 @@
+{
+  "Type": "Repeat",
+  "Repeat": 5,
+  "ForkInteractions": {
+    "Interactions": [
+      {
+        "Type": "Simple",
+        "RunTime": 0.25,
+        "Effects": {
+          "Particles": [
+            {
+              "SystemId": "Explosion_Big"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

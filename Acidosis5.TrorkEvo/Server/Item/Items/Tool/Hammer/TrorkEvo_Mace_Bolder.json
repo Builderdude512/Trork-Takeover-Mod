@@ -1,0 +1,17 @@
+{
+  "IconProperties": {
+    "Scale": 0.45,
+    "Translation": [
+      20.4,
+      -27
+    ],
+    "Rotation": [
+      45,
+      300,
+      0
+    ]
+  },
+  "Parent": "Weapon_Mace_Crude",
+  "Scale": 0.75,
+  "PlayerAnimationsId": "Trork_Sword"
+}

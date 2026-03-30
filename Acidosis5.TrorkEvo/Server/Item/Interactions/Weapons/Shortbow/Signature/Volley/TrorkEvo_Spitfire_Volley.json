@@ -1,0 +1,30 @@
+{
+  "Type": "Serial",
+  "Interactions": [
+    {
+      "Type": "Projectile",
+      "RunTime": 0.075,
+      "Config": "Projectile_Config_Spitfire_D"
+    },
+    {
+      "Type": "Projectile",
+      "RunTime": 0.075,
+      "Config": "Projectile_Config_Spitfire_C"
+    },
+    {
+      "Type": "Projectile",
+      "RunTime": 0.075,
+      "Config": "Projectile_Config_Spitfire"
+    },
+    {
+      "Type": "Projectile",
+      "RunTime": 0.075,
+      "Config": "Projectile_Config_Spitfire_B"
+    },
+    {
+      "Type": "Projectile",
+      "RunTime": 0.075,
+      "Config": "Projectile_Config_Spitfire_A"
+    }
+  ]
+}

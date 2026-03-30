@@ -1,0 +1,24 @@
+{
+  "Appearance": "Mace_Copper_Projectile",
+  "SticksVertically": false,
+  "MuzzleVelocity": 50,
+  "TerminalVelocity": 30,
+  "Gravity": 20,
+  "Bounciness": 0.75,
+  "ImpactSlowdown": 0.5,
+  "TimeToLive": 5,
+  "Damage": 35,
+  "DeathEffectsOnHit": true,
+  "DeadTime": 0,
+  "HitParticles": {
+    "SystemId": "Impact_Mace_Basic",
+    "Scale": 1.5
+  },
+  "DepthShot": 1,
+  "HorizontalCenterShot": 0.1,
+  "HitSoundEventId": "SFX_Daggers_T1_Stab_Impact",
+  "MissSoundEventId": "SFX_Rubble_Bounce",
+  "RotationMode": "VelocityDamped",
+  "ComputePitch": true,
+  "RotationSpeedVelocityRatio": 10
+}

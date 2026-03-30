@@ -1,0 +1,7 @@
+{
+  "LaunchForce": 30,
+  "SpawnRotationOffset": {
+    "Pitch": 10
+  },
+  "Parent": "Projectile_Config_Bolder"
+}

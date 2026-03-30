@@ -1,0 +1,82 @@
+{
+  "Type": "ApplyForce",
+  "RunTime": 2,
+  "Effects": {
+    "ItemPlayerAnimationsId": "Sword",
+    "ItemAnimationId": "FlyFast",
+    "ClearAnimationOnFinish": true
+  },
+  "ChangeVelocityType": "Set",
+  "Forces": [
+    {
+      "Direction": {
+        "Y": 1
+      },
+      "Force": 50
+    }
+  ],
+  "VerticalClamp": [
+    0,
+    45
+  ],
+  "WaitForCollision": true,
+  "WaitForGround": true,
+  "RaycastDistance": 15,
+  "GroundCheckDelay": 0.3,
+  "CollisionCheckDelay": 0.2,
+  "Next": {
+    "Type": "Parallel",
+    "Interactions": [
+      {
+        "Interactions": [
+          {
+            "Type": "Simple",
+            "Effects": {},
+            "RunTime": 3.5
+          }
+        ]
+      },
+      {
+        "Interactions": [
+          {
+            "Type": "Selector",
+            "Effects": {
+              "Particles": [
+                {
+                  "TargetEntityPart": "Entity",
+                  "SystemId": "Block_Break_Stone",
+                  "Scale": 3,
+                  "PositionOffset": {
+                    "Z": 2
+                  }
+                }
+              ],
+              "WorldSoundEventId": "SFX_Stone_Break",
+              "LocalSoundEventId": "SFX_Stone_Break",
+              "ItemPlayerAnimationsId": "Sword",
+              "ItemAnimationId": "SwingDown"
+            },
+            "Selector": {
+              "Id": "AOECircle",
+              "Range": 5,
+              "Offset": {
+                "Z": 1
+              }
+            },
+            "HitEntity": {
+              "Interactions": [
+                {
+                  "Type": "Replace",
+                  "Var": "Melee_Slam",
+                  "DefaultValue": "Root_NPC_Attack_Melee",
+                  "DefaultOk": true
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "Parent": "TrorkEvo_Bolder_Club_Thrust_Force_Ranged"
+}

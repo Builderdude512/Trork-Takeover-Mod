@@ -1,0 +1,11 @@
+{
+  "Interactions": [
+    "TrorkEvo_Tank_Strike_Down_Charge",
+    "TrorkEvo_Tank_Strike_Down"
+  ],
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  }
+}

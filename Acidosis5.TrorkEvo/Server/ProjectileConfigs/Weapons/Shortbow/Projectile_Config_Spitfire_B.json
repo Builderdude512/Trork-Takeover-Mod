@@ -1,0 +1,7 @@
+{
+  "SpawnRotationOffset": {
+    "Yaw": 5,
+    "Pitch": 2
+  },
+  "Parent": "Projectile_Config_Spitfire"
+}

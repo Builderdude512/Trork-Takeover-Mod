@@ -1,0 +1,33 @@
+{
+  "ValueType": "Absolute",
+  "Duration": 1,
+  "OverlapBehavior": "Overwrite",
+  "DamageResistance": {
+    "Physical": [
+      {
+        "CalculationType": "Multiplicative",
+        "Amount": 0.6,
+        "Target": "Max"
+      }
+    ],
+    "Projectile": [
+      {
+        "CalculationType": "Multiplicative",
+        "Amount": 0.6,
+        "Target": "Max"
+      }
+    ]
+  },
+  "ApplicationEffects": {
+    "KnockbackMultiplier": 0.2,
+    "HorizontalSpeedMultiplier": 0.1,
+    "MovementEffects": {
+      "DisableJump": true,
+      "DisableSprint": true,
+      "DisableBackward": true
+    }
+  },
+  "StatModifiers": {
+    "Mana": 1
+  }
+}
