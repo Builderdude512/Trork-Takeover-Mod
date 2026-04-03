@@ -11,20 +11,12 @@
       "Texture": "NPC/Intelligent/Trork/Models/Attachments/Haircuts/Cross_Textures/Black.png"
     },
     {
-      "Model": "NPC/Intelligent/Trork/Models/Attachments/Cosmetics/Loin_Cloth.blockymodel",
-      "Texture": "NPC/Intelligent/Trork/Models/Attachments/Cosmetics/Loin_Cloth_Texture.png"
+      "Model": "NPC/Intelligent/Trork/Models/Attachments/FodderChest.blockymodel",
+      "Texture": "NPC/Intelligent/Trork/Models/Attachments/Fodder_Chest_Texture.png"
     },
     {
-      "Model": "NPC/Intelligent/Trork/Models/Attachments/Cosmetics/Necklace.blockymodel",
-      "Texture": "NPC/Intelligent/Trork/Models/Attachments/Cosmetics/Necklace_Texture.png"
-    },
-    {
-      "Model": "NPC/Intelligent/Trork/Models/Attachments/Warrior/Chest.blockymodel",
-      "Texture": "NPC/Intelligent/Trork/Models/Attachments/Warrior/Chest_Texture.png"
-    },
-    {
-      "Model": "NPC/Intelligent/Trork/Models/Attachments/Warrior/Feet.blockymodel",
-      "Texture": "NPC/Intelligent/Trork/Models/Attachments/Warrior/Feet_Texture.png"
+      "Model": "NPC/Intelligent/Trork/Models/Attachments/Hunter/Feet.blockymodel",
+      "Texture": "NPC/Intelligent/Trork/Models/Attachments/Hunter/Feet_Texture.png"
     }
   ],
   "RandomAttachmentSets": {

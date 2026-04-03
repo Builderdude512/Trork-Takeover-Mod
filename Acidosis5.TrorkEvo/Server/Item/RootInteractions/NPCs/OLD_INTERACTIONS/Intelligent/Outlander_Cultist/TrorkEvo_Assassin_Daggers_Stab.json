@@ -1,0 +1,14 @@
+{
+  "Interactions": [
+    "TrorkEvo_Slayer_Dodge_Alternator",
+    "TrorkEvo_Assassin_Stab_Alternator"
+  ],
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  },
+  "Cooldown": {
+    "Cooldown": 6
+  }
+}

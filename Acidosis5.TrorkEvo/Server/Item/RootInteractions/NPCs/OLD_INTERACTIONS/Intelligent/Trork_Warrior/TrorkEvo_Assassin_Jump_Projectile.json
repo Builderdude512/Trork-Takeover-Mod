@@ -1,0 +1,13 @@
+{
+  "Interactions": [
+    "TrorkEvo_Assassin_Jump_Throw"
+  ],
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  },
+  "Cooldown": {
+    "Cooldown": 9
+  }
+}

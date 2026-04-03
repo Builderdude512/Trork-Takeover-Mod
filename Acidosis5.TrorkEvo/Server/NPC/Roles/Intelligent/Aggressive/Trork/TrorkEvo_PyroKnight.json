@@ -1,0 +1,112 @@
+{
+  "Type": "Variant",
+  "Reference": "Template_TrorkEvo_Hybrid",
+  "Modify": {
+    "Appearance": "TrorkEvo_Monk",
+    "IdleMotionComponent": "Component_Trork_Instruction_Idle_Motion_Follow_Path",
+    "DropList": "Drop_TrorkEvo_Soldier",
+    "Weapons": [
+      "Weapon_Longsword_Iron",
+      "Weapon_Longsword_Iron"
+    ],
+    "MaxHealth": 325,
+    "AttackDistance": 5,
+    "ToMeleeRange": 6,
+    "MeleeMoveThreshold": 3,
+    "IsMemory": false,
+    "DesiredRangedAttackDistanceRange": [
+      6,
+      10
+    ],
+    "AttackSequence": "Component_Instruction_Attack_Sequence_TrorkEvo_PyroKnight",
+    "RangedAttackSequence": "Component_Instruction_Attack_Sequence_Ranged_TrorkEvo_PyroKnight",
+    "BreakOffRange": 7,
+    "_InteractionVars": {
+      "Melee_Fast": {
+        "Interactions": [
+          {
+            "Parent": "NPC_Attack_Melee_Damage",
+            "DamageCalculator": {
+              "BaseDamage": {
+                "Physical": 10
+              }
+            }
+          }
+        ]
+      },
+      "Melee_Medium": {
+        "Interactions": [
+          {
+            "Parent": "NPC_Attack_Melee_Damage",
+            "DamageCalculator": {
+              "BaseDamage": {
+                "Physical": 22
+              }
+            },
+            "DamageEffects": {
+              "Knockback": {
+                "Force": 15,
+                "RelativeX": 0,
+                "RelativeZ": -2,
+                "VelocityY": 0.5,
+                "VelocityType": "Add"
+              }
+            }
+          }
+        ]
+      },
+      "Melee_Slam": {
+        "Interactions": [
+          {
+            "Parent": "NPC_Attack_Melee_Damage",
+            "DamageCalculator": {
+              "BaseDamage": {
+                "Physical": 22
+              }
+            },
+            "DamageEffects": {
+              "Knockback": {
+                "Type": "Point",
+                "Force": 12,
+                "RelativeX": 0,
+                "RelativeZ": -2,
+                "VelocityY": 1,
+                "VelocityType": "Add"
+              }
+            }
+          }
+        ]
+      },
+      "Melee_Heavy": {
+        "Interactions": [
+          {
+            "Parent": "NPC_Attack_Melee_Damage",
+            "DamageCalculator": {
+              "BaseDamage": {
+                "Physical": 31
+              }
+            },
+            "DamageEffects": {
+              "Knockback": {
+                "Force": 10,
+                "RelativeX": 0,
+                "RelativeZ": -2,
+                "VelocityY": 15,
+                "VelocityType": "Add"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "NameTranslationKey": {
+      "Compute": "NameTranslationKey"
+    }
+  },
+  "Parameters": {
+    "NameTranslationKey": {
+      "Value": "TTO_Server.npcRoles.TrorkEvo_Monk.name",
+      "Description": "TTO_Server.npcRoles.TrorkEvo_Monk.description"
+    }
+  }
+}

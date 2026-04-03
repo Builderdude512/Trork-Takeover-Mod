@@ -1,0 +1,10 @@
+{
+  "Parent": "Projectile_Config_Assassin_Daggers",
+  "SpawnRotationOffset": {
+    "Yaw": -0.25,
+    "Pitch": 3
+  },
+  "SpawnOffset": {
+    "X": 0.5
+  }
+}

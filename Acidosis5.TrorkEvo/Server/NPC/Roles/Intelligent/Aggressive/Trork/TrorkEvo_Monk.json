@@ -9,7 +9,7 @@
       "Weapon_Trork_Daggers_Fist",
       "Weapon_Trork_Daggers_Fist"
     ],
-    "MaxHealth": 150,
+    "MaxHealth": 125,
     "IsMemory": false,
     "DesiredRangedAttackDistanceRange": [
       4,

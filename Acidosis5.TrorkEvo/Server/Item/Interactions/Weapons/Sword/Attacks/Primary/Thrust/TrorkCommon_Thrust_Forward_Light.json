@@ -1,0 +1,21 @@
+{
+  "Type": "ApplyForce",
+  "Force": 250,
+  "Direction": {
+    "X": 0,
+    "Y": 0.01,
+    "Z": -1
+  },
+  "RunTime": 0.5,
+  "Duration": 0.2,
+  "AdjustVertical": false,
+  "Effects": {
+    "WorldSoundEventId": "SFX_Daggers_T1_Pounce",
+    "LocalSoundEventId": "SFX_Daggers_T1_Pounce_Local",
+    "Trails": [
+      {
+        "TrailId": "Daggers_Dash_Distortion"
+      }
+    ]
+  }
+}

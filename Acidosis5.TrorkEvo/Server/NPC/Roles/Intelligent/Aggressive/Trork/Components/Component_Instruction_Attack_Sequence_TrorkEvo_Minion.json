@@ -3,7 +3,7 @@
   "Interface": "Hytale.Instruction.AttackSequence",
   "Parameters": {
     "AttackDistance": {
-      "Value": 4,
+      "Value": 5,
       "Description": "The distance at which an NPC will execute attacks"
     },
     "CombatRelativeTurnSpeed": {
@@ -27,39 +27,15 @@
     "Actions": [
       {
         "Type": "Attack",
-        "Attack": "TrorkEvo_Bard_Club_Combo",
+        "Attack": "TrorkCommon_Attack_H1_LR_Combo",
         "AttackPauseRange": [
           1,
-          2
+          1
         ]
       },
       {
         "Type": "Attack",
-        "Attack": "TrorkEvo_Minion_DodgeR",
-        "AttackPauseRange": [
-          1,
-          3
-        ]
-      },
-      {
-        "Type": "Attack",
-        "Attack": "TrorkEvo_Minion_Sword_Lunge",
-        "AttackPauseRange": [
-          1,
-          3
-        ]
-      },
-      {
-        "Type": "Attack",
-        "Attack": "TrorkEvo_Tank_Axe_Medium",
-        "AttackPauseRange": [
-          1,
-          2
-        ]
-      },
-      {
-        "Type": "Attack",
-        "Attack": "TrorkEvo_Minion_DodgeL",
+        "Attack": "TrorkCommon_Dodge_Alternator_Wcooldown",
         "AttackPauseRange": [
           1,
           3
@@ -68,6 +44,30 @@
       {
         "Type": "Attack",
         "Attack": "TrorkEvo_Minion_Sword_Lunge",
+        "AttackPauseRange": [
+          1,
+          1
+        ]
+      },
+      {
+        "Type": "Attack",
+        "Attack": "TrorkCommon_Dodge_Alternator_Wcooldown",
+        "AttackPauseRange": [
+          1,
+          3
+        ]
+      },
+      {
+        "Type": "Attack",
+        "Attack": "TrorkCommon_Attack_H1_Stab",
+        "AttackPauseRange": [
+          1,
+          1
+        ]
+      },
+      {
+        "Type": "Attack",
+        "Attack": "TrorkCommon_Dodge_Alternator_Wcooldown",
         "AttackPauseRange": [
           1,
           3

@@ -1,0 +1,102 @@
+{
+  "Model": "Tornado",
+  "LaunchForce": 12,
+  "Physics": {
+    "Type": "Standard",
+    "TerminalVelocityAir": 50,
+    "TerminalVelocityWater": 1,
+    "RotationMode": "VelocityDamped",
+    "SticksVertically": true
+  },
+  "Interactions": {
+    "ProjectileHit": {
+      "Interactions": [
+        "Common_Projectile_Despawn"
+      ]
+    },
+    "ProjectileMiss": {
+      "Interactions": [
+        "Common_Projectile_Despawn"
+      ]
+    },
+    "ProjectileSpawn": {
+      "Interactions": [
+        {
+          "Type": "Repeat",
+          "Repeat": 20,
+          "ForkInteractions": {
+            "Interactions": [
+              {
+                "Type": "Selector",
+                "Effects": {
+                  "Particles": [
+                    {
+                      "SystemId": "Sword_Signature_AoE2",
+                      "TargetEntityPart": "Entity",
+                      "PositionOffset": {
+                        "Y": -0.5
+                      },
+                      "Scale": 0.2
+                    },
+                    {
+                      "SystemId": "Sword_Signature_AoE2",
+                      "TargetEntityPart": "Entity",
+                      "PositionOffset": {},
+                      "Scale": 0.4
+                    },
+                    {
+                      "SystemId": "Sword_Signature_AoE2",
+                      "TargetEntityPart": "Entity",
+                      "PositionOffset": {
+                        "Y": 0.5
+                      },
+                      "Scale": 0.6
+                    }
+                  ]
+                },
+                "RunTime": 0.15,
+                "IgnoreOwner": true,
+                "Selector": {
+                  "Id": "AOECircle",
+                  "Range": 2
+                },
+                "HitEntity": {
+                  "Interactions": [
+                    {
+                      "Type": "DamageEntity",
+                      "DamageCalculator": {
+                        "BaseDamage": {
+                          "Physical": 10
+                        }
+                      },
+                      "DamageEffects": {
+                        "Knockback": {
+                          "Type": "Force",
+                          "Force": 23,
+                          "Direction": {
+                            "Y": 2,
+                            "Z": -1
+                          },
+                          "VelocityConfig": {
+                            "GroundResistanceMax": 0.692,
+                            "AirResistanceMax": 0.692
+                          },
+                          "VelocityType": "Set"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "RunTime": 0.3
+        },
+        "Common_Projectile_Despawn"
+      ]
+    }
+  },
+  "SpawnOffset": {
+    "Z": -2
+  }
+}

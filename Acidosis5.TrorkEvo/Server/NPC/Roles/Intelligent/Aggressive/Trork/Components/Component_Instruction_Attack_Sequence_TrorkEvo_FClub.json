@@ -1,0 +1,85 @@
+{
+  "Class": "Instruction",
+  "Interface": "Hytale.Instruction.AttackSequence",
+  "Parameters": {
+    "AttackDistance": {
+      "Value": 3,
+      "Description": "The distance at which an NPC will execute attacks"
+    },
+    "CombatRelativeTurnSpeed": {
+      "Value": 1.2,
+      "Description": "Modifier that decides turn speed difference in combat"
+    }
+  },
+  "Content": {
+    "Sensor": {
+      "Type": "Target",
+      "Range": {
+        "Compute": "AttackDistance"
+      },
+      "Filters": [
+        {
+          "Type": "LineOfSight"
+        }
+      ]
+    },
+    "ActionsBlocking": true,
+    "Actions": [
+      {
+        "Type": "Attack",
+        "Attack": "TrorkEvo_Tank_Axe_Medium",
+        "AttackPauseRange": [
+          1,
+          2
+        ]
+      },
+      {
+        "Type": "Attack",
+        "Attack": "TrorkEvo_Tank_Axe_Fast",
+        "AttackPauseRange": [
+          2,
+          3
+        ]
+      },
+      {
+        "Type": "Attack",
+        "Attack": "TrorkEvo_Tank_Axe_Down",
+        "AttackPauseRange": [
+          2,
+          3
+        ]
+      },
+      {
+        "Type": "Attack",
+        "Attack": "TrorkEvo_Tank_Axe_Medium",
+        "AttackPauseRange": [
+          2,
+          3
+        ]
+      },
+      {
+        "Type": "Attack",
+        "Attack": "TrorkEvo_Tank_Axe_Fast",
+        "AttackPauseRange": [
+          2,
+          3
+        ]
+      },
+      {
+        "Type": "Attack",
+        "Attack": "TrorkEvo_Tank_Axe_Combo",
+        "AttackPauseRange": [
+          2,
+          3
+        ]
+      }
+    ],
+    "HeadMotion": {
+      "Type": "Aim",
+      "RelativeTurnSpeed": {
+        "Compute": "CombatRelativeTurnSpeed"
+      }
+    }
+  },
+  "Type": "Component"
+}

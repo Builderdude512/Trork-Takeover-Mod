@@ -1,0 +1,10 @@
+{
+  "Type": "ApplyForce",
+  "Force": 40,
+  "Direction": {
+    "X": 0,
+    "Y": 1
+  },
+  "RunTime": 0.25,
+  "ChangeVelocityType": "Add"
+}

@@ -1,0 +1,13 @@
+{
+  "Interactions": [
+    "TrorkEvo_Slayer_Dodge_Chargeup"
+  ],
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  },
+  "Cooldown": {
+    "Cooldown": 12
+  }
+}

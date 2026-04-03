@@ -1,0 +1,10 @@
+{
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  },
+  "Interactions": [
+    "TrorkCommon_Tester"
+  ]
+}

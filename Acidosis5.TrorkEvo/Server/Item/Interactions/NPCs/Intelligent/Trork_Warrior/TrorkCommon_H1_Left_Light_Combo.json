@@ -1,0 +1,90 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ClearAnimationOnFinish": true,
+    "ItemPlayerAnimationsId": "Trork_Sword",
+    "ItemAnimationId": "SpinLeftCharging"
+  },
+  "$Comment": "Prepare Delay",
+  "RunTime": 0.1,
+  "Next": {
+    "Type": "Simple",
+    "Effects": {
+      "ItemPlayerAnimationsId": "Axe",
+      "ItemAnimationId": "SwingRight",
+      "Trails": [
+        {
+          "TrailId": "Small_Default",
+          "TargetEntityPart": "PrimaryItem"
+        }
+      ]
+    },
+    "RunTime": 0.167,
+    "Next": {
+      "Type": "Parallel",
+      "$Comment": "Make sure this parallel interaction is needed and can't be optimized away",
+      "Interactions": [
+        {
+          "Interactions": [
+            {
+              "Type": "Selector",
+              "$Comment": "Length of Combat",
+              "RunTime": 0.25,
+              "Selector": {
+                "Id": "Horizontal",
+                "Direction": "ToLeft",
+                "TestLineOfSight": true,
+                "ExtendTop": 0.5,
+                "ExtendBottom": 0.5,
+                "StartDistance": 0.1,
+                "EndDistance": 3,
+                "Length": 90,
+                "RollOffset": 0,
+                "YawStartOffset": -45
+              },
+              "HitEntity": {
+                "Interactions": [
+                  {
+                    "Effects": {
+                      "Particles": [
+                        {
+                          "TargetEntityPart": "PrimaryItem",
+                          "SystemId": "Impact_Shield_Bash",
+                          "Scale": 0.5
+                        }
+                      ]
+                    },
+                    "Type": "Replace",
+                    "DefaultValue": {
+                      "Interactions": [
+                        "NPC_Attack_Melee_Damage"
+                      ]
+                    },
+                    "Var": "Melee_Light"
+                  }
+                ]
+              },
+              "Next": {
+                "Type": "Simple",
+                "$Comment": "Pad the interaction length",
+                "RunTime": 0.35
+              }
+            }
+          ]
+        },
+        {
+          "Interactions": [
+            {
+              "Type": "Simple",
+              "$Comment": "Length of Effect",
+              "RunTime": 0.25,
+              "Effects": {
+                "WorldSoundEventId": "SFX_Light_Melee_T2_Swing"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

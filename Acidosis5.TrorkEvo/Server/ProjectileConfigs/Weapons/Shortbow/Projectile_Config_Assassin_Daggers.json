@@ -1,0 +1,39 @@
+{
+  "Model": "Dagger_Copper",
+  "LaunchForce": 35,
+  "Physics": {
+    "Type": "Standard",
+    "Gravity": 12,
+    "TerminalVelocityAir": 35,
+    "TerminalVelocityWater": 1,
+    "RotationMode": "VelocityRoll",
+    "BounceCount": 0,
+    "SticksVertically": true,
+    "ComputePitch": true
+  },
+  "Interactions": {
+    "ProjectileHit": {
+      "Interactions": [
+        {
+          "Type": "DamageEntity",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Projectile": 15
+            }
+          },
+          "DamageEffects": {
+            "Knockback": {
+              "Force": -6
+            }
+          }
+        },
+        "Common_Projectile_Despawn"
+      ]
+    },
+    "ProjectileMiss": {
+      "Interactions": [
+        "Common_Projectile_Despawn"
+      ]
+    }
+  }
+}

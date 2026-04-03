@@ -1,0 +1,11 @@
+{
+  "Interactions": [
+    "TrorkCommon_H2_Left_Light",
+    "TrorkCommon_H2_Right_Heavy"
+  ],
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  }
+}

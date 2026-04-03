@@ -1,0 +1,99 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ClearAnimationOnFinish": true,
+    "ItemPlayerAnimationsId": "Trork_Club",
+    "ItemAnimationId": "SwingDownCharging",
+    "Particles": [
+      {
+        "SystemId": "Mace_Charging",
+        "TargetEntityPart": "PrimaryItem",
+        "Scale": 1,
+        "PositionOffset": {
+          "Y": 0.25
+        }
+      }
+    ]
+  },
+  "$Comment": "Prepare Delay",
+  "RunTime": 0.9,
+  "Next": {
+    "Type": "Simple",
+    "Effects": {
+      "ItemPlayerAnimationsId": "Club",
+      "ItemAnimationId": "SwingDownCharged",
+      "Trails": [
+        {
+          "TrailId": "Small_Default",
+          "TargetEntityPart": "PrimaryItem"
+        }
+      ]
+    },
+    "RunTime": 0.16,
+    "Next": {
+      "Type": "Parallel",
+      "$Comment": "Make sure this parallel interaction is needed and can't be optimized away",
+      "Interactions": [
+        {
+          "Interactions": [
+            {
+              "Type": "Selector",
+              "$Comment": "Length of Combat",
+              "RunTime": 0.25,
+              "Selector": {
+                "Id": "Horizontal",
+                "Direction": "ToLeft",
+                "TestLineOfSight": true,
+                "ExtendTop": 0.5,
+                "ExtendBottom": 0.5,
+                "StartDistance": 0.1,
+                "EndDistance": 3,
+                "Length": 90,
+                "RollOffset": 90,
+                "YawStartOffset": -45
+              },
+              "HitEntity": {
+                "Interactions": [
+                  {
+                    "Effects": {
+                      "Particles": [
+                        {
+                          "TargetEntityPart": "PrimaryItem",
+                          "SystemId": "Impact_Shield_Bash"
+                        }
+                      ]
+                    },
+                    "Type": "Replace",
+                    "DefaultValue": {
+                      "Interactions": [
+                        "NPC_Attack_Melee_Damage"
+                      ]
+                    },
+                    "Var": "Melee_Heavy"
+                  }
+                ]
+              },
+              "Next": {
+                "Type": "Simple",
+                "$Comment": "Pad the interaction length",
+                "RunTime": 0.75
+              }
+            }
+          ]
+        },
+        {
+          "Interactions": [
+            {
+              "Type": "Simple",
+              "$Comment": "Length of Effect",
+              "RunTime": 0.25,
+              "Effects": {
+                "WorldSoundEventId": "SFX_Light_Melee_T2_Swing"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

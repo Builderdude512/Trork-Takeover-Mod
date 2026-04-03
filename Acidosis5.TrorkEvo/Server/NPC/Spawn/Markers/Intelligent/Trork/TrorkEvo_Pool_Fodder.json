@@ -2,19 +2,9 @@
   "Model": "NPC_Spawn_Marker",
   "NPCs": [
     {
-      "Name": "Trork_Brawler",
+      "Name": "TrorkEvo_Fodder_Club",
       "Weight": 50,
       "SpawnAfterGameTime": "P1D"
-    },
-    {
-      "Name": "Trork_Mauler",
-      "Weight": 50,
-      "SpawnAfterGameTime": "P1D"
-    },
-    {
-      "SpawnAfterGameTime": "P1D",
-      "Name": "Trork_Mauler",
-      "Weight": 50
     }
   ],
   "ExclusionRadius": 20,

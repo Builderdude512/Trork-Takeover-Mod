@@ -1,0 +1,26 @@
+{
+  "Model": "Items/Rubble/Rubble.blockymodel",
+  "Texture": "Items/Rubble/Rubble_Textures/Sandstone.png",
+  "HitBox": {
+    "Max": {
+      "X": 0.1,
+      "Y": 0.1,
+      "Z": 0.1
+    },
+    "Min": {
+      "X": -0.1,
+      "Y": -0.1,
+      "Z": -0.1
+    }
+  },
+  "MinScale": 1,
+  "MaxScale": 1,
+  "Particles": [
+    {
+      "TargetEntityPart": "Entity",
+      "SystemId": "Block_Run_Sand",
+      "Scale": 3,
+      "Color": "#eab72a"
+    }
+  ]
+}

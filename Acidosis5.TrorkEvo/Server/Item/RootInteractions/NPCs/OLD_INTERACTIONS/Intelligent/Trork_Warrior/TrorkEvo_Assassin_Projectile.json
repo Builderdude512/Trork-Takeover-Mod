@@ -1,0 +1,11 @@
+{
+  "Interactions": [
+    "TrorkEvo_Slayer_Dodge_Alternator",
+    "TrorkEvo_Assassin_Projectiles"
+  ],
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  }
+}

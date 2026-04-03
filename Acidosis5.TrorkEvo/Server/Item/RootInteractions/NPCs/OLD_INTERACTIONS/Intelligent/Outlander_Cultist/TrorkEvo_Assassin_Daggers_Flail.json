@@ -1,0 +1,12 @@
+{
+  "Interactions": [
+    "TrorkEvo_Slayer_Dodge_Alternator",
+    "TrorkEvo_Monk_Strike_FlailRight",
+    "TrorkEvo_Monk_Strike_FlailLeft"
+  ],
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  }
+}

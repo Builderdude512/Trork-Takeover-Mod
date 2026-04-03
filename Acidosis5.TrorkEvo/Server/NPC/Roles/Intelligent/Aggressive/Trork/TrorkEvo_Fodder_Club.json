@@ -1,0 +1,73 @@
+{
+  "Type": "Variant",
+  "Reference": "Template_Trork_Melee",
+  "Modify": {
+    "Appearance": "TrorkEvo_Tank",
+    "DropList": "Drop_TrorkEvo_Grunt",
+    "Weapons": [
+      "Weapon_Club_Stone_Trork",
+      "Rubble_Stone"
+    ],
+    "MaxHealth": 60,
+    "IsMemory": false,
+    "AttackSequence": "Component_Instruction_Attack_Sequence_TrorkEvo_FClub",
+    "LeashMinPlayerDistance": 8,
+    "MaxSpeed": 7,
+    "_InteractionVars": {
+      "Melee_Light": {
+        "Interactions": [
+          {
+            "Parent": "NPC_Attack_Melee_Damage",
+            "DamageCalculator": {
+              "BaseDamage": {
+                "Physical": 13
+              }
+            }
+          }
+        ]
+      },
+      "Melee_Medium": {
+        "Interactions": [
+          {
+            "Parent": "NPC_Attack_Melee_Damage",
+            "DamageCalculator": {
+              "BaseDamage": {
+                "Physical": 18
+              }
+            }
+          }
+        ]
+      },
+      "Melee_Heavy": {
+        "Interactions": [
+          {
+            "Parent": "NPC_Attack_Melee_Damage",
+            "DamageCalculator": {
+              "BaseDamage": {
+                "Physical": 25
+              }
+            },
+            "DamageEffects": {
+              "Knockback": {
+                "Force": 5,
+                "RelativeX": 0,
+                "RelativeZ": -3,
+                "VelocityY": 3,
+                "VelocityType": "Add"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "NameTranslationKey": {
+      "Compute": "NameTranslationKey"
+    }
+  },
+  "Parameters": {
+    "NameTranslationKey": {
+      "Value": "TTO_Server.npcRoles.TrorkEvo_Tank.name",
+      "Description": "TTO_Server.npcRoles.TrorkEvo_Tank.description"
+    }
+  }
+}

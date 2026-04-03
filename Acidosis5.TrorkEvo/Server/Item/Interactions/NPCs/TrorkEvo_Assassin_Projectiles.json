@@ -1,0 +1,36 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemPlayerAnimationsId": "Daggers",
+    "ItemAnimationId": "StabDoubleCharging",
+    "ClearAnimationOnFinish": true
+  },
+  "$Comment": "Prepare Delay",
+  "Next": {
+    "Type": "Repeat",
+    "Repeat": 2,
+    "ForkInteractions": {
+      "Interactions": [
+        {
+          "Type": "Projectile",
+          "Effects": {
+            "ItemPlayerAnimationsId": "Daggers",
+            "ItemAnimationId": "SwingLeft"
+          },
+          "Config": "Projectile_Config_Assassin_Daggers_A",
+          "RunTime": 0.35
+        },
+        {
+          "Type": "Projectile",
+          "Effects": {
+            "ItemPlayerAnimationsId": "Daggers",
+            "ItemAnimationId": "SwingRight"
+          },
+          "Config": "Projectile_Config_Assassin_Daggers_B",
+          "RunTime": 0.35
+        }
+      ]
+    }
+  },
+  "RunTime": 0.5
+}

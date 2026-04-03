@@ -1,0 +1,67 @@
+{
+  "Type": "Simple",
+  "RunTime": 0.65,
+  "Effects": {
+    "ItemPlayerAnimationsId": "Daggers",
+    "ItemAnimationId": "LungeDoubleCharging",
+    "ClearAnimationOnFinish": true,
+    "Particles": [
+      {
+        "SystemId": "Sword_Charging",
+        "TargetEntityPart": "PrimaryItem"
+      },
+      {
+        "SystemId": "Dagger_Charging",
+        "TargetEntityPart": "SecondaryItem"
+      }
+    ],
+    "MovementEffects": {
+      "DisableAll": true
+    }
+  },
+  "Next": {
+    "Type": "Serial",
+    "Interactions": [
+      "TrorkEvo_Assassin_Daggers_Force_Ranged",
+      {
+        "Type": "Projectile",
+        "Config": "Projectile_Config_Assassin_Daggers_A"
+      },
+      {
+        "Type": "Projectile",
+        "Config": "Projectile_Config_Assassin_Daggers_B"
+      },
+      {
+        "Type": "Selector",
+        "Selector": {
+          "Id": "Stab",
+          "EndDistance": 6,
+          "ExtendTop": 0.5,
+          "ExtendBottom": 0.5,
+          "ExtendLeft": 0.5,
+          "ExtendRight": 0.5,
+          "TestLineOfSight": true
+        },
+        "HitEntity": {
+          "Interactions": [
+            {
+              "Type": "Replace",
+              "DefaultValue": {
+                "Interactions": [
+                  "NPC_Attack_Melee_Damage"
+                ]
+              },
+              "Var": "Melee_Medium"
+            }
+          ]
+        },
+        "Effects": {
+          "ItemPlayerAnimationsId": "Daggers",
+          "ItemAnimationId": "LungeDoubleCharged",
+          "StartDelay": 0.3
+        },
+        "RunTime": 0.4
+      }
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "Type": "Variant",
+  "Reference": "Template_TrorkEvo_Hybrid",
+  "Modify": {
+    "Appearance": "TrorkEvo_Pyro",
+    "DropList": "Drop_TrorkEvo_Soldier",
+    "Weapons": [
+      "Weapon_Staff_Copper",
+      "Weapon_Staff_Copper"
+    ],
+    "MaxHealth": 120,
+    "ToMeleeRange": 7,
+    "MeleeMoveThreshold": 2,
+    "IsMemory": false,
+    "DesiredRangedAttackDistanceRange": [
+      7,
+      15
+    ],
+    "AttackSequence": "Component_Instruction_Attack_Sequence_TrorkEvo_Sandcaster",
+    "RangedAttackSequence": "Component_Instruction_Attack_Sequence_Ranged_TrorkEvo_Sandcaster",
+    "_InteractionVars": {
+      "Melee_Light": {
+        "Interactions": [
+          {
+            "Parent": "NPC_Attack_Melee_Damage",
+            "DamageCalculator": {
+              "BaseDamage": {
+                "Physical": 12
+              }
+            }
+          }
+        ]
+      },
+      "Melee_Launcher": {
+        "Interactions": [
+          {
+            "Parent": "NPC_Attack_Melee_Damage",
+            "DamageCalculator": {
+              "BaseDamage": {
+                "Physical": 20
+              }
+            },
+            "DamageEffects": {
+              "Knockback": {
+                "Force": 18,
+                "RelativeX": 0,
+                "RelativeZ": -2,
+                "VelocityY": 3,
+                "VelocityType": "Add"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "NameTranslationKey": {
+      "Compute": "NameTranslationKey"
+    }
+  },
+  "Parameters": {
+    "NameTranslationKey": {
+      "Value": "TTO_Server.npcRoles.TrorkEvo_Pyro.name",
+      "Description": "TTO_Server.npcRoles.TrorkEvo_Pyro.description"
+    }
+  }
+}

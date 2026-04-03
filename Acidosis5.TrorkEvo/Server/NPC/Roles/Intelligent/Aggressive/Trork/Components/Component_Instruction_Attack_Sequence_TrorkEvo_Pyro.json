@@ -27,7 +27,7 @@
     "Actions": [
       {
         "Type": "Attack",
-        "Attack": "TrorkEvo_Tank_Axe_Medium",
+        "Attack": "TrorkCommon_Attack_H1_LR_Combo",
         "AttackPauseRange": [
           1,
           2
@@ -35,7 +35,7 @@
       },
       {
         "Type": "Attack",
-        "Attack": "TrorkEvo_Monk_Daggers_Haymaker",
+        "Attack": "TrorkCommon_Dodge_Alternator_Wcooldown",
         "AttackPauseRange": [
           1,
           2
@@ -43,10 +43,10 @@
       },
       {
         "Type": "Attack",
-        "Attack": "TrorkEvo_Slayer_Dodge",
+        "Attack": "TrorkCommon_Attack_H1_Spinlauncher",
         "AttackPauseRange": [
           1,
-          3
+          2
         ]
       },
       {

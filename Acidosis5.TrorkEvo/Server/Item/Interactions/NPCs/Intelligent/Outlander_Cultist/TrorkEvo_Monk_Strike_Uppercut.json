@@ -7,9 +7,7 @@
         "SystemId": "Dagger_Charging",
         "TargetEntityPart": "PrimaryItem"
       }
-    ],
-    "ItemPlayerAnimationsId": "Sword",
-    "ItemAnimationId": "SwingLeftCharging"
+    ]
   },
   "$Comment": "Prepare Delay",
   "RunTime": 0.4,

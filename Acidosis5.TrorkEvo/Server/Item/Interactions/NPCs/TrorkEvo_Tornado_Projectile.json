@@ -1,0 +1,30 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemPlayerAnimationsId": "Trork_Mace",
+    "ItemAnimationId": "SwingLeftCharging",
+    "ClearAnimationOnFinish": true,
+    "Particles": [
+      {
+        "SystemId": "Block_Sprint_Dust",
+        "PositionOffset": {
+          "Y": 1.5
+        },
+        "Scale": 1,
+        "Color": "#90cce8"
+      }
+    ]
+  },
+  "$Comment": "Prepare Delay",
+  "Next": {
+    "Type": "Projectile",
+    "Config": "Projectile_Config_Tornado",
+    "Effects": {
+      "ItemPlayerAnimationsId": "Trork_Mace",
+      "ItemAnimationId": "Sweep",
+      "ClearAnimationOnFinish": true
+    },
+    "RunTime": 0.35
+  },
+  "RunTime": 1
+}

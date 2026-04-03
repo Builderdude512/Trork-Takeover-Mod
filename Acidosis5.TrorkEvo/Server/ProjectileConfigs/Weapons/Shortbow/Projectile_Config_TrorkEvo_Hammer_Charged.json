@@ -7,10 +7,10 @@
     "TerminalVelocityAir": 35,
     "TerminalVelocityWater": 1,
     "RotationMode": "VelocityRoll",
-    "Bounciness": 1,
     "BounceCount": 1,
     "SticksVertically": true,
-    "ComputePitch": true
+    "ComputePitch": true,
+    "Bounciness": 1
   },
   "Interactions": {
     "ProjectileHit": {

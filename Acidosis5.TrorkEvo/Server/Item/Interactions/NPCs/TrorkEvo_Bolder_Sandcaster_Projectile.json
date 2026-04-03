@@ -1,0 +1,31 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemPlayerAnimationsId": "Trork_Mace",
+    "ItemAnimationId": "SwingLeftCharging",
+    "ClearAnimationOnFinish": true,
+    "Particles": [
+      {
+        "TargetEntityPart": "PrimaryItem",
+        "SystemId": "Block_Sprint_Sand",
+        "PositionOffset": {
+          "Y": 1.5
+        },
+        "Scale": 2,
+        "Color": "#eab72a"
+      }
+    ]
+  },
+  "$Comment": "Prepare Delay",
+  "Next": {
+    "Type": "Projectile",
+    "Config": "Projectile_Config_Bolder",
+    "Effects": {
+      "ItemPlayerAnimationsId": "Trork_Mace",
+      "ItemAnimationId": "SwingLeftCharged",
+      "ClearAnimationOnFinish": true
+    },
+    "RunTime": 0.35
+  },
+  "RunTime": 1.25
+}

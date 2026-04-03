@@ -1,0 +1,14 @@
+{
+  "Interactions": [
+    "TrorkEvo_Assassin_Strike_Lunge_Ranged"
+  ],
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  },
+  "Cooldown": {
+    "Cooldown": 12,
+    "Id": "CooldownLunge"
+  }
+}

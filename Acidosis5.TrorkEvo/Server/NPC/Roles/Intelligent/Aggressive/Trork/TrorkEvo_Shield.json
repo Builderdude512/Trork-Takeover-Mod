@@ -8,7 +8,7 @@
       "Weapon_Shield_Scrap_Spiked",
       "Weapon_Shield_Scrap_Spiked"
     ],
-    "MaxHealth": 100,
+    "MaxHealth": 90,
     "IsMemory": false,
     "AttackDistance": 4,
     "AttackSequence": "Component_Instruction_Attack_Sequence_TrorkEvo_Shield",

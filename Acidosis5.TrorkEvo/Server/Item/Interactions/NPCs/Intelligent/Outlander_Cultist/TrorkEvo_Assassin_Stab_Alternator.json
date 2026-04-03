@@ -1,0 +1,27 @@
+{
+  "Type": "StatsCondition",
+  "LessThan": true,
+  "Costs": {
+    "Health": 50
+  },
+  "ValueType": "Percent",
+  "Failed": "TrorkEvo_Assassin_Stab",
+  "Next": {
+    "Type": "CooldownCondition",
+    "Id": "PoisonCooldown",
+    "Failed": "TrorkEvo_Assassin_Stab",
+    "Next": {
+      "Type": "Serial",
+      "Interactions": [
+        "TrorkEvo_Assassin_Poison_Stab",
+        {
+          "Type": "TriggerCooldown",
+          "Cooldown": {
+            "Id": "PoisonCooldown",
+            "Cooldown": 18
+          }
+        }
+      ]
+    }
+  }
+}

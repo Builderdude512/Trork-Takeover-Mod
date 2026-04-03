@@ -16,7 +16,7 @@
           "Type": "DamageEntity",
           "DamageCalculator": {
             "BaseDamage": {
-              "Projectile": 12
+              "Projectile": 20
             }
           },
           "DamageEffects": {

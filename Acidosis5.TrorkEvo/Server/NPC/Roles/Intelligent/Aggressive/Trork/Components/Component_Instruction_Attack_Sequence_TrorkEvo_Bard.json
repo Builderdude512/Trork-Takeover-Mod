@@ -35,7 +35,7 @@
       },
       {
         "Type": "Attack",
-        "Attack": "TrorkEvo_Tank_Axe_Medium",
+        "Attack": "TrorkEvo_Tank_Axe_Down",
         "AttackPauseRange": [
           1,
           2
@@ -44,14 +44,6 @@
       {
         "Type": "Attack",
         "Attack": "TrorkEvo_Bard_Club_Combo",
-        "AttackPauseRange": [
-          1,
-          2
-        ]
-      },
-      {
-        "Type": "Attack",
-        "Attack": "TrorkEvo_Tank_Axe_Down",
         "AttackPauseRange": [
           1,
           2

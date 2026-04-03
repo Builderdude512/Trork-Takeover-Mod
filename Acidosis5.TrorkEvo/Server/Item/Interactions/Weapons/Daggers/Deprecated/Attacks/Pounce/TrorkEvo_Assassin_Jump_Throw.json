@@ -1,0 +1,37 @@
+{
+  "Type": "Simple",
+  "RunTime": 0.5,
+  "Effects": {
+    "ItemPlayerAnimationsId": "Daggers",
+    "ItemAnimationId": "PounceStabCharging",
+    "ClearAnimationOnFinish": true,
+    "Particles": [
+      {
+        "SystemId": "Sword_Charging",
+        "TargetEntityPart": "PrimaryItem",
+        "PositionOffset": {
+          "Y": 0.35
+        },
+        "Scale": 0.7
+      },
+      {
+        "SystemId": "Sword_Charging",
+        "TargetEntityPart": "SecondaryItem",
+        "PositionOffset": {
+          "Y": 0.35
+        },
+        "Scale": 0.7
+      }
+    ],
+    "MovementEffects": {
+      "DisableAll": true
+    }
+  },
+  "Next": {
+    "Type": "Serial",
+    "Interactions": [
+      "TrorkEvo_Assassin_Jump_Force",
+      "TrorkEvo_Assassin_Jumping_Projectiles"
+    ]
+  }
+}

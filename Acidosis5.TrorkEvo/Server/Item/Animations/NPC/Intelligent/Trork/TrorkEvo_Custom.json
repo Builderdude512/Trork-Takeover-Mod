@@ -1,0 +1,43 @@
+{
+  "Animations": {
+    "Sweep": {
+      "ThirdPerson": "Characters/Animations/Items/Dual_Handed/Battleaxe/Attacks/Sweep/Sweep.blockyanim",
+      "ThirdPersonMoving": "Characters/Animations/Items/Dual_Handed/Battleaxe/Attacks/Sweep/Sweep_Moving.blockyanim",
+      "Speed": 0.75
+    }
+  },
+  "WiggleWeights": {
+    "Pitch": 2.5,
+    "PitchDeceleration": 0.3,
+    "Roll": 0.1,
+    "RollDeceleration": 0.3,
+    "X": 2.5,
+    "XDeceleration": 0.3,
+    "Y": 0.1,
+    "YDeceleration": 0.3,
+    "Z": 0.1,
+    "ZDeceleration": 0.3
+  },
+  "PullbackConfig": {
+    "LeftOffsetOverride": [
+      0,
+      0,
+      -1.6
+    ],
+    "LeftRotationOverride": [
+      0,
+      0,
+      0
+    ],
+    "RightOffsetOverride": [
+      0,
+      0,
+      -1.6
+    ],
+    "RightRotationOverride": [
+      0,
+      0,
+      0
+    ]
+  }
+}

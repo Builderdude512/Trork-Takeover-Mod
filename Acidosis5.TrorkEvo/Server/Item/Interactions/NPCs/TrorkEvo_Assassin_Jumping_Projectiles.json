@@ -1,0 +1,26 @@
+{
+  "Type": "Repeat",
+  "Repeat": 3,
+  "ForkInteractions": {
+    "Interactions": [
+      {
+        "Type": "Projectile",
+        "Effects": {
+          "ItemPlayerAnimationsId": "Daggers",
+          "ItemAnimationId": "SwingLeft"
+        },
+        "Config": "Projectile_Config_Assassin_Daggers_A",
+        "RunTime": 0.1
+      },
+      {
+        "Type": "Projectile",
+        "Effects": {
+          "ItemPlayerAnimationsId": "Daggers",
+          "ItemAnimationId": "SwingRight"
+        },
+        "Config": "Projectile_Config_Assassin_Daggers_B",
+        "RunTime": 0.1
+      }
+    ]
+  }
+}

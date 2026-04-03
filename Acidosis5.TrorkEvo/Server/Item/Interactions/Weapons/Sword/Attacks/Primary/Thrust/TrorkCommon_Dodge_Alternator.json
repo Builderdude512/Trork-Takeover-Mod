@@ -1,0 +1,15 @@
+{
+  "Type": "Chaining",
+  "ChainingAllowance": 18,
+  "Next": [
+    {
+      "Type": "Simple",
+      "RunTime": 0.1
+    },
+    "TrorkEvo_Slayer_Dodge_Chargeup",
+    {
+      "Type": "Simple",
+      "RunTime": 0.1
+    }
+  ]
+}

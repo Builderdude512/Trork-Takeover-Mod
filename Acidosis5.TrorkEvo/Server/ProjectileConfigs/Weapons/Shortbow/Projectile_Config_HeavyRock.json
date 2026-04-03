@@ -1,0 +1,43 @@
+{
+  "Model": "HeavyRock",
+  "LaunchForce": 25,
+  "Physics": {
+    "Type": "Standard",
+    "Gravity": 12,
+    "TerminalVelocityAir": 50,
+    "TerminalVelocityWater": 1,
+    "RotationMode": "VelocityRoll",
+    "Bounciness": 0.5,
+    "BounceCount": 3,
+    "BounceLimit": 0
+  },
+  "Interactions": {
+    "ProjectileHit": {
+      "Interactions": [
+        {
+          "Type": "DamageEntity",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Projectile": 22
+            }
+          },
+          "DamageEffects": {
+            "Knockback": {
+              "Force": -5
+            }
+          }
+        },
+        "SandcasterHeavyRockExplode",
+        "Common_Projectile_Despawn"
+      ]
+    },
+    "ProjectileMiss": {
+      "Interactions": [
+        "Common_Projectile_Despawn"
+      ]
+    }
+  },
+  "SpawnRotationOffset": {
+    "Pitch": 6
+  }
+}
