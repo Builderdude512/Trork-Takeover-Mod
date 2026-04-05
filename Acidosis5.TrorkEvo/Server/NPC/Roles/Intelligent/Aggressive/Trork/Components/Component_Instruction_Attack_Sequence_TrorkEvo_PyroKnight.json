@@ -3,7 +3,7 @@
   "Interface": "Hytale.Instruction.AttackSequence",
   "Parameters": {
     "AttackDistance": {
-      "Value": 4,
+      "Value": 6,
       "Description": "The distance at which an NPC will execute attacks"
     },
     "CombatRelativeTurnSpeed": {
@@ -27,10 +27,26 @@
     "Actions": [
       {
         "Type": "Attack",
-        "Attack": "TrorkEvo_Attack_SpinStab_Thrust",
+        "Attack": "TrorkEvo_PyroKnight_Light_Attacks",
         "AttackPauseRange": [
-          2,
-          3
+          1,
+          2
+        ]
+      },
+      {
+        "Type": "Attack",
+        "Attack": "TrorkEvo_PyroKnight_Light_Attacks",
+        "AttackPauseRange": [
+          1,
+          2
+        ]
+      },
+      {
+        "Type": "Attack",
+        "Attack": "TrorkEvo_PyroKnight_Heavy_Attacks",
+        "AttackPauseRange": [
+          5,
+          6
         ]
       }
     ],

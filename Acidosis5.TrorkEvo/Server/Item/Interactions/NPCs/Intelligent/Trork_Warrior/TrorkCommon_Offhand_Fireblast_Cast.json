@@ -1,0 +1,128 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemPlayerAnimationsId": "Shield",
+    "ItemAnimationId": "Guard",
+    "Particles": [
+      {
+        "SystemId": "Effect_Fire",
+        "TargetEntityPart": "Entity",
+        "Scale": 2
+      },
+      {
+        "TargetEntityPart": "Entity",
+        "SystemId": "FireSword",
+        "PositionOffset": {
+          "Y": 1,
+          "Z": 0.25
+        },
+        "Scale": 2
+      },
+      {
+        "SystemId": "Mace_Charging",
+        "Scale": 3,
+        "TargetEntityPart": "Entity"
+      }
+    ],
+    "ClearAnimationOnFinish": true,
+    "MovementEffects": {
+      "DisableAll": true
+    }
+  },
+  "$Comment": "Prepare Delay",
+  "RunTime": 1.25,
+  "Next": {
+    "Type": "Simple",
+    "Effects": {
+      "ItemPlayerAnimationsId": "Shield",
+      "ItemAnimationId": "GuardBash",
+      "Trails": [
+        {
+          "TrailId": "Small_Default",
+          "TargetEntityPart": "PrimaryItem"
+        }
+      ]
+    },
+    "RunTime": 0.2,
+    "Next": {
+      "Type": "Parallel",
+      "$Comment": "Make sure this parallel interaction is needed and can't be optimized away",
+      "Interactions": [
+        {
+          "Interactions": [
+            {
+              "Type": "Selector",
+              "$Comment": "Length of Combat",
+              "RunTime": 0.05,
+              "Selector": {
+                "Id": "AOECircle",
+                "Range": 3,
+                "Offset": {
+                  "Z": -3,
+                  "Y": 0.5
+                }
+              },
+              "HitEntity": {
+                "Interactions": [
+                  {
+                    "Effects": {
+                      "Particles": [
+                        {
+                          "TargetEntityPart": "PrimaryItem",
+                          "SystemId": "Impact_Shield_Bash",
+                          "Scale": 0.5
+                        }
+                      ]
+                    },
+                    "Type": "Replace",
+                    "DefaultValue": {
+                      "Interactions": [
+                        "NPC_Attack_Melee_Damage"
+                      ]
+                    },
+                    "Var": "Melee_Extreme"
+                  },
+                  {
+                    "Type": "ApplyEffect",
+                    "Entity": "Target",
+                    "EffectId": "Burn"
+                  }
+                ]
+              },
+              "Next": {
+                "Type": "Simple",
+                "$Comment": "Pad the interaction length",
+                "RunTime": 0.5
+              },
+              "IgnoreOwner": true,
+              "Effects": {
+                "Particles": [
+                  {
+                    "SystemId": "Explosion_Medium",
+                    "TargetEntityPart": "Self",
+                    "PositionOffset": {
+                      "Z": 3
+                    },
+                    "Scale": 3
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "Interactions": [
+            {
+              "Type": "Simple",
+              "$Comment": "Length of Effect",
+              "RunTime": 0.25,
+              "Effects": {
+                "WorldSoundEventId": "SFX_Goblin_Lobber_Bomb_Death"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

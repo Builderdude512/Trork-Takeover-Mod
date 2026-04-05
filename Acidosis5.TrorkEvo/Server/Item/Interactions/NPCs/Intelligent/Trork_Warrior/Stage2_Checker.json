@@ -1,0 +1,53 @@
+{
+  "Type": "StatsCondition",
+  "LessThan": true,
+  "Costs": {
+    "Health": 150
+  },
+  "Next": {
+    "Type": "ApplyEffect",
+    "EffectId": "TrorkEvo_Pyro_Stage2_FX",
+    "Next": {
+      "Type": "Selector",
+      "Selector": {
+        "Id": "AOECircle",
+        "Range": 2,
+        "Offset": {
+          "Y": 1
+        }
+      },
+      "HitEntity": {
+        "Interactions": [
+          {
+            "Type": "ApplyEffect",
+            "EffectId": "Burn"
+          }
+        ],
+        "Cooldown": {
+          "Cooldown": 5
+        }
+      },
+      "IgnoreOwner": true
+    },
+    "Effects": {
+      "Particles": [
+        {
+          "SystemId": "Explosion_Medium",
+          "TargetEntityPart": "Entity",
+          "PositionOffset": {
+            "Y": 1
+          }
+        },
+        {
+          "SystemId": "Sword_Signature_AoE2",
+          "TargetEntityPart": "Entity",
+          "PositionOffset": {
+            "Y": 1
+          },
+          "Scale": 0.75
+        }
+      ]
+    },
+    "RunTime": 0.1
+  }
+}

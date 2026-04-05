@@ -1,0 +1,13 @@
+{
+  "Interactions": [
+    "TrorkCommon_Jump_Backwards_Medium"
+  ],
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  },
+  "Cooldown": {
+    "Cooldown": 12
+  }
+}

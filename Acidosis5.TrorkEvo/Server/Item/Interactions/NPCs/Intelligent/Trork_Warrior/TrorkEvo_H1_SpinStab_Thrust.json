@@ -14,7 +14,7 @@
     ]
   },
   "$Comment": "Prepare Delay",
-  "RunTime": 1.2,
+  "RunTime": 0.75,
   "Next": {
     "Type": "Simple",
     "Effects": {

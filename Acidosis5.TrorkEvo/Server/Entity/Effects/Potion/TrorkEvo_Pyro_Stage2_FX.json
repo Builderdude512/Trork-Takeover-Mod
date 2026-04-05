@@ -1,0 +1,36 @@
+{
+  "ValueType": "Absolute",
+  "OverlapBehavior": "Overwrite",
+  "DamageResistance": {
+    "Projectile": [
+      {
+        "CalculationType": "Multiplicative",
+        "Amount": 0.15,
+        "Target": "Max"
+      }
+    ]
+  },
+  "ApplicationEffects": {
+    "EntityTopTint": "#c56330",
+    "HorizontalSpeedMultiplier": 1.4,
+    "Particles": [
+      {
+        "SystemId": "Effect_Fire",
+        "Scale": 2
+      }
+    ]
+  },
+  "DamageCalculatorCooldown": 4,
+  "Duration": 17,
+  "ApplyConditions": [
+    {
+      "Id": "Stat",
+      "Comparison": "Lte",
+      "Amount": 150,
+      "Stat": "Health"
+    }
+  ],
+  "StatModifiers": {
+    "Health": 1
+  }
+}

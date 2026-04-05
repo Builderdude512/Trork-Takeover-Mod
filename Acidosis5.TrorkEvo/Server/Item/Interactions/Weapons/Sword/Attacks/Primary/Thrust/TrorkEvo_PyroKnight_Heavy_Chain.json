@@ -1,0 +1,6 @@
+{
+  "Type": "Chaining",
+  "Next": [
+    "TrorkCommon_Offhand_Fireblast_Cast"
+  ]
+}

@@ -2,16 +2,16 @@
   "Type": "Simple",
   "Effects": {
     "ClearAnimationOnFinish": true,
-    "ItemPlayerAnimationsId": "Longsword",
-    "ItemAnimationId": "SwingLeftCharging"
+    "ItemPlayerAnimationsId": "Daggers",
+    "ItemAnimationId": "RazorstrikeCharging"
   },
   "$Comment": "Prepare Delay",
-  "RunTime": 0.4,
+  "RunTime": 1,
   "Next": {
     "Type": "Simple",
     "Effects": {
-      "ItemPlayerAnimationsId": "Longsword",
-      "ItemAnimationId": "SwingLeftCharged",
+      "ItemPlayerAnimationsId": "Daggers",
+      "ItemAnimationId": "RazorstrikeSweep",
       "Trails": [
         {
           "TrailId": "Small_Default",

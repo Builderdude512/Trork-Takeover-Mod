@@ -7,20 +7,20 @@
       "Texture": "NPC/Intelligent/Trork/Models/Attachments/Eyebrows/Eyebrows_Textures/Brown.png"
     },
     {
-      "Model": "NPC/Intelligent/Trork/Models/Attachments/Haircuts/Cross.blockymodel",
-      "Texture": "NPC/Intelligent/Trork/Models/Attachments/Haircuts/Cross_Textures/RedDark.png"
+      "Model": "NPC/Intelligent/Trork/Models/Attachments/Haircuts/Samurai.blockymodel",
+      "Texture": "NPC/Intelligent/Trork/Models/Attachments/Haircuts/Samurai_Textures/Red.png"
     },
     {
-      "Model": "NPC/Intelligent/Trork/Models/Attachments/Warrior/Chest.blockymodel",
-      "Texture": "NPC/Intelligent/Trork/Models/Attachments/Warrior/Chest_Texture.png"
+      "Model": "NPC/Intelligent/Trork/Models/Attachments/MageChest.blockymodel",
+      "Texture": "NPC/Intelligent/Trork/Models/Attachments/Mage_Chest_Texture.png"
     },
     {
-      "Model": "NPC/Intelligent/Trork/Models/Attachments/Warrior/Feet.blockymodel",
-      "Texture": "NPC/Intelligent/Trork/Models/Attachments/Warrior/Feet_Texture.png"
+      "Model": "NPC/Intelligent/Trork/Models/Attachments/Shaman/Feet.blockymodel",
+      "Texture": "NPC/Intelligent/Trork/Models/Attachments/Shaman/Feet_Texture.png"
     },
     {
-      "Model": "NPC/Intelligent/Trork/Models/Attachments/Hunter/Hands.blockymodel",
-      "Texture": "NPC/Intelligent/Trork/Models/Attachments/Hunter/Hands_Texture.png"
+      "Model": "NPC/Intelligent/Trork/Models/Attachments/Shaman/Hands.blockymodel",
+      "Texture": "NPC/Intelligent/Trork/Models/Attachments/Shaman/Hands_Texture.png"
     }
   ],
   "RandomAttachmentSets": {

@@ -11,16 +11,16 @@
     ],
     "MaxHealth": 325,
     "AttackDistance": 5,
-    "ToMeleeRange": 6,
+    "ToMeleeRange": 7,
     "MeleeMoveThreshold": 3,
     "IsMemory": false,
     "DesiredRangedAttackDistanceRange": [
-      6,
-      10
+      8,
+      14
     ],
     "AttackSequence": "Component_Instruction_Attack_Sequence_TrorkEvo_PyroKnight",
     "RangedAttackSequence": "Component_Instruction_Attack_Sequence_Ranged_TrorkEvo_PyroKnight",
-    "BreakOffRange": 7,
+    "BreakOffRange": 9,
     "_InteractionVars": {
       "Melee_Fast": {
         "Interactions": [
@@ -28,7 +28,7 @@
             "Parent": "NPC_Attack_Melee_Damage",
             "DamageCalculator": {
               "BaseDamage": {
-                "Physical": 10
+                "Physical": 15
               }
             }
           }
@@ -40,7 +40,7 @@
             "Parent": "NPC_Attack_Melee_Damage",
             "DamageCalculator": {
               "BaseDamage": {
-                "Physical": 22
+                "Physical": 40
               }
             },
             "DamageEffects": {
@@ -55,19 +55,19 @@
           }
         ]
       },
-      "Melee_Slam": {
+      "Melee_Extreme": {
         "Interactions": [
           {
             "Parent": "NPC_Attack_Melee_Damage",
             "DamageCalculator": {
               "BaseDamage": {
-                "Physical": 22
+                "Physical": 42
               }
             },
             "DamageEffects": {
               "Knockback": {
                 "Type": "Point",
-                "Force": 12,
+                "Force": 30,
                 "RelativeX": 0,
                 "RelativeZ": -2,
                 "VelocityY": 1,

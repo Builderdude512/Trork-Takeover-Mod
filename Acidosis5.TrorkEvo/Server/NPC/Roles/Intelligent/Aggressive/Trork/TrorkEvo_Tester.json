@@ -5,7 +5,7 @@
     "Appearance": "TrorkEvo_Tank",
     "DropList": "Drop_TrorkEvo_Grunt",
     "Weapons": [
-      "Weapon_Staff_Copper",
+      "Weapon_Daggers_Copper",
       "Rubble_Stone"
     ],
     "MaxHealth": 60,

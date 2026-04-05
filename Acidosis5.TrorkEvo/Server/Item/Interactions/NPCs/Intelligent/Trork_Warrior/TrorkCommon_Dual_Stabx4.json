@@ -1,0 +1,176 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ClearAnimationOnFinish": true,
+    "ItemPlayerAnimationsId": "Sword",
+    "ItemAnimationId": "StabDashCharging"
+  },
+  "$Comment": "Prepare Delay",
+  "RunTime": 0.4,
+  "Next": {
+    "Type": "Repeat",
+    "Repeat": 2,
+    "ForkInteractions": {
+      "Interactions": [
+        {
+          "Type": "Simple",
+          "Effects": {
+            "ItemPlayerAnimationsId": "Daggers",
+            "ItemAnimationId": "SwingLeft",
+            "Trails": [
+              {
+                "TrailId": "Small_Default",
+                "TargetEntityPart": "PrimaryItem"
+              }
+            ]
+          },
+          "RunTime": 0.125,
+          "Next": {
+            "Type": "Parallel",
+            "$Comment": "Make sure this parallel interaction is needed and can't be optimized away",
+            "Interactions": [
+              {
+                "Interactions": [
+                  {
+                    "Type": "Selector",
+                    "$Comment": "Length of Combat",
+                    "RunTime": 0.15,
+                    "Selector": {
+                      "Id": "Horizontal",
+                      "Direction": "ToLeft",
+                      "Length": 50,
+                      "YawStartOffset": -40,
+                      "EndDistance": 3,
+                      "ExtendTop": 0.5,
+                      "ExtendBottom": 0.5,
+                      "TestLineOfSight": true,
+                      "RollOffset": 10
+                    },
+                    "HitEntity": {
+                      "Interactions": [
+                        {
+                          "Effects": {
+                            "Particles": [
+                              {
+                                "TargetEntityPart": "PrimaryItem",
+                                "SystemId": "Impact_Shield_Bash",
+                                "Scale": 0.5
+                              }
+                            ]
+                          },
+                          "Type": "Replace",
+                          "DefaultValue": {
+                            "Interactions": [
+                              "NPC_Attack_Melee_Damage"
+                            ]
+                          },
+                          "Var": "Melee_Light"
+                        }
+                      ]
+                    },
+                    "Next": {
+                      "Type": "Simple",
+                      "$Comment": "Pad the interaction length",
+                      "RunTime": 0.05
+                    }
+                  }
+                ]
+              },
+              {
+                "Interactions": [
+                  {
+                    "Type": "Simple",
+                    "$Comment": "Length of Effect",
+                    "RunTime": 0.05,
+                    "Effects": {
+                      "WorldSoundEventId": "SFX_Light_Melee_T2_Swing"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Simple",
+          "Effects": {
+            "ItemPlayerAnimationsId": "Daggers",
+            "ItemAnimationId": "SwingRight",
+            "Trails": [
+              {
+                "TrailId": "Small_Default",
+                "TargetEntityPart": "PrimaryItem"
+              }
+            ]
+          },
+          "RunTime": 0.135,
+          "Next": {
+            "Type": "Parallel",
+            "$Comment": "Make sure this parallel interaction is needed and can't be optimized away",
+            "Interactions": [
+              {
+                "Interactions": [
+                  {
+                    "Type": "Selector",
+                    "$Comment": "Length of Combat",
+                    "RunTime": 0.15,
+                    "Selector": {
+                      "Id": "Horizontal",
+                      "Direction": "ToRight",
+                      "Length": 50,
+                      "YawStartOffset": -40,
+                      "EndDistance": 3,
+                      "ExtendTop": 0.5,
+                      "ExtendBottom": 0.5,
+                      "TestLineOfSight": true,
+                      "RollOffset": -10
+                    },
+                    "HitEntity": {
+                      "Interactions": [
+                        {
+                          "Effects": {
+                            "Particles": [
+                              {
+                                "TargetEntityPart": "PrimaryItem",
+                                "SystemId": "Impact_Shield_Bash",
+                                "Scale": 0.5
+                              }
+                            ]
+                          },
+                          "Type": "Replace",
+                          "DefaultValue": {
+                            "Interactions": [
+                              "NPC_Attack_Melee_Damage"
+                            ]
+                          },
+                          "Var": "Melee_Light"
+                        }
+                      ]
+                    },
+                    "Next": {
+                      "Type": "Simple",
+                      "$Comment": "Pad the interaction length",
+                      "RunTime": 0.05
+                    }
+                  }
+                ]
+              },
+              {
+                "Interactions": [
+                  {
+                    "Type": "Simple",
+                    "$Comment": "Length of Effect",
+                    "RunTime": 0.05,
+                    "Effects": {
+                      "WorldSoundEventId": "SFX_Light_Melee_T2_Swing"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

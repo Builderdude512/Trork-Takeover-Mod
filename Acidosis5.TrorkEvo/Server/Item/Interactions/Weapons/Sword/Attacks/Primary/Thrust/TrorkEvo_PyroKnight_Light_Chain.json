@@ -1,0 +1,9 @@
+{
+  "Type": "Chaining",
+  "Next": [
+    "TrorkEvo_H1_SpinStab_Thrust",
+    "TrorkCommon_H1_Right_Medium_Combo",
+    "TrorkEvo_Slayer_Dodge_Chargeup",
+    "TrorkCommon_H1_Right_Light_Combo"
+  ]
+}
