@@ -3,13 +3,13 @@
         "Id": "FortRoundhouse",
         "ZoneMask": [ "*" ],
         "BiomeMask": [ "*Forest_Birch*" ],
-        "Prefab": [ "TrorkEvo.TrorkEvo_Fort_Roundhouse" ],
+        "Prefab": [ "TrorkEvo.BasePack.TrorkEvo_Fort_Roundhouse" ],
         "Weight": [ 1.0 ],
         "Pattern": {
             "GridGenerator": {
                 "Seed": "Pattern_Monuments",
-                "Density": [ 0.2, 0.75 ],
-                "Scale": 0.005,
+                "Density": [ 0.75, 0.95 ],
+                "Scale": 0.009,
                 "Jitter": 0.75
             },
             "HeightThreshold": {

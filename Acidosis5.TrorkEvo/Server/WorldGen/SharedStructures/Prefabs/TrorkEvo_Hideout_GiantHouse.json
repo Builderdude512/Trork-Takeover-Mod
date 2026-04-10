@@ -3,7 +3,7 @@
         "Id": "HideoutGiantHome",
         "ZoneMask": [ "*" ],
         "BiomeMask": [ "*Forest_Aspen*" ],
-        "Prefab": [ "TrorkEvo.TrorkEvo_Hideout_GiantHome" ],
+        "Prefab": [ "TrorkEvo.BasePack.TrorkEvo_Hideout_GiantHome" ],
         "Weight": [ 1.0 ],
         "Pattern": {
             "GridGenerator": {

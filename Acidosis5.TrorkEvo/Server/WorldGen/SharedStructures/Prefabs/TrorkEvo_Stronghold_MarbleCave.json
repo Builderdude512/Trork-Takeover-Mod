@@ -3,7 +3,7 @@
         "Id": "StrongholdMarbleCave",
         "ZoneMask": [ "Zone1_Tier3" ],
         "BiomeMask": [ "*Plains_Gorge*" ],
-        "Prefab": [ "TrorkEvo.TrorkEvo_Stronghold_MarbleCave" ],
+        "Prefab": [ "TrorkEvo.BasePack.TrorkEvo_Stronghold_MarbleCave" ],
         "Weight": [ 1.0 ],
         "Pattern": {
             "GridGenerator": {
