@@ -5,6 +5,16 @@
       "Name": "TrorkEvo_Fodder_Club",
       "Weight": 50,
       "SpawnAfterGameTime": "P1D"
+    },
+    {
+      "Name": "TrorkEvo_Fodder_Sword",
+      "Weight": 50,
+      "SpawnAfterGameTime": "P1D"
+    },
+    {
+      "Name": "TrorkEvo_Fodder_Battleaxe",
+      "Weight": 50,
+      "SpawnAfterGameTime": "P1D"
     }
   ],
   "ExclusionRadius": 20,

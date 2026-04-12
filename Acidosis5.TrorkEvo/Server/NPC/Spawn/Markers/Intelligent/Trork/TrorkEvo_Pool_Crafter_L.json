@@ -1,0 +1,23 @@
+{
+  "Model": "NPC_Spawn_Marker",
+  "NPCs": [
+    {
+      "Name": "TrorkEvo_Hamr",
+      "SpawnAfterGameTime": "P1D",
+      "Weight": 20
+    },
+    {
+      "Name": "TrorkEvo_Sandcaster",
+      "SpawnAfterGameTime": "P1D",
+      "Weight": 40
+    },
+    {
+      "Name": "TrorkEvo_Bard",
+      "SpawnAfterGameTime": "P1D",
+      "Weight": 40
+    }
+  ],
+  "ExclusionRadius": 25,
+  "MaxDropHeight": 4,
+  "DeactivationDistance": 150
+}

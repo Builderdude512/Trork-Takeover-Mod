@@ -1,7 +1,7 @@
 [
     {
         "Id": "CampQuarry",
-        "ZoneMask": [ "*" ],
+        "ZoneMask": [ "*Zone1*" ],
         "BiomeMask": [ "*Plains*" ],
         "Prefab": [ "TrorkEvo.BasePack.TrorkEvo_Camp_Quarry" ],
         "Weight": [ 1.0 ],
@@ -9,7 +9,7 @@
             "GridGenerator": {
                 "Seed": "Pattern_Monuments",
                 "Density": [ 0.35, 0.45 ],
-                "Scale": 0.015,
+                "Scale": 0.005,
                 "Jitter": 0.75
             },
             "HeightThreshold": {

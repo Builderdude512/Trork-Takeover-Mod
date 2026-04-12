@@ -2,7 +2,7 @@
   "version": 8,
   "blockIdVersion": 11,
   "anchorX": 0,
-  "anchorY": 0,
+  "anchorY": 4,
   "anchorZ": 0,
   "blocks": [
     {
@@ -2501,82 +2501,112 @@
   ],
   "entities": [
     {
-      "Components": {
-        "Prop": {},
-        "Model": {
-          "Model": {
-            "Id": "NPC_Spawn_Marker",
-            "Scale": 1.0,
-            "Static": true
-          }
-        },
-        "Transform": {
-          "Position": {
-            "X": -0.7102279663085938,
-            "Y": 5.337169647216797,
-            "Z": 2.4812088012695312
-          },
-          "Rotation": {
-            "Pitch": 0.0,
-            "Yaw": 3.1414027214050293,
-            "Roll": 0.0
-          }
-        },
-        "UUID": {
-          "UUID": {
-            "$binary": "xL734CX5M+a2uSx/Rk/7IQ==",
-            "$type": "04"
-          }
-        },
-        "FromPrefab": {},
-        "PrefabCopyable": {},
-        "HeadRotation": {
-          "Rotation": {
-            "Pitch": 0.0,
-            "Yaw": 3.1414027214050293,
-            "Roll": 0.0
-          }
+        "Components": {
+            "Nameplate": {
+                "Text": "1"
+            },
+            "HiddenFromAdventurePlayer": {},
+            "SpawnMarkerComponent": {
+                "SpawnMarker": "TrorkEvo_Pool_Fodder",
+                "RespawnTime": 0.0,
+                "SpawnCount": 0,
+                "NPCReferences": [],
+                "PersistedFlock": {},
+                "SpawnPosition": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                }
+            },
+            "Prop": {},
+            "Model": {
+                "Model": {
+                    "Id": "NPC_Spawn_Marker",
+                    "Scale": 1.0,
+                    "Static": true
+                }
+            },
+            "Transform": {
+                "Position": {
+                    "X": -0.7102279663085938,
+                    "Y": 5.337169647216797,
+                    "Z": 2.4812088012695312
+                },
+                "Rotation": {
+                    "Pitch": 0.0,
+                    "Yaw": 3.1414027214050293,
+                    "Roll": 0.0
+                }
+            },
+            "UUID": {
+                "UUID": {
+                    "$binary": "ZvM+ERMzPyyr5Udnh+eREA==",
+                    "$type": "04"
+                }
+            },
+            "PrefabCopyable": {},
+            "HeadRotation": {
+                "Rotation": {
+                    "Pitch": 0.0,
+                    "Yaw": 3.1414027214050293,
+                    "Roll": 0.0
+                }
+            }
         }
-      }
     },
     {
-      "Components": {
-        "Prop": {},
-        "Model": {
-          "Model": {
-            "Id": "NPC_Spawn_Marker",
-            "Scale": 1.0,
-            "Static": true
-          }
-        },
-        "Transform": {
-          "Position": {
-            "X": 1.7718505859375,
-            "Y": 5.227977752685547,
-            "Z": 0.8843841552734375
-          },
-          "Rotation": {
-            "Pitch": 0.0,
-            "Yaw": 3.1414027214050293,
-            "Roll": 0.0
-          }
-        },
-        "UUID": {
-          "UUID": {
-            "$binary": "PENHxGVHOPmAqcmiTX2abA==",
-            "$type": "04"
-          }
-        },
-        "FromPrefab": {},
-        "PrefabCopyable": {},
-        "HeadRotation": {
-          "Rotation": {
-            "Pitch": 0.0,
-            "Yaw": 3.1414027214050293,
-            "Roll": 0.0
-          }
+        "Components": {
+            "Nameplate": {
+                "Text": "2"
+            },
+            "HiddenFromAdventurePlayer": {},
+            "SpawnMarkerComponent": {
+                "SpawnMarker": "TrorkEvo_Pool_Fodder",
+                "RespawnTime": 0.0,
+                "SpawnCount": 0,
+                "NPCReferences": [],
+                "PersistedFlock": {},
+                "SpawnPosition": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                }
+            },
+            "Prop": {},
+            "Model": {
+                "Model": {
+                    "Id": "NPC_Spawn_Marker",
+                    "Scale": 1.0,
+                    "Static": true
+                }
+            },
+            "Transform": {
+                "Position": {
+                    "X": 1.7718505859375,
+                    "Y": 5.227977752685547,
+                    "Z": 0.8843841552734375
+                },
+                "Rotation": {
+                    "Pitch": 0.0,
+                    "Yaw": 3.1414027214050293,
+                    "Roll": 0.0
+                }
+            },
+            "UUID": {
+                "UUID": {
+                    "$binary": "ewGG8UoVMXCQKc9Zigkeng==",
+                    "$type": "04"
+                }
+            },
+            "PrefabCopyable": {},
+            "HeadRotation": {
+                "Rotation": {
+                    "Pitch": 0.0,
+                    "Yaw": 3.1414027214050293,
+                    "Roll": 0.0
+                }
+            }
         }
-      }
     }
   ]
 }

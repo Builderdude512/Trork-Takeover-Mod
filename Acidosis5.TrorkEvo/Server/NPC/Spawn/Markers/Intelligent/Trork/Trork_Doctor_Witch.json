@@ -8,8 +8,8 @@
     },
     {
       "Name": "TrorkEvo_Pyro",
-      "Weight": 25,
-      "SpawnAfterGameTime": "P2D"
+      "Weight": 20,
+      "SpawnAfterGameTime": "P1D"
     }
   ],
   "ExclusionRadius": 20,

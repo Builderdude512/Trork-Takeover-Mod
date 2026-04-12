@@ -2,7 +2,7 @@
   "version": 8,
   "blockIdVersion": 11,
   "anchorX": 0,
-  "anchorY": 0,
+  "anchorY": 4,
   "anchorZ": 0,
   "blocks": [
     {
@@ -2372,43 +2372,58 @@
   ],
   "entities": [
     {
-      "Components": {
-        "Prop": {},
-        "Model": {
-          "Model": {
-            "Id": "NPC_Spawn_Marker",
-            "Scale": 1.0,
-            "Static": true
-          }
-        },
-        "Transform": {
-          "Position": {
-            "X": 2.4479217529296875,
-            "Y": 18.690200805664062,
-            "Z": 2.3492431640625
-          },
-          "Rotation": {
-            "Pitch": 0.0,
-            "Yaw": -3.1237447261810303,
-            "Roll": 0.0
-          }
-        },
-        "UUID": {
-          "UUID": {
-            "$binary": "0y3O1R4oOPCjGuucdJYE7w==",
-            "$type": "04"
-          }
-        },
-        "FromPrefab": {},
-        "PrefabCopyable": {},
-        "HeadRotation": {
-          "Rotation": {
-            "Pitch": 0.0,
-            "Yaw": -3.1237447261810303,
-            "Roll": 0.0
-          }
+        "Components": {
+            "Nameplate": {
+                "Text": "1"
+            },
+            "HiddenFromAdventurePlayer": {},
+            "SpawnMarkerComponent": {
+                "SpawnMarker": "TrorkEvo_Pool_Grunt",
+                "RespawnTime": 0.0,
+                "SpawnCount": 0,
+                "NPCReferences": [],
+                "PersistedFlock": {},
+                "SpawnPosition": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                }
+            },
+            "Prop": {},
+            "Model": {
+                "Model": {
+                    "Id": "NPC_Spawn_Marker",
+                    "Scale": 1.0,
+                    "Static": true
+                }
+            },
+            "Transform": {
+                "Position": {
+                    "X": 2.4479217529296875,
+                    "Y": 18.690200805664062,
+                    "Z": 2.3492431640625
+                },
+                "Rotation": {
+                    "Pitch": 0.0,
+                    "Yaw": -3.1237447261810303,
+                    "Roll": 0.0
+                }
+            },
+            "UUID": {
+                "UUID": {
+                    "$binary": "5VsHVK0wNDSrwHXbFUKCZw==",
+                    "$type": "04"
+                }
+            },
+            "PrefabCopyable": {},
+            "HeadRotation": {
+                "Rotation": {
+                    "Pitch": 0.0,
+                    "Yaw": -3.1237447261810303,
+                    "Roll": 0.0
+                }
+            }
         }
-      }
     }
   ]
 }

@@ -2,7 +2,7 @@
   "version": 8,
   "blockIdVersion": 11,
   "anchorX": 0,
-  "anchorY": 0,
+  "anchorY": 5,
   "anchorZ": 0,
   "blocks": [
     {
@@ -14297,11 +14297,10 @@
         },
         "UUID": {
           "UUID": {
-            "$binary": "mbzXZ0lbN0+WhXMVbbYq5w==",
+            "$binary": "fl9zx720PlqiG+xG0mpATg==",
             "$type": "04"
           }
         },
-        "FromPrefab": {},
         "PrefabCopyable": {},
         "HeadRotation": {
           "Rotation": {
@@ -14336,11 +14335,10 @@
         },
         "UUID": {
           "UUID": {
-            "$binary": "lJ1Lh30ZNz6AEpM2l6tNTA==",
+            "$binary": "uBUkY2dLOjacpiZwKa1QdA==",
             "$type": "04"
           }
         },
-        "FromPrefab": {},
         "PrefabCopyable": {},
         "HeadRotation": {
           "Rotation": {
@@ -14375,11 +14373,10 @@
         },
         "UUID": {
           "UUID": {
-            "$binary": "3dTc8XmcMJK0RzdLSRqw1g==",
+            "$binary": "3g6LpggsPSm5UgvxwS+XFg==",
             "$type": "04"
           }
         },
-        "FromPrefab": {},
         "PrefabCopyable": {},
         "HeadRotation": {
           "Rotation": {
@@ -14414,11 +14411,10 @@
         },
         "UUID": {
           "UUID": {
-            "$binary": "ma3O6EOkMKmOpLerf3WDCA==",
+            "$binary": "Mp0GK4NkPsaszjuY3tzbiQ==",
             "$type": "04"
           }
         },
-        "FromPrefab": {},
         "PrefabCopyable": {},
         "HeadRotation": {
           "Rotation": {

@@ -2,7 +2,7 @@
   "version": 8,
   "blockIdVersion": 11,
   "anchorX": 0,
-  "anchorY": 0,
+  "anchorY": 5,
   "anchorZ": 0,
   "blocks": [
     {
@@ -15794,11 +15794,10 @@
         },
         "UUID": {
           "UUID": {
-            "$binary": "6JBZYIq2MgSs3XL0u6/nfg==",
+            "$binary": "cygd8PFZOQKgu8mRC0nhww==",
             "$type": "04"
           }
         },
-        "FromPrefab": {},
         "PrefabCopyable": {},
         "HeadRotation": {
           "Rotation": {
@@ -15833,11 +15832,10 @@
         },
         "UUID": {
           "UUID": {
-            "$binary": "fTufsCciN9acnidcOJiAlw==",
+            "$binary": "ej2SxF8OOSqHLZFmqShL+w==",
             "$type": "04"
           }
         },
-        "FromPrefab": {},
         "PrefabCopyable": {},
         "HeadRotation": {
           "Rotation": {

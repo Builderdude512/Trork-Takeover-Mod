@@ -9,7 +9,7 @@
     {
       "Name": "TrorkEvo_Monk",
       "Weight": 15,
-      "SpawnAfterGameTime": "P2D"
+      "SpawnAfterGameTime": "P1D"
     }
   ],
   "ExclusionRadius": 20,

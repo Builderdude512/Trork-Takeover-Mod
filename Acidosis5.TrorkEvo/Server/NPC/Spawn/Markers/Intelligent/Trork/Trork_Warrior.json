@@ -7,9 +7,19 @@
       "SpawnAfterGameTime": "P1D"
     },
     {
-      "Name": "TrorkEvo_Tank",
-      "Weight": 25,
-      "SpawnAfterGameTime": "P2D"
+      "Name": "TrorkEvo_Fodder_Sword",
+      "Weight": 20,
+      "SpawnAfterGameTime": "P1D"
+    },
+    {
+      "Name": "TrorkEvo_Fodder_Club",
+      "Weight": 20,
+      "SpawnAfterGameTime": "P1D"
+    },
+    {
+      "Name": "TrorkEvo_Fodder_Battleaxe",
+      "Weight": 20,
+      "SpawnAfterGameTime": "P1D"
     }
   ],
   "ExclusionRadius": 20,

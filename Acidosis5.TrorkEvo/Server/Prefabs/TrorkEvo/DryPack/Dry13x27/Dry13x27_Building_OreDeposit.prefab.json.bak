@@ -14297,7 +14297,7 @@
         },
         "UUID": {
           "UUID": {
-            "$binary": "auqdld2vMSqJqXuljUuiTQ==",
+            "$binary": "mbzXZ0lbN0+WhXMVbbYq5w==",
             "$type": "04"
           }
         },
@@ -14336,10 +14336,11 @@
         },
         "UUID": {
           "UUID": {
-            "$binary": "lL7VAc3CMFCLvODfGaCCbA==",
+            "$binary": "lJ1Lh30ZNz6AEpM2l6tNTA==",
             "$type": "04"
           }
         },
+        "FromPrefab": {},
         "PrefabCopyable": {},
         "HeadRotation": {
           "Rotation": {
@@ -14374,10 +14375,11 @@
         },
         "UUID": {
           "UUID": {
-            "$binary": "V+iZQ14SPzOBahh/zxT99A==",
+            "$binary": "3dTc8XmcMJK0RzdLSRqw1g==",
             "$type": "04"
           }
         },
+        "FromPrefab": {},
         "PrefabCopyable": {},
         "HeadRotation": {
           "Rotation": {
@@ -14412,10 +14414,11 @@
         },
         "UUID": {
           "UUID": {
-            "$binary": "QGavTg7LO/iPr4D4XPpBuQ==",
+            "$binary": "ma3O6EOkMKmOpLerf3WDCA==",
             "$type": "04"
           }
         },
+        "FromPrefab": {},
         "PrefabCopyable": {},
         "HeadRotation": {
           "Rotation": {

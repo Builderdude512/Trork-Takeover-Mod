@@ -2,7 +2,7 @@
   "version": 8,
   "blockIdVersion": 11,
   "anchorX": 0,
-  "anchorY": 0,
+  "anchorY": 4,
   "anchorZ": 0,
   "blocks": [
     {
@@ -2441,6 +2441,62 @@
       "y": 4,
       "z": 4,
       "name": "Soil_Dirt_Dry"
+    }
+  ],
+  "entities": [
+    {
+        "Components": {
+            "Nameplate": {
+                "Text": "1"
+            },
+            "HiddenFromAdventurePlayer": {},
+            "SpawnMarkerComponent": {
+                "SpawnMarker": "TrorkEvo_Pool_Grunt",
+                "RespawnTime": 0.0,
+                "SpawnCount": 0,
+                "NPCReferences": [],
+                "PersistedFlock": {},
+                "SpawnPosition": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                }
+            },
+            "Prop": {},
+            "Model": {
+                "Model": {
+                    "Id": "NPC_Spawn_Marker",
+                    "Scale": 1.0,
+                    "Static": true
+                }
+            },
+            "Transform": {
+                "Position": {
+                    "X": 0.00983428955078125,
+                    "Y": 6.015224456787109,
+                    "Z": 1.6331787109375
+                },
+                "Rotation": {
+                    "Pitch": 0.0,
+                    "Yaw": -3.1023929119110107,
+                    "Roll": 0.0
+                }
+            },
+            "UUID": {
+                "UUID": {
+                    "$binary": "M6F5D+93MkiAOFT1BCZAsA==",
+                    "$type": "04"
+                }
+            },
+            "PrefabCopyable": {},
+            "HeadRotation": {
+                "Rotation": {
+                    "Pitch": 0.0,
+                    "Yaw": -3.1023929119110107,
+                    "Roll": 0.0
+                }
+            }
+        }
     }
   ]
 }

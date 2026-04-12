@@ -3,8 +3,13 @@
   "NPCs": [
     {
       "Name": "TrorkEvo_Slayer",
-      "Weight": 100,
-      "SpawnAfterGameTime": "P3D"
+      "Weight": 50,
+      "SpawnAfterGameTime": "P2D"
+    },
+    {
+      "Name": "TrorkEvo_Assassin",
+      "Weight": 25,
+      "SpawnAfterGameTime": "P2D"
     }
   ],
   "ExclusionRadius": 30,

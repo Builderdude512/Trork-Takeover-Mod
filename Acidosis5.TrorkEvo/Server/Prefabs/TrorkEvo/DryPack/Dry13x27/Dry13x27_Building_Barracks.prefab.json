@@ -2,7 +2,7 @@
   "version": 8,
   "blockIdVersion": 11,
   "anchorX": 0,
-  "anchorY": 0,
+  "anchorY": 4,
   "anchorZ": 0,
   "blocks": [
     {
@@ -14023,160 +14023,220 @@
   ],
   "entities": [
     {
-      "Components": {
-        "Prop": {},
-        "Model": {
-          "Model": {
-            "Id": "NPC_Spawn_Marker",
-            "Scale": 1.0,
-            "Static": true
-          }
-        },
-        "Transform": {
-          "Position": {
-            "X": -6.536773681640625,
-            "Y": 10.383941650390625,
-            "Z": 0.91546630859375
-          },
-          "Rotation": {
-            "Pitch": 0.0,
-            "Yaw": -3.07391619682312,
-            "Roll": 0.0
-          }
-        },
-        "UUID": {
-          "UUID": {
-            "$binary": "IYIYcht7PuW3dxBgbltG8Q==",
-            "$type": "04"
-          }
-        },
-        "FromPrefab": {},
-        "PrefabCopyable": {},
-        "HeadRotation": {
-          "Rotation": {
-            "Pitch": 0.0,
-            "Yaw": -3.07391619682312,
-            "Roll": 0.0
-          }
+        "Components": {
+            "Nameplate": {
+                "Text": "1"
+            },
+            "HiddenFromAdventurePlayer": {},
+            "SpawnMarkerComponent": {
+                "SpawnMarker": "TrorkEvo_Pool_Grunt",
+                "RespawnTime": 0.0,
+                "SpawnCount": 0,
+                "NPCReferences": [],
+                "PersistedFlock": {},
+                "SpawnPosition": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                }
+            },
+            "Prop": {},
+            "Model": {
+                "Model": {
+                    "Id": "NPC_Spawn_Marker",
+                    "Scale": 1.0,
+                    "Static": true
+                }
+            },
+            "Transform": {
+                "Position": {
+                    "X": -6.536773681640625,
+                    "Y": 10.383941650390625,
+                    "Z": 0.91546630859375
+                },
+                "Rotation": {
+                    "Pitch": 0.0,
+                    "Yaw": -3.07391619682312,
+                    "Roll": 0.0
+                }
+            },
+            "UUID": {
+                "UUID": {
+                    "$binary": "b6gtnBvHMC+SIMFEdCCYUw==",
+                    "$type": "04"
+                }
+            },
+            "PrefabCopyable": {},
+            "HeadRotation": {
+                "Rotation": {
+                    "Pitch": 0.0,
+                    "Yaw": -3.07391619682312,
+                    "Roll": 0.0
+                }
+            }
         }
-      }
     },
     {
-      "Components": {
-        "Prop": {},
-        "Model": {
-          "Model": {
-            "Id": "NPC_Spawn_Marker",
-            "Scale": 1.0,
-            "Static": true
-          }
-        },
-        "Transform": {
-          "Position": {
-            "X": -5.82379150390625,
-            "Y": 5.485584259033203,
-            "Z": -0.383880615234375
-          },
-          "Rotation": {
-            "Pitch": 0.0,
-            "Yaw": -2.716761350631714,
-            "Roll": 0.0
-          }
-        },
-        "UUID": {
-          "UUID": {
-            "$binary": "b5mL96ffMKeLOgEkRwl/YQ==",
-            "$type": "04"
-          }
-        },
-        "FromPrefab": {},
-        "PrefabCopyable": {},
-        "HeadRotation": {
-          "Rotation": {
-            "Pitch": 0.0,
-            "Yaw": -2.716761350631714,
-            "Roll": 0.0
-          }
+        "Components": {
+            "Nameplate": {
+                "Text": "2"
+            },
+            "HiddenFromAdventurePlayer": {},
+            "SpawnMarkerComponent": {
+                "SpawnMarker": "TrorkEvo_Pool_Soldier",
+                "RespawnTime": 0.0,
+                "SpawnCount": 0,
+                "NPCReferences": [],
+                "PersistedFlock": {},
+                "SpawnPosition": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                }
+            },
+            "Prop": {},
+            "Model": {
+                "Model": {
+                    "Id": "NPC_Spawn_Marker",
+                    "Scale": 1.0,
+                    "Static": true
+                }
+            },
+            "Transform": {
+                "Position": {
+                    "X": -5.82379150390625,
+                    "Y": 5.485584259033203,
+                    "Z": -0.383880615234375
+                },
+                "Rotation": {
+                    "Pitch": 0.0,
+                    "Yaw": -2.716761350631714,
+                    "Roll": 0.0
+                }
+            },
+            "UUID": {
+                "UUID": {
+                    "$binary": "XgegVpLbPX+cGGX4LXWm3w==",
+                    "$type": "04"
+                }
+            },
+            "PrefabCopyable": {},
+            "HeadRotation": {
+                "Rotation": {
+                    "Pitch": 0.0,
+                    "Yaw": -2.716761350631714,
+                    "Roll": 0.0
+                }
+            }
         }
-      }
     },
     {
-      "Components": {
-        "Prop": {},
-        "Model": {
-          "Model": {
-            "Id": "NPC_Spawn_Marker",
-            "Scale": 1.0,
-            "Static": true
-          }
-        },
-        "Transform": {
-          "Position": {
-            "X": 1.6685638427734375,
-            "Y": 5.170372009277344,
-            "Z": 5.2431640625
-          },
-          "Rotation": {
-            "Pitch": 0.0,
-            "Yaw": -2.988968849182129,
-            "Roll": 0.0
-          }
-        },
-        "UUID": {
-          "UUID": {
-            "$binary": "YjRzVbYYPt6Xy/xeGV9Q3g==",
-            "$type": "04"
-          }
-        },
-        "FromPrefab": {},
-        "PrefabCopyable": {},
-        "HeadRotation": {
-          "Rotation": {
-            "Pitch": 0.0,
-            "Yaw": -2.988968849182129,
-            "Roll": 0.0
-          }
+        "Components": {
+            "Nameplate": {
+                "Text": "3"
+            },
+            "HiddenFromAdventurePlayer": {},
+            "SpawnMarkerComponent": {
+                "SpawnMarker": "TrorkEvo_Pool_Grunt",
+                "RespawnTime": 0.0,
+                "SpawnCount": 0,
+                "NPCReferences": [],
+                "PersistedFlock": {},
+                "SpawnPosition": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                }
+            },
+            "Prop": {},
+            "Model": {
+                "Model": {
+                    "Id": "NPC_Spawn_Marker",
+                    "Scale": 1.0,
+                    "Static": true
+                }
+            },
+            "Transform": {
+                "Position": {
+                    "X": 1.6685638427734375,
+                    "Y": 5.170372009277344,
+                    "Z": 5.2431640625
+                },
+                "Rotation": {
+                    "Pitch": 0.0,
+                    "Yaw": -2.988968849182129,
+                    "Roll": 0.0
+                }
+            },
+            "UUID": {
+                "UUID": {
+                    "$binary": "tEsgxufaMUaELDEt/Chv0g==",
+                    "$type": "04"
+                }
+            },
+            "PrefabCopyable": {},
+            "HeadRotation": {
+                "Rotation": {
+                    "Pitch": 0.0,
+                    "Yaw": -2.988968849182129,
+                    "Roll": 0.0
+                }
+            }
         }
-      }
     },
     {
-      "Components": {
-        "Prop": {},
-        "Model": {
-          "Model": {
-            "Id": "NPC_Spawn_Marker",
-            "Scale": 1.0,
-            "Static": true
-          }
-        },
-        "Transform": {
-          "Position": {
-            "X": 8.260337829589844,
-            "Y": 5.343585968017578,
-            "Z": 2.8684921264648438
-          },
-          "Rotation": {
-            "Pitch": 0.0,
-            "Yaw": -2.716761350631714,
-            "Roll": 0.0
-          }
-        },
-        "UUID": {
-          "UUID": {
-            "$binary": "rPDdFmB8NHSXYljT/03+Jg==",
-            "$type": "04"
-          }
-        },
-        "FromPrefab": {},
-        "PrefabCopyable": {},
-        "HeadRotation": {
-          "Rotation": {
-            "Pitch": 0.0,
-            "Yaw": -2.716761350631714,
-            "Roll": 0.0
-          }
+        "Components": {
+            "Nameplate": {
+                "Text": "4"
+            },
+            "HiddenFromAdventurePlayer": {},
+            "SpawnMarkerComponent": {
+                "SpawnMarker": "TrorkEvo_Pool_Soldier",
+                "RespawnTime": 0.0,
+                "SpawnCount": 0,
+                "NPCReferences": [],
+                "PersistedFlock": {},
+                "SpawnPosition": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                }
+            },
+            "Prop": {},
+            "Model": {
+                "Model": {
+                    "Id": "NPC_Spawn_Marker",
+                    "Scale": 1.0,
+                    "Static": true
+                }
+            },
+            "Transform": {
+                "Position": {
+                    "X": 8.260337829589844,
+                    "Y": 5.343585968017578,
+                    "Z": 2.8684921264648438
+                },
+                "Rotation": {
+                    "Pitch": 0.0,
+                    "Yaw": -2.716761350631714,
+                    "Roll": 0.0
+                }
+            },
+            "UUID": {
+                "UUID": {
+                    "$binary": "y/7IRFxENZivgu519yDg2A==",
+                    "$type": "04"
+                }
+            },
+            "PrefabCopyable": {},
+            "HeadRotation": {
+                "Rotation": {
+                    "Pitch": 0.0,
+                    "Yaw": -2.716761350631714,
+                    "Roll": 0.0
+                }
+            }
         }
-      }
     }
   ]
 }
