@@ -1,0 +1,88 @@
+{
+  "Type": "Variant",
+  "Reference": "Template_TrorkEvo_Hybrid",
+  "Modify": {
+    "Appearance": "TrorkEvo_Shield",
+    "DropList": "Drop_TrorkEvo_Grunt",
+    "Weapons": [
+      "Weapon_Spear_Stone_Trork",
+      "Weapon_Spear_Stone_Trork"
+    ],
+    "MaxHealth": 80,
+    "IsMemory": false,
+    "ToMeleeRange": 5,
+    "MeleeMoveThreshold": 1,
+    "DesiredRangedAttackDistanceRange": [
+      7,
+      20
+    ],
+    "BreakOffRange": 6,
+    "AttackSequence": "Component_Instruction_Attack_Sequence_TrorkEvo_Spear",
+    "RangedAttackSequence": "Component_Instruction_Attack_Sequence_Ranged_TrorkEvo_Spear",
+    "_InteractionVars": {
+      "Melee_Light": {
+        "Interactions": [
+          {
+            "Parent": "NPC_Attack_Melee_Damage",
+            "DamageCalculator": {
+              "BaseDamage": {
+                "Physical": 12
+              }
+            }
+          }
+        ]
+      },
+      "Melee_Medium": {
+        "Interactions": [
+          {
+            "Parent": "NPC_Attack_Melee_Damage",
+            "DamageCalculator": {
+              "BaseDamage": {
+                "Physical": 16
+              }
+            },
+            "DamageEffects": {
+              "Knockback": {
+                "Force": 11,
+                "RelativeX": 0,
+                "RelativeZ": -2,
+                "VelocityY": 0.5,
+                "VelocityType": "Add"
+              }
+            }
+          }
+        ]
+      },
+      "Melee_Heavy": {
+        "Interactions": [
+          {
+            "Parent": "NPC_Attack_Melee_Damage",
+            "DamageCalculator": {
+              "BaseDamage": {
+                "Physical": 23
+              }
+            },
+            "DamageEffects": {
+              "Knockback": {
+                "Force": 15,
+                "RelativeX": 0,
+                "RelativeZ": -2,
+                "VelocityY": 0.5,
+                "VelocityType": "Add"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "NameTranslationKey": {
+      "Compute": "NameTranslationKey"
+    }
+  },
+  "Parameters": {
+    "NameTranslationKey": {
+      "Value": "TTO_Server.npcRoles.TrorkEvo_Pyro.name",
+      "Description": "TTO_Server.npcRoles.TrorkEvo_Pyro.description"
+    }
+  }
+}

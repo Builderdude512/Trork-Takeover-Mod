@@ -143,10 +143,6 @@
             }
           }
         ]
-      },
-      {
-        "Type": "Droplist",
-        "DroplistId": "Zone3_Encounters_Tier3"
       }
     ]
   }

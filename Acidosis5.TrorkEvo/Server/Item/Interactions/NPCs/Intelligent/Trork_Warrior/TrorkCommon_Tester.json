@@ -2,22 +2,26 @@
   "Type": "Simple",
   "Effects": {
     "ClearAnimationOnFinish": true,
-    "ItemPlayerAnimationsId": "Daggers",
-    "ItemAnimationId": "RazorstrikeCharging"
+    "ItemPlayerAnimationsId": "Trork_Spear",
+    "ItemAnimationId": "ThrowCharging"
   },
   "$Comment": "Prepare Delay",
-  "RunTime": 1,
+  "RunTime": 0.3,
   "Next": {
     "Type": "Simple",
     "Effects": {
-      "ItemPlayerAnimationsId": "Daggers",
-      "ItemAnimationId": "RazorstrikeSweep",
+      "ItemPlayerAnimationsId": "Trork_Spear",
+      "ItemAnimationId": "Stab",
       "Trails": [
         {
           "TrailId": "Small_Default",
           "TargetEntityPart": "PrimaryItem"
         }
-      ]
+      ],
+      "WaitForAnimationToFinish": true,
+      "MovementEffects": {
+        "DisableAll": true
+      }
     },
     "RunTime": 0.167,
     "Next": {
@@ -29,18 +33,15 @@
             {
               "Type": "Selector",
               "$Comment": "Length of Combat",
-              "RunTime": 0.25,
+              "RunTime": 0.2,
               "Selector": {
-                "Id": "Horizontal",
-                "Direction": "ToRight",
-                "TestLineOfSight": true,
-                "ExtendTop": 0.5,
-                "ExtendBottom": 0.5,
-                "StartDistance": 0.1,
-                "EndDistance": 3,
-                "Length": 90,
-                "RollOffset": 0,
-                "YawStartOffset": -45
+                "Id": "Stab",
+                "EndDistance": 4,
+                "ExtendTop": 0.3,
+                "ExtendBottom": 0.3,
+                "ExtendLeft": 0.3,
+                "ExtendRight": 0.3,
+                "TestLineOfSight": true
               },
               "HitEntity": {
                 "Interactions": [
@@ -66,8 +67,7 @@
               },
               "Next": {
                 "Type": "Simple",
-                "$Comment": "Pad the interaction length",
-                "RunTime": 0.65
+                "RunTime": 0.85
               }
             }
           ]
@@ -82,6 +82,11 @@
                 "WorldSoundEventId": "SFX_Light_Melee_T2_Swing"
               }
             }
+          ]
+        },
+        {
+          "Interactions": [
+            "TrorkCommon_Thrust_Forward_Light"
           ]
         }
       ]

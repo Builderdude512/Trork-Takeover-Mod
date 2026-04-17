@@ -1,0 +1,28 @@
+[
+    {
+        "Id": "Complex",
+        "ZoneMask": [ "*Zone2_Tier2*" ],
+        "BiomeMask": [ "*Tile.Desert_Red*" ],
+        "Prefab": [ "TrorkEvo.DryPack.DryStructures.Dry_Fort_Complex" ],
+        "Weight": [ 1.0 ],
+        "Pattern": {
+            "GridGenerator": {
+                "Seed": "Pattern_Monuments",
+                "Density": [ 0.65, 0.85 ],
+                "Scale": 0.004,
+                "Jitter": 0.75
+            },
+            "HeightThreshold": {
+                "Positions": [ 105, 109],
+                "Values": [ 0, 1 ]
+            },
+            "FitHeightmap": false,
+            "Mask": {
+                "File": "Zones.Masks.Zone2.Monuments_Encounter"
+            },
+            "MaxSize": 1000,
+            "ExclusionRadius": 1000
+        }
+
+    }
+]

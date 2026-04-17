@@ -28,7 +28,7 @@
               {
                 "Type": "Single",
                 "Item": {
-                  "ItemId": "Ore_Iron"
+                  "ItemId": "Ore_Copper"
                 },
                 "Weight": 15
               }

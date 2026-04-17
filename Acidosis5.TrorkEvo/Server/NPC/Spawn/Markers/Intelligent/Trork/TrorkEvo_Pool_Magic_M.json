@@ -9,12 +9,17 @@
     {
       "Name": "TrorkEvo_Pyro",
       "SpawnAfterGameTime": "P1D",
-      "Weight": 50
+      "Weight": 20
+    },
+    {
+      "Name": "Trork_Doctor_Witch",
+      "SpawnAfterGameTime": "P1D",
+      "Weight": 20
     },
     {
       "Name": "TrorkEvo_Sandcaster",
       "SpawnAfterGameTime": "P1D",
-      "Weight": 50
+      "Weight": 20
     }
   ],
   "ExclusionRadius": 25,

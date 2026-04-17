@@ -1,0 +1,12 @@
+{
+  "Interactions": [
+    "TrorkCommon_SpearLight_Projectile",
+    "TrorkCommon_SpearLight_Projectile",
+    "TrorkCommon_SpearLight_Projectile"
+  ],
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  }
+}

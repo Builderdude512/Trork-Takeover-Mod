@@ -1,0 +1,32 @@
+{
+  "Parent": "Trork",
+  "Texture": "NPC/Intelligent/Trork/Models/Model_Textures/Blue_Dark.png",
+  "DefaultAttachments": [
+    {
+      "Model": "NPC/Intelligent/Trork/Models/Attachments/Eyes/Eyes.blockymodel",
+      "Texture": "NPC/Intelligent/Trork/Models/Attachments/Eyes/Eyes_Textures/Orange.png"
+    },
+    {
+      "Model": "NPC/Intelligent/Trork/Models/Attachments/MinionChest.blockymodel",
+      "Texture": "NPC/Intelligent/Trork/Models/Attachments/MinionChestTexture.png"
+    },
+    {
+      "Model": "NPC/Intelligent/Trork/Models/Attachments/MinionHead.blockymodel",
+      "Texture": "NPC/Intelligent/Trork/Models/Attachments/MinionHead.png"
+    }
+  ],
+  "AnimationSets": {
+    "Sleep": {
+      "Animations": [
+        {
+          "Animation": "NPC/Intelligent/Trork/Animations/Flavor/Sleep_Spear.blockyanim",
+          "SoundEventId": "SFX_Trork_Sleep",
+          "Speed": 0.5
+        }
+      ]
+    }
+  },
+  "MaxScale": 0.9,
+  "MinScale": 0.9,
+  "EyeHeight": 1.8
+}

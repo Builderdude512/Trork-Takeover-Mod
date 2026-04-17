@@ -13,24 +13,25 @@
                 "Type": "Single",
                 "Item": {
                   "ItemId": "Ingredient_Fabric_Scrap_Linen",
-                  "QuantityMax": 4
+                  "QuantityMax": 6
                 },
-                "Weight": 60
+                "Weight": 40
               },
               {
                 "Type": "Single",
                 "Item": {
                   "ItemId": "Ingredient_Leather_Heavy",
-                  "QuantityMax": 2
+                  "QuantityMax": 3
                 },
-                "Weight": 27
+                "Weight": 30
               },
               {
                 "Type": "Single",
                 "Item": {
-                  "ItemId": "Ore_Thorium"
+                  "ItemId": "Ore_Iron",
+                  "QuantityMax": 3
                 },
-                "Weight": 13
+                "Weight": 30
               }
             ]
           }
@@ -38,40 +39,40 @@
       },
       {
         "Type": "Choice",
-        "Weight": 5,
+        "Weight": 50,
         "Containers": [
           {
             "Weight": 25,
             "Type": "Single",
             "Item": {
-              "ItemId": "Armor_Trork_Head",
-              "QuantityMin": 1,
-              "QuantityMax": 1
+              "ItemId": "Ingredient_Bar_Copper",
+              "QuantityMin": 4,
+              "QuantityMax": 6
             }
           },
           {
             "Weight": 25,
             "Type": "Single",
             "Item": {
-              "ItemId": "Armor_Trork_Chest",
-              "QuantityMin": 1,
-              "QuantityMax": 1
+              "ItemId": "Ingredient_Bar_Iron",
+              "QuantityMin": 3,
+              "QuantityMax": 5
             }
           },
           {
             "Weight": 25,
             "Type": "Single",
             "Item": {
-              "ItemId": "Armor_Trork_Hands",
-              "QuantityMin": 1,
-              "QuantityMax": 1
+              "ItemId": "Ingredient_Bar_Gold",
+              "QuantityMin": 2,
+              "QuantityMax": 3
             }
           },
           {
             "Weight": 25,
             "Type": "Single",
             "Item": {
-              "ItemId": "Armor_Trork_Legs",
+              "ItemId": "Potion_Health_Small",
               "QuantityMin": 1,
               "QuantityMax": 1
             }

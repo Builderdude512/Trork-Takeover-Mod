@@ -1,0 +1,14 @@
+{
+  "Entries": [
+    {
+      "Name": "Furniture_Crude_Chest_Small",
+      "State": {
+        "Custom": false,
+        "AllowViewing": true,
+        "Type": "container",
+        "Droplist": "TrorkEvo_Z2_Magic1"
+      },
+      "Weight": 100
+    }
+  ]
+}

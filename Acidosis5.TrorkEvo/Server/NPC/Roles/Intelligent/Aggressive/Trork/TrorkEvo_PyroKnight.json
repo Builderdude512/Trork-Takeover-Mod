@@ -2,7 +2,7 @@
   "Type": "Variant",
   "Reference": "Template_TrorkEvo_Hybrid",
   "Modify": {
-    "Appearance": "TrorkEvo_Monk",
+    "Appearance": "TrorkEvo_PyroKnight",
     "IdleMotionComponent": "Component_Trork_Instruction_Idle_Motion_Follow_Path",
     "DropList": "Drop_TrorkEvo_Soldier",
     "Weapons": [

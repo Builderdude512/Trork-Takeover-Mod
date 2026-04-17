@@ -1,0 +1,149 @@
+{
+  "Container": {
+    "Type": "Multiple",
+    "Containers": [
+      {
+        "Type": "Choice",
+        "RollsMin": 2,
+        "RollsMax": 3,
+        "Containers": [
+          {
+            "Type": "Single",
+            "Weight": 5,
+            "Item": {
+              "ItemId": "Ingredient_Chitin_Sturdy",
+              "QuantityMin": 2,
+              "QuantityMax": 3
+            }
+          },
+          {
+            "Type": "Single",
+            "Weight": 5,
+            "Item": {
+              "ItemId": "Ingredient_Sac_Venom",
+              "QuantityMin": 2,
+              "QuantityMax": 3
+            }
+          },
+          {
+            "Type": "Single",
+            "Weight": 5,
+            "Item": {
+              "ItemId": "Ingredient_Leather_Heavy",
+              "QuantityMin": 2,
+              "QuantityMax": 4
+            }
+          },
+          {
+            "Type": "Single",
+            "Weight": 5,
+            "Item": {
+              "ItemId": "Ingredient_Bone_Fragment",
+              "QuantityMin": 2,
+              "QuantityMax": 3
+            }
+          },
+          {
+            "Type": "Single",
+            "Weight": 5,
+            "Item": {
+              "ItemId": "Deco_Bone_Skulls",
+              "QuantityMin": 1,
+              "QuantityMax": 2
+            }
+          },
+          {
+            "Type": "Single",
+            "Weight": 3,
+            "Item": {
+              "ItemId": "Food_Kebab_Mushroom",
+              "QuantityMin": 2,
+              "QuantityMax": 3
+            }
+          },
+          {
+            "Type": "Single",
+            "Weight": 3,
+            "Item": {
+              "ItemId": "Deco_Book_Pile_Small",
+              "QuantityMin": 1,
+              "QuantityMax": 2
+            }
+          },
+          {
+            "Type": "Single",
+            "Weight": 3,
+            "Item": {
+              "ItemId": "Food_Kebab_Meat",
+              "QuantityMin": 2,
+              "QuantityMax": 3
+            }
+          },
+          {
+            "Type": "Single",
+            "Weight": 3,
+            "Item": {
+              "ItemId": "Plant_Crop_Health2",
+              "QuantityMin": 2,
+              "QuantityMax": 3
+            }
+          },
+          {
+            "Type": "Single",
+            "Weight": 3,
+            "Item": {
+              "ItemId": "Plant_Crop_Mana2",
+              "QuantityMin": 2,
+              "QuantityMax": 3
+            }
+          },
+          {
+            "Type": "Single",
+            "Weight": 3,
+            "Item": {
+              "ItemId": "Plant_Crop_Stamina2",
+              "QuantityMin": 2,
+              "QuantityMax": 3
+            }
+          },
+          {
+            "Type": "Single",
+            "Weight": 1,
+            "Item": {
+              "ItemId": "Ingredient_Bar_Thorium",
+              "QuantityMin": 2,
+              "QuantityMax": 3
+            }
+          },
+          {
+            "Type": "Single",
+            "Weight": 1,
+            "Item": {
+              "ItemId": "Ingredient_Life_Essence",
+              "QuantityMin": 6,
+              "QuantityMax": 12
+            }
+          },
+          {
+            "Type": "Single",
+            "Weight": 1,
+            "Item": {
+              "ItemId": "Deco_Bone_Skulls_Wall",
+              "QuantityMin": 3,
+              "QuantityMax": 4
+            }
+          },
+          {
+            "Type": "Single",
+            "Weight": 1,
+            "Item": {
+              "ItemId": "Potion_Health_Lesser",
+              "QuantityMin": 1,
+              "QuantityMax": 1
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

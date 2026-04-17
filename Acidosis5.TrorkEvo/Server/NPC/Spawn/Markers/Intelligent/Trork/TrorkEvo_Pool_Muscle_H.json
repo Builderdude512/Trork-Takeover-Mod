@@ -2,7 +2,7 @@
   "Model": "NPC_Spawn_Marker",
   "NPCs": [
     {
-      "Name": "TrorkEvo_Hamr",
+      "Name": "Trork_Chieftain",
       "SpawnAfterGameTime": "P1D",
       "Weight": 40
     },

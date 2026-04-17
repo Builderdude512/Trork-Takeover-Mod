@@ -1,0 +1,101 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ClearAnimationOnFinish": true,
+    "ItemPlayerAnimationsId": "Trork_Spear",
+    "ItemAnimationId": "SpinSwingLeftHeavy",
+    "Particles": [
+      {
+        "SystemId": "Mace_Charging",
+        "TargetEntityPart": "PrimaryItem",
+        "Scale": 1.3,
+        "PositionOffset": {
+          "Y": 0.3
+        }
+      }
+    ]
+  },
+  "$Comment": "Prepare Delay",
+  "RunTime": 0.75,
+  "Next": {
+    "Type": "Simple",
+    "Effects": {
+      "ItemPlayerAnimationsId": "Trork_Spear",
+      "ItemAnimationId": "SwingLeft",
+      "Trails": [
+        {
+          "TrailId": "Small_Default",
+          "TargetEntityPart": "PrimaryItem"
+        }
+      ],
+      "WaitForAnimationToFinish": true
+    },
+    "RunTime": 0.167,
+    "Next": {
+      "Type": "Parallel",
+      "$Comment": "Make sure this parallel interaction is needed and can\u0027t be optimized away",
+      "Interactions": [
+        {
+          "Interactions": [
+            {
+              "Type": "Selector",
+              "$Comment": "Length of Combat",
+              "RunTime": 0.25,
+              "Selector": {
+                "Id": "Horizontal",
+                "Direction": "ToLeft",
+                "TestLineOfSight": true,
+                "ExtendTop": 0.5,
+                "ExtendBottom": 0.5,
+                "StartDistance": 0.1,
+                "EndDistance": 4,
+                "Length": 90,
+                "RollOffset": 0,
+                "YawStartOffset": -45
+              },
+              "HitEntity": {
+                "Interactions": [
+                  {
+                    "Effects": {
+                      "Particles": [
+                        {
+                          "TargetEntityPart": "PrimaryItem",
+                          "SystemId": "Impact_Shield_Bash",
+                          "Scale": 0.5
+                        }
+                      ]
+                    },
+                    "Type": "Replace",
+                    "DefaultValue": {
+                      "Interactions": [
+                        "NPC_Attack_Melee_Damage"
+                      ]
+                    },
+                    "Var": "Melee_Heavy"
+                  }
+                ]
+              },
+              "Next": {
+                "Type": "Simple",
+                "$Comment": "Pad the interaction length",
+                "RunTime": 0.65
+              }
+            }
+          ]
+        },
+        {
+          "Interactions": [
+            {
+              "Type": "Simple",
+              "$Comment": "Length of Effect",
+              "RunTime": 0.25,
+              "Effects": {
+                "WorldSoundEventId": "SFX_Light_Melee_T2_Swing"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

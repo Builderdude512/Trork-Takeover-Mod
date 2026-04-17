@@ -4,12 +4,12 @@
     {
       "Name": "TrorkEvo_Hamr",
       "SpawnAfterGameTime": "P1D",
-      "Weight": 20
+      "Weight": 40
     },
     {
-      "Name": "TrorkEvo_Sandcaster",
+      "Name": "TrorkEvo_Minion",
       "SpawnAfterGameTime": "P1D",
-      "Weight": 40
+      "Weight": 20
     },
     {
       "Name": "TrorkEvo_Bard",

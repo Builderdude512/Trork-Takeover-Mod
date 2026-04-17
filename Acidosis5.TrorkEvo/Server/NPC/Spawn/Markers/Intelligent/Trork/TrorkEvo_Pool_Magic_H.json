@@ -2,9 +2,9 @@
   "Model": "NPC_Spawn_Marker",
   "NPCs": [
     {
-      "Name": "TrorkEvo_Bard",
+      "Name": "Trork_Shaman",
       "SpawnAfterGameTime": "P1D",
-      "Weight": 20
+      "Weight": 30
     },
     {
       "Name": "TrorkEvo_Pyro",

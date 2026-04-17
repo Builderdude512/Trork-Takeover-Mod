@@ -1,0 +1,42 @@
+{
+  "Model": "Spear_Stone_Trork",
+  "LaunchForce": 35,
+  "Physics": {
+    "Type": "Standard",
+    "Gravity": 6,
+    "TerminalVelocityAir": 35,
+    "TerminalVelocityWater": 35,
+    "RotationMode": "VelocityDamped",
+    "BounceCount": 0,
+    "SticksVertically": true
+  },
+  "Interactions": {
+    "ProjectileHit": {
+      "Interactions": [
+        {
+          "Type": "DamageEntity",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Projectile": 12
+            }
+          },
+          "DamageEffects": {
+            "Knockback": {
+              "Force": -7
+            }
+          }
+        },
+        "Common_Projectile_Despawn"
+      ]
+    },
+    "ProjectileMiss": {
+      "Interactions": [
+        {
+          "Type": "Simple",
+          "RunTime": 1
+        },
+        "Common_Projectile_Despawn"
+      ]
+    }
+  }
+}

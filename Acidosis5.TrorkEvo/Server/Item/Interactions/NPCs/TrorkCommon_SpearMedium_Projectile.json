@@ -1,0 +1,30 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemPlayerAnimationsId": "Trork_Spear",
+    "ItemAnimationId": "ThrowCharging",
+    "ClearAnimationOnFinish": true,
+    "MovementEffects": {
+      "DisableAll": true
+    },
+    "Particles": [
+      {
+        "SystemId": "Mace_Charging",
+        "TargetEntityPart": "PrimaryItem",
+        "Scale": 1
+      }
+    ]
+  },
+  "$Comment": "Prepare Delay",
+  "Next": {
+    "Type": "Projectile",
+    "Config": "Projectile_Config_SpearMedium",
+    "Effects": {
+      "ItemPlayerAnimationsId": "Trork_Spear",
+      "ItemAnimationId": "ThrowCharged",
+      "ClearAnimationOnFinish": true
+    },
+    "RunTime": 0.35
+  },
+  "RunTime": 0.85
+}

@@ -1,0 +1,57 @@
+{
+  "Parent": "Trork",
+  "Texture": "NPC/Intelligent/Trork/Models/Attachments/BolderSkinTexture.png",
+  "DefaultAttachments": [
+    {
+      "Model": "NPC/Intelligent/Trork/Models/Attachments/Eyebrows/Eyebrows.blockymodel",
+      "Texture": "NPC/Intelligent/Trork/Models/Attachments/Eyebrows/Eyebrows_Textures/Brown.png"
+    },
+    {
+      "Model": "NPC/Intelligent/Trork/Models/Attachments/Haircuts/Samurai.blockymodel",
+      "Texture": "NPC/Intelligent/Trork/Models/Attachments/Haircuts/Samurai_Textures/BrownLight.png"
+    },
+    {
+      "Model": "NPC/Intelligent/Trork/Models/Attachments/MageChest.blockymodel",
+      "Texture": "NPC/Intelligent/Trork/Models/Attachments/Mage_Chest_Texture.png"
+    },
+    {
+      "Model": "NPC/Intelligent/Trork/Models/Attachments/Shaman/Feet.blockymodel",
+      "Texture": "NPC/Intelligent/Trork/Models/Attachments/Shaman/Feet_Texture.png"
+    },
+    {
+      "Model": "NPC/Intelligent/Trork/Models/Attachments/Shaman/Hands.blockymodel",
+      "Texture": "NPC/Intelligent/Trork/Models/Attachments/Shaman/Hands_Texture.png"
+    }
+  ],
+  "RandomAttachmentSets": {
+    "Eyes": {
+      "Eye1": {
+        "Model": "NPC/Intelligent/Trork/Models/Attachments/Eyes/Eyes.blockymodel",
+        "Texture": "NPC/Intelligent/Trork/Models/Attachments/Eyes/Eyes_Textures/Orange.png",
+        "Weight": 5
+      },
+      "Eye2": {
+        "Model": "NPC/Intelligent/Trork/Models/Attachments/Eyes/Eyes.blockymodel",
+        "Texture": "NPC/Intelligent/Trork/Models/Attachments/Eyes/Eyes_Textures/One_Eye.png"
+      }
+    }
+  },
+  "MinScale": 0.95,
+  "MaxScale": 0.95,
+  "EyeHeight": 1.65,
+  "Particles": [
+    {
+      "SystemId": "Candle_Fire",
+      "TargetEntityPart": "Self",
+      "PositionOffset": {
+        "Y": 0.35
+      },
+      "Scale": 1.5,
+      "TargetNodeName": "Head",
+      "Color": "#da9950"
+    }
+  ],
+  "Light": {
+    "Color": "#985"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemPlayerAnimationsId": "Trork_Spear",
+    "ItemAnimationId": "ThrowCharging",
+    "ClearAnimationOnFinish": true
+  },
+  "$Comment": "Prepare Delay",
+  "Next": {
+    "Type": "Projectile",
+    "Config": "Projectile_Config_SpearLight",
+    "Effects": {
+      "ItemPlayerAnimationsId": "Trork_Spear",
+      "ItemAnimationId": "Throw",
+      "ClearAnimationOnFinish": true
+    },
+    "RunTime": 0.35
+  },
+  "RunTime": 0.5
+}

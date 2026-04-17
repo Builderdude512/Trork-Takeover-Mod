@@ -7,12 +7,12 @@
       "Weight": 40
     },
     {
-      "Name": "TrorkEvo_Sandcaster",
+      "Name": "TrorkEvo_Fodder_Battleaxe",
       "SpawnAfterGameTime": "P1D",
       "Weight": 20
     },
     {
-      "Name": "TrorkEvo_Monk",
+      "Name": "TrorkEvo_Fodder_Sword",
       "SpawnAfterGameTime": "P1D",
       "Weight": 20
     }

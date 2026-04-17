@@ -19,8 +19,8 @@
       "Texture": "NPC/Intelligent/Trork/Models/Attachments/Warrior/Chest_Texture.png"
     },
     {
-      "Model": "NPC/Intelligent/Trork/Models/Attachments/Warrior/Feet.blockymodel",
-      "Texture": "NPC/Intelligent/Trork/Models/Attachments/Warrior/Feet_Texture.png"
+      "Model": "NPC/Intelligent/Trork/Models/Attachments/Hunter/Feet.blockymodel",
+      "Texture": "NPC/Intelligent/Trork/Models/Attachments/Hunter/Feet_Texture.png"
     },
     {
       "Model": "NPC/Intelligent/Trork/Models/Attachments/Hunter/Hands.blockymodel",
