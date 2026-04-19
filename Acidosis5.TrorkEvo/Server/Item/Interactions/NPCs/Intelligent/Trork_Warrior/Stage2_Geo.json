@@ -1,0 +1,34 @@
+{
+  "Type": "StatsCondition",
+  "LessThan": true,
+  "Costs": {
+    "Health": 75
+  },
+  "Next": {
+    "Type": "ApplyEffect",
+    "EffectId": "TrorkEvo_Stage2_FX",
+    "Next": {
+      "Type": "Selector",
+      "Selector": {
+        "Id": "AOECircle",
+        "Range": 2,
+        "Offset": {
+          "Y": 1
+        }
+      },
+      "HitEntity": {
+        "Interactions": [
+          {
+            "Type": "ApplyEffect",
+            "EffectId": "Burn"
+          }
+        ],
+        "Cooldown": {
+          "Cooldown": 5
+        }
+      },
+      "IgnoreOwner": true
+    },
+    "RunTime": 0.1
+  }
+}

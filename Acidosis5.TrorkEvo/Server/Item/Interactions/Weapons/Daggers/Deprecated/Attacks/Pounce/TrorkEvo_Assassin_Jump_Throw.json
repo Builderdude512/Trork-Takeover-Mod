@@ -30,7 +30,7 @@
   "Next": {
     "Type": "Serial",
     "Interactions": [
-      "TrorkEvo_Assassin_Jump_Force",
+      "TrorkCommon_Jump_Vertical_High",
       "TrorkEvo_Assassin_Jumping_Projectiles"
     ]
   }

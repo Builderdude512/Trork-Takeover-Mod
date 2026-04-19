@@ -20,7 +20,6 @@
   "StatModifiers": {
     "Mana": 1
   },
-  "Infinite": true,
   "ApplicationEffects": {
     "EntityTopTint": "#aa2121",
     "Particles": [
@@ -36,5 +35,6 @@
     ],
     "HorizontalSpeedMultiplier": 1.25
   },
-  "DamageCalculatorCooldown": 1
+  "DamageCalculatorCooldown": 1,
+  "Duration": 12
 }

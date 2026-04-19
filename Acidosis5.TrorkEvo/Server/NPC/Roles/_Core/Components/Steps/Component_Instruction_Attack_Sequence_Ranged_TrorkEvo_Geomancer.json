@@ -3,7 +3,7 @@
   "Interface": "Hytale.Instruction.AttackSequence",
   "Parameters": {
     "AttackDistance": {
-      "Value": 6,
+      "Value": 9,
       "Description": "The distance at which an NPC will execute attacks"
     },
     "CombatRelativeTurnSpeed": {
@@ -27,14 +27,38 @@
     "Actions": [
       {
         "Type": "Attack",
-        "Attack": "TrorkEvo_Monk_Suplex",
+        "Attack": "TrorkEvo_Geo_Doubleshot",
         "AimingTimeRange": [
           2,
           3
         ],
         "AttackPauseRange": [
-          1,
-          6
+          2,
+          3
+        ]
+      },
+      {
+        "Type": "Attack",
+        "Attack": "TrorkEvo_BolderThrow_Geo_Launcher",
+        "AimingTimeRange": [
+          2,
+          3
+        ],
+        "AttackPauseRange": [
+          3,
+          4
+        ]
+      },
+      {
+        "Type": "Attack",
+        "Attack": "TrorkEvo_Geo_HeavyProjectile_Launcher",
+        "AimingTimeRange": [
+          2,
+          3
+        ],
+        "AttackPauseRange": [
+          4,
+          5
         ]
       }
     ],

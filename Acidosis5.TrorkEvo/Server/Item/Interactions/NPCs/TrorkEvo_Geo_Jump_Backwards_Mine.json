@@ -1,0 +1,61 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ClearAnimationOnFinish": true,
+    "MovementEffects": {
+      "DisableAll": true
+    },
+    "ItemAnimationId": "Crouch",
+    "Trails": [
+      {
+        "TrailId": "Daggers_Dash_Distortion"
+      }
+    ],
+    "Particles": [
+      {
+        "SystemId": "Daggers_Charged_Trail",
+        "Scale": 4,
+        "TargetEntityPart": "Entity"
+      }
+    ]
+  },
+  "RunTime": 0.35,
+  "Next": {
+    "Type": "Projectile",
+    "Config": "Proj_Bouncer_A",
+    "Next": {
+      "Type": "Parallel",
+      "Interactions": [
+        {
+          "Interactions": [
+            {
+              "Type": "StatsCondition",
+              "LessThan": true,
+              "Costs": {
+                "Health": 76
+              },
+              "Next": {
+                "Type": "Repeat",
+                "Repeat": 3,
+                "ForkInteractions": {
+                  "Interactions": [
+                    {
+                      "Type": "Projectile",
+                      "Config": "Proj_Bouncer_A",
+                      "RunTime": 0.05
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Interactions": [
+            "TrorkCommon_Jump_Backwards_Medium_Force"
+          ]
+        }
+      ]
+    }
+  }
+}

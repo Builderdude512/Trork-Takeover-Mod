@@ -29,8 +29,8 @@
         "Type": "Attack",
         "Attack": "TrorkCommon_Attack_Dual_Stabx4",
         "AttackPauseRange": [
-          2,
-          3
+          1,
+          2
         ]
       },
       {
@@ -43,10 +43,10 @@
       },
       {
         "Type": "Attack",
-        "Attack": "TrorkCommon_Attack_Jump_Backwards",
+        "Attack": "TrorkEvo_Geo_HeavyStrike_Attack",
         "AttackPauseRange": [
-          2,
-          3
+          3,
+          4
         ]
       }
     ],

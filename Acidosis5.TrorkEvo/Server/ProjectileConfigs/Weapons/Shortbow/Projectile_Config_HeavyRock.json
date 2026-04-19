@@ -33,6 +33,7 @@
     },
     "ProjectileMiss": {
       "Interactions": [
+        "TrorkEvo_Rockshot_Shrapnel",
         "Common_Projectile_Despawn"
       ]
     }

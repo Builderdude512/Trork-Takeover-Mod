@@ -1,0 +1,11 @@
+{
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  },
+  "Interactions": [
+    "Stage2_Geo",
+    "TrorkEvo_Geo_HeavyStrike_Alternator"
+  ]
+}

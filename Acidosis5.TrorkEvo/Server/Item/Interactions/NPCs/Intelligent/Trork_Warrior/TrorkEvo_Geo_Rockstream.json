@@ -132,7 +132,8 @@
             "Config": "Projectile_Config_Rockshot",
             "Effects": {
               "ItemPlayerAnimationsId": "Daggers",
-              "ItemAnimationId": "SwingLeftRight"
+              "ItemAnimationId": "SwingLeftRight",
+              "WorldSoundEventId": "SFX_Rubble_Bounce"
             },
             "RunTime": 0.075
           },

@@ -17,8 +17,8 @@
   "Config": {
     "DamageBlocks": false,
     "DamageEntities": true,
-    "EntityDamageRadius": 4,
-    "EntityDamage": 30,
+    "EntityDamageRadius": 3,
+    "EntityDamage": 5,
     "EntityDamageFalloff": 0.25,
     "Knockback": {
       "Type": "Point",

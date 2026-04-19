@@ -1,0 +1,100 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemPlayerAnimationsId": "Wand",
+    "ItemAnimationId": "CastLeftCharging",
+    "ClearAnimationOnFinish": true,
+    "Particles": [
+      {
+        "SystemId": "Block_Sprint_Stone",
+        "TargetEntityPart": "PrimaryItem",
+        "Color": "#8d7a60",
+        "PositionOffset": {
+          "Y": 0,
+          "Z": 0.3
+        }
+      },
+      {
+        "SystemId": "Block_Sprint_Stone",
+        "TargetEntityPart": "SecondaryItem",
+        "Color": "#8d7a60",
+        "PositionOffset": {
+          "Z": 0.3
+        }
+      }
+    ]
+  },
+  "$Comment": "Prepare Delay",
+  "Next": {
+    "Type": "Simple",
+    "RunTime": 0.075,
+    "Effects": {
+      "ItemPlayerAnimationsId": "Daggers",
+      "ItemAnimationId": "SwingLeftRight"
+    },
+    "Next": {
+      "Type": "Repeat",
+      "Repeat": 2,
+      "ForkInteractions": {
+        "Interactions": [
+          {
+            "Type": "Projectile",
+            "Config": "Projectile_Config_Rockshot",
+            "RunTime": 0.1,
+            "Effects": {
+              "Particles": [
+                {
+                  "TargetEntityPart": "PrimaryItem",
+                  "Color": "#8d7a60",
+                  "PositionOffset": {
+                    "Y": 0,
+                    "Z": 0.3
+                  },
+                  "SystemId": "Block_Break_Ore",
+                  "Scale": 1.5
+                }
+              ]
+            }
+          },
+          {
+            "Type": "Projectile",
+            "Config": "Proj_Con_Rockshot_A",
+            "Effects": {
+              "Particles": [
+                {
+                  "TargetEntityPart": "PrimaryItem",
+                  "Color": "#8d7a60",
+                  "PositionOffset": {
+                    "Y": 0,
+                    "Z": 0.3
+                  },
+                  "SystemId": "Block_Break_Ore",
+                  "Scale": 1.5
+                }
+              ]
+            }
+          },
+          {
+            "Type": "Projectile",
+            "Config": "Proj_Con_Rockshot_B",
+            "Effects": {
+              "Particles": [
+                {
+                  "TargetEntityPart": "PrimaryItem",
+                  "Color": "#8d7a60",
+                  "PositionOffset": {
+                    "Y": 0,
+                    "Z": 0.3
+                  },
+                  "SystemId": "Block_Break_Ore",
+                  "Scale": 1.5
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "RunTime": 0.4
+}

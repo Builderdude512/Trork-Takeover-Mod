@@ -1,0 +1,11 @@
+{
+  "Model": "Bolder",
+  "LaunchForce": 15,
+  "SpawnRotationOffset": {
+    "Pitch": 65
+  },
+  "Parent": "Projectile_Config_Bolder_Bouncer",
+  "SpawnOffset": {
+    "Y": 4
+  }
+}

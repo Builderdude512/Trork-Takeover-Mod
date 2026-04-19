@@ -1,0 +1,151 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ClearAnimationOnFinish": true,
+    "ItemPlayerAnimationsId": "Daggers",
+    "ItemAnimationId": "StabDoubleCharging",
+    "Particles": [
+      {
+        "SystemId": "Mace_Charging",
+        "TargetEntityPart": "Entity",
+        "PositionOffset": {
+          "Y": 1
+        },
+        "Scale": 2
+      }
+    ],
+    "MovementEffects": {
+      "DisableAll": true
+    }
+  },
+  "$Comment": "Prepare Delay",
+  "RunTime": 1.75,
+  "Next": {
+    "Type": "Repeat",
+    "Repeat": 5,
+    "ForkInteractions": {
+      "Interactions": [
+        {
+          "Type": "Simple",
+          "Effects": {
+            "ItemPlayerAnimationsId": "Daggers",
+            "ItemAnimationId": "StabDoubleCharged",
+            "Trails": [
+              {
+                "TrailId": "Small_Default",
+                "TargetEntityPart": "PrimaryItem"
+              }
+            ],
+            "Particles": [
+              {
+                "SystemId": "Block_Break_Sand",
+                "Color": "#8d7a60",
+                "PositionOffset": {
+                  "Z": 1,
+                  "Y": 1
+                },
+                "TargetEntityPart": "Self",
+                "RotationOffset": {
+                  "Pitch": -90
+                }
+              },
+              {
+                "SystemId": "Block_Break_Sand",
+                "Color": "#8d7a60",
+                "PositionOffset": {
+                  "Z": 2,
+                  "Y": 2
+                },
+                "Scale": 2,
+                "TargetEntityPart": "Self",
+                "RotationOffset": {
+                  "Pitch": -90
+                }
+              },
+              {
+                "SystemId": "Block_Break_Sand",
+                "Color": "#8d7a60",
+                "PositionOffset": {
+                  "Z": 4,
+                  "Y": 4
+                },
+                "Scale": 3,
+                "TargetEntityPart": "Self",
+                "RotationOffset": {
+                  "Pitch": -90
+                }
+              }
+            ],
+            "WorldSoundEventId": "SFX_Sand_Break",
+            "LocalSoundEventId": "SFX_Sand_Break"
+          },
+          "RunTime": 0.075,
+          "Next": {
+            "Type": "Parallel",
+            "$Comment": "Make sure this parallel interaction is needed and can't be optimized away",
+            "Interactions": [
+              {
+                "Interactions": [
+                  {
+                    "Type": "Selector",
+                    "$Comment": "Length of Combat",
+                    "RunTime": 0.1,
+                    "Selector": {
+                      "Id": "Horizontal",
+                      "Direction": "ToLeft",
+                      "Length": 40,
+                      "YawStartOffset": -20,
+                      "EndDistance": 6,
+                      "ExtendTop": 1.5,
+                      "ExtendBottom": 1.5,
+                      "TestLineOfSight": true
+                    },
+                    "HitEntity": {
+                      "Interactions": [
+                        {
+                          "Effects": {
+                            "Particles": [
+                              {
+                                "TargetEntityPart": "PrimaryItem",
+                                "SystemId": "Impact_Shield_Bash",
+                                "Scale": 0.5
+                              }
+                            ]
+                          },
+                          "Type": "Replace",
+                          "DefaultValue": {
+                            "Interactions": [
+                              "NPC_Attack_Melee_Damage"
+                            ]
+                          },
+                          "Var": "Melee_Light"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "Interactions": [
+                  {
+                    "Type": "Simple",
+                    "$Comment": "Length of Effect",
+                    "RunTime": 0.05,
+                    "Effects": {
+                      "WorldSoundEventId": "SFX_Light_Melee_T2_Swing"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "Effects": {
+      "MovementEffects": {
+        "DisableAll": true
+      }
+    }
+  }
+}

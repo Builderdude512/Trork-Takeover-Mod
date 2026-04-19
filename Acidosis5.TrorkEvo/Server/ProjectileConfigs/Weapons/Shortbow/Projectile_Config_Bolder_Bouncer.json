@@ -14,6 +14,14 @@
   "Interactions": {
     "ProjectileHit": {
       "Interactions": [
+        {
+          "Type": "DamageEntity",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Projectile": 30
+            }
+          }
+        },
         "BolderExplode",
         "Common_Projectile_Despawn"
       ]
@@ -31,5 +39,7 @@
   },
   "SpawnRotationOffset": {
     "Pitch": 15
-  }
+  },
+  "LaunchLocalSoundEventId": "SFX_Dirt_Break",
+  "LaunchWorldSoundEventId": "SFX_Dirt_Break"
 }

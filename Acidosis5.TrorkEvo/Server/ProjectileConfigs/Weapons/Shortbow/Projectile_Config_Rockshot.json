@@ -1,0 +1,70 @@
+{
+  "Model": "Rockshot",
+  "LaunchForce": 35,
+  "Physics": {
+    "Type": "Standard",
+    "Gravity": 6,
+    "TerminalVelocityAir": 35,
+    "TerminalVelocityWater": 35,
+    "RotationMode": "VelocityDamped",
+    "BounceCount": 0,
+    "SticksVertically": true
+  },
+  "Interactions": {
+    "ProjectileHit": {
+      "Interactions": [
+        {
+          "Type": "DamageEntity",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Projectile": 10
+            }
+          },
+          "DamageEffects": {
+            "Knockback": {
+              "Force": -5
+            }
+          }
+        },
+        {
+          "Type": "Simple",
+          "Effects": {
+            "Particles": [
+              {
+                "SystemId": "Block_Break_Stone",
+                "Color": "#8d7a60",
+                "TargetEntityPart": "Entity",
+                "Scale": 0.6
+              }
+            ],
+            "WorldSoundEventId": "SFX_Stone_Break"
+          },
+          "RunTime": 0.05
+        },
+        "Common_Projectile_Despawn"
+      ]
+    },
+    "ProjectileMiss": {
+      "Interactions": [
+        {
+          "Type": "Simple",
+          "Effects": {
+            "Particles": [
+              {
+                "SystemId": "Block_Break_Stone",
+                "Color": "#8d7a60",
+                "TargetEntityPart": "Entity",
+                "Scale": 0.6
+              }
+            ],
+            "WorldSoundEventId": "SFX_Stone_Break"
+          },
+          "RunTime": 0.05
+        },
+        "Common_Projectile_Despawn"
+      ]
+    }
+  },
+  "LaunchLocalSoundEventId": "SFX_Dirt_Break",
+  "LaunchWorldSoundEventId": "SFX_Dirt_Break"
+}

@@ -1,0 +1,8 @@
+{
+  "Type": "Chaining",
+  "ChainingAllowance": 18,
+  "Next": [
+    "TrorkEvo_MineKick",
+    "TrorkEvo_Geo_Rockstream"
+  ]
+}

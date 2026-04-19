@@ -1,0 +1,68 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemPlayerAnimationsId": "Daggers",
+    "ItemAnimationId": "StabDoubleCharging",
+    "ClearAnimationOnFinish": true,
+    "Particles": [
+      {
+        "SystemId": "Block_Sprint_Stone",
+        "TargetEntityPart": "PrimaryItem",
+        "Color": "#8d7a60",
+        "PositionOffset": {
+          "Y": 0,
+          "Z": 0.3
+        }
+      },
+      {
+        "SystemId": "Block_Sprint_Stone",
+        "TargetEntityPart": "SecondaryItem",
+        "Color": "#8d7a60",
+        "PositionOffset": {
+          "Z": 0.3
+        }
+      }
+    ]
+  },
+  "$Comment": "Prepare Delay",
+  "RunTime": 0.5,
+  "Next": {
+    "Type": "Serial",
+    "Interactions": [
+      "TrorkCommon_Jump_Vertical_High",
+      {
+        "Type": "Projectile",
+        "Effects": {
+          "ItemPlayerAnimationsId": "Daggers",
+          "ItemAnimationId": "KickTornadoRight"
+        },
+        "Config": "Projectile_Config_Bolder_Mine",
+        "RunTime": 0.25,
+        "Next": {
+          "Type": "Projectile",
+          "Config": "Projectile_Config_Bolder_Mine",
+          "RunTime": 0.25,
+          "Next": {
+            "Type": "StatsCondition",
+            "Costs": {
+              "Health": 76
+            },
+            "LessThan": true,
+            "Next": {
+              "Type": "Projectile",
+              "Config": "Projectile_Config_Bolder_Mine",
+              "Next": {
+                "Type": "Simple",
+                "RunTime": 0.65
+              },
+              "Failed": {
+                "Type": "Simple",
+                "RunTime": 0.65
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

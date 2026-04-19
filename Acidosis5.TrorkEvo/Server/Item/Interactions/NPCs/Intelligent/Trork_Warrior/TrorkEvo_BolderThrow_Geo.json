@@ -1,0 +1,45 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemPlayerAnimationsId": "Daggers",
+    "ItemAnimationId": "StabDoubleCharging",
+    "ClearAnimationOnFinish": true,
+    "Particles": [
+      {
+        "SystemId": "Block_Sprint_Stone",
+        "TargetEntityPart": "PrimaryItem",
+        "Color": "#8d7a60",
+        "PositionOffset": {
+          "Y": 0,
+          "Z": 0.3
+        }
+      },
+      {
+        "SystemId": "Block_Sprint_Stone",
+        "TargetEntityPart": "SecondaryItem",
+        "Color": "#8d7a60",
+        "PositionOffset": {
+          "Z": 0.3
+        }
+      }
+    ]
+  },
+  "$Comment": "Prepare Delay",
+  "Next": {
+    "Type": "Simple",
+    "RunTime": 0.075,
+    "Effects": {
+      "ItemPlayerAnimationsId": "Daggers",
+      "ItemAnimationId": "PounceStab"
+    },
+    "Next": {
+      "Type": "Projectile",
+      "Config": "Projectile_Config_Bolder_Bouncer",
+      "Next": {
+        "Type": "Simple",
+        "RunTime": 0.65
+      }
+    }
+  },
+  "RunTime": 0.5
+}

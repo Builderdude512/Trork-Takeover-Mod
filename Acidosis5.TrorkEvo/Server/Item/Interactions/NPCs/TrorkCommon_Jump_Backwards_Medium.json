@@ -20,23 +20,5 @@
     ]
   },
   "RunTime": 0.35,
-  "Next": {
-    "Type": "ApplyForce",
-    "Force": 700,
-    "Direction": {
-      "Y": 0.06,
-      "Z": 2
-    },
-    "RaycastMode": "FollowLook",
-    "Effects": {
-      "ItemPlayerAnimationsId": "Daggers",
-      "ItemAnimationId": "Backflip",
-      "ClearAnimationOnFinish": true,
-      "Trails": [
-        {
-          "TrailId": "Large_Projectile"
-        }
-      ]
-    }
-  }
+  "Next": "TrorkCommon_Jump_Backwards_Medium_Force"
 }

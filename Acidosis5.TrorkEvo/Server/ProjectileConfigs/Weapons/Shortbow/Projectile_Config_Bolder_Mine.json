@@ -1,0 +1,87 @@
+{
+  "Model": "Bolder_Bomb",
+  "LaunchForce": 30,
+  "Physics": {
+    "Type": "Standard",
+    "Gravity": 20,
+    "TerminalVelocityAir": 50,
+    "TerminalVelocityWater": 1,
+    "RotationMode": "VelocityRoll"
+  },
+  "Interactions": {
+    "ProjectileHit": {
+      "Interactions": [
+        {
+          "Type": "DamageEntity",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Projectile": 20
+            }
+          }
+        },
+        "BolderExplode",
+        "Common_Projectile_Despawn"
+      ]
+    },
+    "ProjectileMiss": {
+      "Interactions": [
+        {
+          "Type": "Repeat",
+          "Repeat": 20,
+          "ForkInteractions": {
+            "Interactions": [
+              {
+                "Type": "Selector",
+                "RunTime": 0.25,
+                "Selector": {
+                  "Id": "AOECircle",
+                  "Range": 1
+                },
+                "HitEntity": {
+                  "Interactions": [
+                    {
+                      "Type": "DamageEntity",
+                      "DamageCalculator": {
+                        "BaseDamage": {
+                          "Physical": 25
+                        }
+                      }
+                    },
+                    "BolderExplode",
+                    "Common_Projectile_Despawn"
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Selector",
+          "Selector": {
+            "Id": "AOECircle",
+            "Range": 2
+          },
+          "HitEntity": {
+            "Interactions": [
+              {
+                "Type": "DamageEntity",
+                "DamageCalculator": {
+                  "BaseDamage": {
+                    "Physical": 25
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "BolderExplode",
+        "Common_Projectile_Despawn"
+      ]
+    }
+  },
+  "SpawnRotationOffset": {
+    "Pitch": 4
+  },
+  "LaunchLocalSoundEventId": "SFX_Dirt_Break",
+  "LaunchWorldSoundEventId": "SFX_Dirt_Break"
+}

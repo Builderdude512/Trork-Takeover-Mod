@@ -9,7 +9,8 @@
       {
         "SystemId": "Block_Break_Stone",
         "TargetEntityPart": "Entity",
-        "Scale": 1.5
+        "Scale": 1.5,
+        "Color": "#a67a30"
       }
     ]
   },
